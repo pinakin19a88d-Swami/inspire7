@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 	var bodyHeight = windowHeight * 0.84;
 	var footerHeight = windowHeight * 0.16;
-	var gridWidth = 860 * 1.4;
+	var gridWidth = (bodyHeight * 0.86) * 1.44;
 
 	$(".bodySection").css("height",bodyHeight);
 	$(".footerSection").css("height",footerHeight);
