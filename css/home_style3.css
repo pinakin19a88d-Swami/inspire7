@@ -34,6 +34,33 @@
 	margin: 0 auto 0 auto;
 	background-color: #44c;
 }
+.imgGrid ul {
+	list-style: none;
+}
+.imgGrid li {
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 25%;
+}
+.imgGrid li img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.hoverBox {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url("../images/whiteBG.png");
+	display: none;
+}
+.searchIcon {
+	display: block;
+	width: 
+}
 
 .footerSection {
 	float: none;
