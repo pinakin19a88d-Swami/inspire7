@@ -7,10 +7,15 @@ $(document).ready(function(){
 	var footerHeight = windowHeight * 0.16;
 	var gridWidth = (bodyHeight * 0.86) * 1.44;
 
+	var navWidth = $(".navContainer").css("width");
+	var contWidth = parseInt(navWidth) + parseInt(gridWidth);
+	$(".container").css("width",contWidth);
+
 	$(".bodySection").css("height",bodyHeight);
 	$(".footerSection").css("height",footerHeight);
 	$(".imgGrid").css("width",gridWidth);
 
+	
 
 	$(window).resize(function(){
 
