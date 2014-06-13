@@ -3,12 +3,12 @@
 }
 
 .bodySection {
-	height: 85%;
+	height: 700px;
 }
 
 .navContainer {
 	float: left;
-	width: 16.66%;
+	width: 20%;
 	height: 100%;
 	background-color: #000;
 }
@@ -38,7 +38,7 @@
 	border: #000 solid 2px;
 }
 .footerSection > .span2 {
-	width: 200px;
+	width: 211px;
 	height: 100%;
 	float: left;
 	margin-left: 1.6%;
