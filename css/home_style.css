@@ -122,19 +122,20 @@
     text-decoration: none;
     text-transform: uppercase;
     border-bottom: 1px solid #e4e4e4;
-    padding: 9px 0;
-    font: 20px/22px 'ergoeregular', sans-serif;
+    padding: 5% 0;
+    font: 142%/90% 'ergoeregular', sans-serif;
+    letter-spacing: 1px;
 }
 .subMenu li a {
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 90%;
+    line-height: 100%;
     border-bottom: none;
-    /*padding: 6px 0;*/
-    padding: 3.84% 0;
+    padding: 1.5% 0;
+    /*padding: 3.84% 0;*/
 }
 .subMenu li a:first-child {
     
-    padding-top: 7.68%;
+    padding-top: 3%;
 }
 a.logo {
     display: block;
