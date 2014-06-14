@@ -122,15 +122,15 @@
     text-decoration: none;
     text-transform: uppercase;
     border-bottom: 1px solid #e4e4e4;
-    padding: 5% 0;
+    padding: 3% 0;
     font: 142%/90% 'ergoeregular', sans-serif;
     letter-spacing: 1px;
 }
 .subMenu li a {
-    font-size: 90%;
+    font-size: 92%;
     line-height: 100%;
     border-bottom: none;
-    padding: 1.5% 0;
+    padding: 1.2% 0;
     /*padding: 3.84% 0;*/
 }
 .subMenu li a:first-child {
@@ -139,8 +139,8 @@
 }
 a.logo {
     display: block;
-    margin: 25% 0;
-    width: 75%;
+    margin: 20% 0;
+    width: 65%;
 }
 a.logo img {
     display: block;
