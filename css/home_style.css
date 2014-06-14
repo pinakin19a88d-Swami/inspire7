@@ -104,17 +104,21 @@
 	float: left;
 	width: 20%;
 	height: 100%;
-	/*background-color: #000;*/
+    /*background-color: #000;*/
+	/*border: 1px solid #000;*/
 }
 .nav-list {
 	height: 100%;
-	/*background-color: #c44;    */
+    /*background-color: #c44;*/
+	border: 1px solid #c44;
+    font: 20px/22px 'ergoeregular', sans-serif;
 }
 .nav-list li a,
 .subMenu li a {
     color: #999999;
     text-decoration: none;
     text-transform: uppercase;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .gridContainer {
