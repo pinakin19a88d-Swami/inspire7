@@ -43,7 +43,6 @@
     font-style: normal;
 
 }
-../fonts/ergoe/
 /* Calibri fonts*/
 @font-face {
     font-family: 'ergoebold';
@@ -109,7 +108,13 @@
 }
 .nav-list {
 	height: 100%;
-	background-color: #c44;
+	background-color: #c44;    
+}
+.nav-list li a,
+.subMenu li a {
+    color: #999999;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .gridContainer {
@@ -129,7 +134,7 @@
 	margin: 0 auto 0 auto;
 	background-color: #44c;
 }
-.imgGrid ul, ul.nav-list {
+.imgGrid ul, ul.nav-list, ul.subMenu {
 	list-style: none;
 }
 .imgGrid li {
