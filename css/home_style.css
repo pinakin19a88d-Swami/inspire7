@@ -1,3 +1,96 @@
+/* Fonts section started*/
+@font-face {
+    font-family: 'calibriregular';
+    src: url('../fonts/calibri/calibri-webfont.eot');
+    src: url('../fonts/calibri/calibri-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/calibri/calibri-webfont.woff') format('woff'),
+         url('../fonts/calibri/calibri-webfont.ttf') format('truetype'),
+         url('../fonts/calibri/calibri-webfont.svg#calibriregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'calibribold';
+    src: url('../fonts/calibri/calibrib-webfont.eot');
+    src: url('../fonts/calibri/calibrib-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/calibri/calibrib-webfont.woff') format('woff'),
+         url('../fonts/calibri/calibrib-webfont.ttf') format('truetype'),
+         url('../fonts/calibri/calibrib-webfont.svg#calibribold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'calibriitalic';
+    src: url('../fonts/calibri/calibrii-webfont.eot');
+    src: url('../fonts/calibri/calibrii-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/calibri/calibrii-webfont.woff') format('woff'),
+         url('../fonts/calibri/calibrii-webfont.ttf') format('truetype'),
+         url('../fonts/calibri/calibrii-webfont.svg#calibriitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'calibribold_italic';
+    src: url('../fonts/calibri/calibriz-webfont.eot');
+    src: url('../fonts/calibri/calibriz-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/calibri/calibriz-webfont.woff') format('woff'),
+         url('../fonts/calibri/calibriz-webfont.ttf') format('truetype'),
+         url('../fonts/calibri/calibriz-webfont.svg#calibribold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+../fonts/ergoe/
+/* Calibri fonts*/
+@font-face {
+    font-family: 'ergoebold';
+    src: url('../fonts/ergoe/ergob-webfont.eot');
+    src: url('../fonts/ergoe/ergob-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ergoe/ergob-webfont.woff') format('woff'),
+         url('../fonts/ergoe/ergob-webfont.ttf') format('truetype'),
+         url('../fonts/ergoe/ergob-webfont.svg#ergoebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ergoeitalic';
+    src: url('../fonts/ergoe/ergoi-webfont.eot');
+    src: url('../fonts/ergoe/ergoi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ergoe/ergoi-webfont.woff') format('woff'),
+         url('../fonts/ergoe/ergoi-webfont.ttf') format('truetype'),
+         url('../fonts/ergoe/ergoi-webfont.svg#ergoeitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ergoeregular';
+    src: url('../fonts/ergoe/ergor-webfont.eot');
+    src: url('../fonts/ergoe/ergor-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ergoe/ergor-webfont.woff') format('woff'),
+         url('../fonts/ergoe/ergor-webfont.ttf') format('truetype'),
+         url('../fonts/ergoe/ergor-webfont.svg#ergoeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ergoebold_italic';
+    src: url('../fonts/ergoe/ergobi-webfont.eot');
+    src: url('../fonts/ergoe/ergobi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ergoe/ergobi-webfont.woff') format('woff'),
+         url('../fonts/ergoe/ergobi-webfont.ttf') format('truetype'),
+         url('../fonts/ergoe/ergobi-webfont.svg#ergoebold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Fonts section end*/
+
 .container {
 	margin: 0 auto;
 }
