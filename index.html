@@ -15,6 +15,7 @@
 		
 		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
 		<script type="text/javascript" src="js/home_script.js"></script>
+		<script type="text/javascript" src="js/ajax_load_script.js"></script>
 
 	</head>
 
@@ -30,13 +31,13 @@
 					</a>
 				
 				<ul class="nav-list">
-					<li class=""><a href="#">About</a>
+					<li class=""><a href="#" id="aboutNav">About</a>
 					<ul class="subMenu">
-						<li><a href="#">Who We Are?</a></li>
-						<li><a href="#">What do We Do?</a></li>
-						<li><a href="#">Our Approach?</a></li>
-						<li><a href="#">Our Team</a></li>
-						<li><a href="#">Our Infrastructure</a></li>
+						<li><a href="#" id="whoWeAreNav">Who We Are?</a></li>
+						<li><a href="#" id="whatWeDoNav">What do We Do?</a></li>
+						<li><a href="#" id="approachNav">Our Approach?</a></li>
+						<li><a href="#" id="teamNav">Our Team</a></li>
+						<li><a href="#" id="infraNav">Our Infrastructure</a></li>
 
 						<li><a href="#">Our Approach?</a></li>
 						<li><a href="#">Our Team</a></li>
@@ -52,12 +53,17 @@
 			</div><!-- navContainer -->
 
 			<div class="gridContainer">
+
 				<div class="sprites"></div>
 				<div class="imgGrid">
+
 					<div class="gridShadow"></div>
-					<div class="gridCurtain">
-						<div class="blackBox"></div>
-					</div>
+					<div class="gridCurtain animated fadeIn">
+						<div class="blackBox animated slideInLeft" id="blackBoxCont">
+							
+						</div><!-- blackBox -->
+					</div><!-- gridCurtain -->
+
 					<ul class="clearfix">
 						<li>
 							<div class="imgHolder">
@@ -198,7 +204,9 @@
 						</li>
 						
 					</ul>
-				</div>
+
+				</div><!-- imgGrid -->
+
 			</div><!-- gridContainer -->
 
 		</div><!-- bodySection -->
