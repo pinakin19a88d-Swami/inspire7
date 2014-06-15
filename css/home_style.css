@@ -335,9 +335,11 @@
     padding: 1.2% 0;
     /*padding: 3.84% 0;*/
 }
-.subMenu li a:first-child {
-    
-    padding-top: 3%;
+.subMenu li a:first-child {    
+   padding-top: 3%;
+}
+.subMenu li a:hover {
+    color: #cc0000;
 }
 a.logo {
     display: block;
@@ -400,6 +402,9 @@ a.logo img {
 }
 .imgGrid ul, ul.nav-list, ul.subMenu {
 	list-style: none;
+}
+.subMenu {
+border-bottom: 1px solid #e4e4e4;
 }
 .imgGrid li {
 	position: relative;
@@ -468,6 +473,9 @@ h3 {
 	font-size: 20px;
 	margin-bottom: 10px;
 }
+.infoText h3 {
+    color: #999;
+}
 p, .boldItalics {
 	width: 100%;
 	font: 14px/17px 'calibriregular', sans-serif;
@@ -497,8 +505,11 @@ p, .boldItalics {
 .active {
 	color: #cc0000!important;
 }
-.whoWeAreCont {
+.whoWeAreCont, .whatWeDo {
 	height: 100%;
     background: url("../images/Who-We-Are.png") no-repeat right bottom;
     background-size: 75%;
+}
+.whatWeDo {
+    background: url("../images/WhatWeDo.png") no-repeat right bottom;
 }
