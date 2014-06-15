@@ -476,8 +476,6 @@ p, .boldItalics {
 }
 .boldItalics, .inBoldItalic {
 	display: inline-block;
-	/*font-weight: bold;
-	font-style: italic;*/
     font-family: 'calibribold_italic', sans-serif;
 	margin-top: 10px;
 	margin-bottom: 40px;
@@ -497,7 +495,7 @@ p, .boldItalics {
 	color: #ffffff;
 }
 .active {
-	color: #cc0000;
+	color: #cc0000!important;
 }
 .whoWeAreCont {
 	height: 100%;
