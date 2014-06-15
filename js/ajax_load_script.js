@@ -9,5 +9,11 @@ $(document).ready(function() {
 		$(".gridCurtain").css("display","block");
 	});	
 
+	$("#closeBtn").click(function(){
+		alert("test");
+		$("this").parent().parent().parent(".gridCurtain").hide();
+		
+	});
+
 });
 
