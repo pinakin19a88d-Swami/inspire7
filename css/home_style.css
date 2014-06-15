@@ -500,6 +500,7 @@ p, .boldItalics {
 	color: #cc0000;
 }
 .whoWeAreCont {
+	height: 100%;
     background: url("../images/Who-We-Are.png") no-repeat right bottom;
     background-size: 75%;
 }
