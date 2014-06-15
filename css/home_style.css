@@ -1,3 +1,17 @@
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
 /* Fonts section started*/
 @font-face {
     font-family: 'calibriregular';
@@ -382,6 +396,7 @@ a.logo img {
 	margin: 6% 0 5% 0;
 	position: relative;
 	z-index: 60;
+    overflow: hidden;
 }
 .imgGrid ul, ul.nav-list, ul.subMenu {
 	list-style: none;
@@ -441,7 +456,7 @@ a.logo img {
 }
 
 h2, h3 {
-	font-family: 'ergoeregular';
+	font-family: 'ergoeregular', sans-serif;
 	font-weight: normal;
 }
 
@@ -455,8 +470,9 @@ h3 {
 }
 p, .boldItalics {
 	width: 100%;
-	font: 14px/18px 'calibriregular', sans-serif;
+	font: 14px/17px 'calibriregular', sans-serif;
 	margin-bottom: 10px;
+    color: #999999;
 }
 .boldItalics {
 	display: block;
@@ -464,17 +480,22 @@ p, .boldItalics {
 	font-style: italic;
 	margin-top: 10px;
 	margin-bottom: 40px;
+    color: #fff;
 }
 .infoText {
 	position: absolute;
 	display: block;
-	width: 43%;
+    /*width: 43%;*/
+	width: 50%;
 	margin: 75px 0 10px 40px;
 }
 .whiteText {
-	letter-spacing: 1px;
+	/*letter-spacing: 1px;*/
 	color: #ffffff;
 }
 .active {
 	color: #cc0000;
+}
+.whoWeAreCont {
+    background: url("../images/Who-We-Are.png") no-repeat right bottom;
 }
