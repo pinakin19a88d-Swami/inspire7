@@ -10,10 +10,14 @@ $(document).ready(function() {
 	});	
 
 	$("#closeBtn").click(function(){
-		alert("test");
-		$("this").parent().parent().parent(".gridCurtain").hide();
+
+		// $(".gridCurtain").removeClass("fadeIn");
+		$(".gridCurtain").css("display","none");
+		// $(".gridCurtain").addClass("fadeOut");
 		
 	});
+
+
 
 });
 

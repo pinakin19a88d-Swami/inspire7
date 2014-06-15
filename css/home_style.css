@@ -403,12 +403,18 @@ a.logo img {
 .close {
     /*display: block;*/
     position: absolute;
-    top: 2px;
-    right: 2px;
+    top: 10%;
+    right: 17%;
+    z-index: 99;
 
     width: 21px;
     height: 23px;
+    /*background-color: #c00;*/
     background: url("../images/Inspire_sprite.png") 0 -40px;
+}
+.close:hover{
+	background-color: #0c0;
+	cursor: pointer;
 }
 .imgGrid ul, ul.nav-list, ul.subMenu {
 	list-style: none;
