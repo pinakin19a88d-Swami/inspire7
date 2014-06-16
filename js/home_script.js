@@ -9,13 +9,14 @@ $(document).ready(function(){
 
 	var navWidth = $(".navContainer").css("width");
 	var contWidth = parseInt(navWidth) + parseInt(gridWidth);
+	
 	$(".container").css("width",contWidth);
 
 	$(".bodySection").css("height",bodyHeight);
 	$(".footerSection").css("height",footerHeight);
 	$(".imgGrid").css("width",gridWidth);
 
-	
+	$(".hoverBox").addClass("animated fadeInDown");
 
 	$(window).resize(function(){
 
