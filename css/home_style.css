@@ -495,6 +495,9 @@ p, .boldItalics {
 .inBoldItalic {
     display: inline;
 }
+.redText {
+	color: #cc0000;
+}
 .infoText {
 	width: 52%;
 	margin: 10% 0 10% 6%;
@@ -506,15 +509,29 @@ p, .boldItalics {
 .active {
 	color: #cc0000!important;
 }
-.whoWeAreCont, .whatWeDo {
+.whoWeAreCont,
+.whatWeDoCont,
+.ourApproachCont,
+.ourTeamCont,
+.ourInfraCont {
 	height: 100%;
-    background: url("../images/Who-We-Are.png") no-repeat right bottom;
-    background-size: 75%;
+	background-size: 75%;
     position: relative;
 }
-.whatWeDo {
+.whoWeAreCont {
+    background: url("../images/Who-We-Are.png") no-repeat right bottom;
+}
+.whatWeDoCont {
     background: url("../images/What-Do-We-Do.png") no-repeat right bottom;
-    background-size: 50%;
+}
+.ourApproachCont {
+    background: url("../images/Our-Approach.png") no-repeat right bottom;
+}
+.ourTeamCont {
+    background: url("../images/Our-Team.png") no-repeat right bottom;
+}
+.ourInfraCont {
+    background: url("../images/Our-Infrastructure.png") no-repeat right bottom;
 }
 .services {
     width: 100%;
