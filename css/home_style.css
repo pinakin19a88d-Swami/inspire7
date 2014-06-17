@@ -316,6 +316,11 @@
 }
 .nav-list li {
     /*padding-right: 20px;*/
+    overflow: hidden;
+}
+.nav-list > li:hover .subMenu {
+	/*height: 138px;*/
+	opacity: 1;
 }
 .nav-list li a,
 .subMenu li a {
@@ -328,6 +333,25 @@
     font: 142%/90% 'ergoeregular', sans-serif;
     letter-spacing: 1px;
 }
+.subMenu {
+	height: 0;
+	opacity: 0;
+
+	-webkit-transition: all 0.5s ease;
+	   -moz-transition: all 0.5s ease;
+		 -o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+
+	-webkit-animation-duration: 0.5s;
+	   -moz-animation-duration: 0.5s;
+	   	 -o-animation-duration: 0.5s;
+	   	 	animation-duration: 0.5s;
+  	
+  	-webkit-animation-delay: 0s;
+  	   -moz-animation-delay: 0s;
+  		 -o-animation-delay: 0s;
+  			animation-delay: 0s;
+}
 .subMenu li a {
     font-size: 92%;
     line-height: 100%;
@@ -339,7 +363,7 @@
    padding-top: 3%;
 }
 .subMenu li a:hover {
-    color: #cc0000;
+    color: #ee0000;
 }
 a.logo {
     display: block;
@@ -468,9 +492,16 @@ border-bottom: 1px solid #e4e4e4;
   		 -o-animation-delay: 0s;
   			animation-delay: 0s;
 }
+.boxText {
+	display: inline;
+}
 .searchIcon {
 	display: block;
-/*	width: */
+	background: url("../images/search_icon.png") no-repeat top center;
+	background-size: 100%;
+	width: 12%;
+	height: 30%;
+	margin: 5% 0 0 45%;
 }
 
 .footerSection {
@@ -527,7 +558,7 @@ p, .boldItalics {
 	color: #ffffff;
 }
 .active {
-	color: #cc0000!important;
+	color: #ee0000!important;
 }
 .whoWeAreCont,
 .whatWeDoCont,
