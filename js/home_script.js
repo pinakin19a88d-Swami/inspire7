@@ -17,8 +17,6 @@ $(document).ready(function(){
 	$(".footerSection").css("height",footerHeight);
 	$(".imgGrid").css("width",gridWidth);
 
-	$(".hoverBox").addClass("animated fadeInDown");
-
 	// Sub-Menu Height Fix
 	var liHeight = $(".subMenu > li").height();
 	var liPadding = (1.2 / liHeight) * 100;

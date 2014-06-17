@@ -7,7 +7,13 @@ $(document).ready(function() {
 		var current = $(this).attr("name");
 		$(".blackBox").load(current);
 		$(".gridCurtain").css("display","block");
-	});	
+	});
+
+	$(".nav-list li a").click(function() {
+		var current = $(this).attr("name");
+		$(".blackBox").load(current);
+		$(".gridCurtain").css("display","block");
+	});
 
 	$("#closeBtn").click(function(){
 

@@ -318,19 +318,22 @@
     /*padding-right: 20px;*/
     overflow: hidden;
 }
+.nav-list li:hover > a {
+    color: #333333;
+}
 .nav-list > li:hover .subMenu {
 	/*height: 138px;*/
 	opacity: 1;
 }
 .nav-list li a,
 .subMenu li a {
-    display: block;
+    display: table;
     color: #999999;
     text-decoration: none;
     text-transform: uppercase;
     border-bottom: 1px solid #e4e4e4;
     padding: 3% 0;
-    font: 142%/90% 'ergoeregular', sans-serif;
+    font: 142%/92% 'ergoeregular', sans-serif;
     letter-spacing: 1px;
 }
 .subMenu {
@@ -407,7 +410,6 @@ a.logo img {
 	width: 600px;
 	height: 86%;
 	margin: 0 auto 0 auto;
-	background-color: #44c;
 }
 .gridCurtain {
 	width: 100%;
@@ -466,7 +468,8 @@ border-bottom: 1px solid #e4e4e4;
 	height: 100%;
 }
 .imgGrid li:hover .hoverBox{
-    display: block;
+  	opacity: 1;
+  	margin-top: 0;
 }
 .hoverBox {
 	position: absolute;
@@ -475,22 +478,15 @@ border-bottom: 1px solid #e4e4e4;
 	top: 0;
 	left: 0;
 	background: url("../images/whiteBG.png");
-	display: none;
     color: #666666;
     font-family: 'calibriregular', sans-serif;
     font-size: 100%;
     text-align: center;
     padding-top: 25%;
 
-	-webkit-animation-duration: 0.5s;
-	   -moz-animation-duration: 0.5s;
-	   	 -o-animation-duration: 0.5s;
-	   	 	animation-duration: 0.5s;
-  	
-  	-webkit-animation-delay: 0s;
-  	   -moz-animation-delay: 0s;
-  		 -o-animation-delay: 0s;
-  			animation-delay: 0s;
+  	opacity: 0;
+  	margin-top:-20px;
+  	transition: opacity 0.5s ease, margin-top 0.5s ease;
 }
 .boxText {
 	display: inline;
@@ -514,11 +510,10 @@ border-bottom: 1px solid #e4e4e4;
 .footerSection > ul {
 	list-style: none;
 }
-h2, h3 {
+h2, h3, h4 {
 	font-family: 'ergoeregular', sans-serif;
 	font-weight: normal;
 }
-
 h2 {
 	font-size: 170%;
 	margin-bottom: 2%;
@@ -527,7 +522,20 @@ h3 {
 	font-size: 150%;
 	margin-bottom: 2%;
 }
-.infoText h3 {
+h4 {
+	font-size: 100%;
+	margin-bottom: 2%;
+}
+.infoText {
+	width: 52%;
+	margin: 10% 0 10% 6%;
+	float: left;
+}
+.infoText p a {
+	text-decoration: none;
+	color: #cccccc;
+}
+.infoText h3, .infoText h4 {
     color: #999;
 }
 p, .boldItalics {
@@ -549,13 +557,19 @@ p, .boldItalics {
 .redText {
 	color: #cc0000;
 }
-.infoText {
-	width: 52%;
-	margin: 10% 0 10% 6%;
-}
 .whiteText {
 	/*letter-spacing: 1px;*/
 	color: #ffffff;
+}
+.yellowText {
+	color: #ffcc66;
+}
+iframe {
+	position: absolute;
+	margin: 6% 0 0 -18%;
+}
+.feedbackForm {
+	margin: -25px 0 0 50px;
 }
 .active {
 	color: #ee0000!important;
@@ -694,5 +708,8 @@ p, .boldItalics {
     p, .boldItalics {
         font: 82%/115% 'calibriregular', sans-serif;
         margin-bottom: 4%;
+    }
+    .services li a span {
+    	font-size: 92%;
     }
 }
