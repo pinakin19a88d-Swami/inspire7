@@ -376,7 +376,7 @@ a.logo {
 a.logo img {
     display: block;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
 }
 .gridContainer {
 	float: right;
@@ -486,7 +486,11 @@ border-bottom: 1px solid #e4e4e4;
 
   	opacity: 0;
   	margin-top:-20px;
-  	transition: opacity 0.5s ease, margin-top 0.5s ease;
+  	-webkit-transition: opacity 0.5s ease, margin-top 0.5s ease;
+  	   -moz-transition: opacity 0.5s ease, margin-top 0.5s ease;
+  		 -o-transition: opacity 0.5s ease, margin-top 0.5s ease;
+  		-ms-transition: opacity 0.5s ease, margin-top 0.5s ease;
+  			transition: opacity 0.5s ease, margin-top 0.5s ease;
 }
 .boxText {
 	display: inline;
@@ -566,10 +570,15 @@ p, .boldItalics {
 }
 iframe {
 	position: absolute;
-	margin: 6% 0 0 -18%;
+	width: 55%;
+	height: 75%;
+	/*margin: 6% 0 0 -18%;*/
+	top: 7%;
+	right: 5%;
+	border: #666 dotted 2px;
 }
 .feedbackForm {
-	margin: -25px 0 0 50px;
+	margin: 4% 0 0 0;
 }
 .active {
 	color: #ee0000!important;
@@ -580,7 +589,7 @@ iframe {
 .ourTeamCont,
 .ourInfraCont {
 	height: 100%;
-	background-size: 75%;
+	/*background-size: 75%;*/
     position: relative;
 }
 .whoWeAreCont {
@@ -598,6 +607,11 @@ iframe {
 .ourInfraCont {
     background: url("../images/Our-Infrastructure.png") no-repeat right bottom;
 }
+.talkToUsCont > .infoText {
+	width: 100%;
+	margin: 7% 0 10% 6%;
+}
+
 .services {
     width: 100%;
     height: 100%;
@@ -610,6 +624,7 @@ iframe {
 }
 .services li a {
     display: block;
+    text-decoration: none;
     width: 100%;
     height: 100%;
 }
