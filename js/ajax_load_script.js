@@ -15,12 +15,17 @@ $(document).ready(function() {
 		$(".gridCurtain").css("display","block");
 	});
 
-	$("#closeBtn").click(function(){
+	$(".services li a").click(function() {
+		$(".services li a").removeClass("active");
+		$(this).addClass("active");
 
-		// $(".gridCurtain").removeClass("fadeIn");
+		var current = $(this).attr("name");
+		$(".blackBox").load(current);
+		$(".gridCurtain").css("display","block");
+	});
+
+	$("#closeBtn").click(function(){
 		$(".gridCurtain").css("display","none");
-		// $(".gridCurtain").addClass("fadeOut");
-		
 	});
 
 });

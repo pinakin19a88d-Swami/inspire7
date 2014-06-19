@@ -515,6 +515,7 @@ border-bottom: 1px solid #e4e4e4;
 	list-style: none;
 }
 h2, h3, h4 {
+	width: 54%;
 	font-family: 'ergoeregular', sans-serif;
 	font-weight: normal;
 }
@@ -523,7 +524,7 @@ h2 {
 	margin-bottom: 2%;
 }
 h3 {
-	font-size: 150%;
+	font-size: 145%;
 	margin-bottom: 2%;
 }
 h4 {
@@ -531,19 +532,19 @@ h4 {
 	margin-bottom: 2%;
 }
 .infoText {
-	width: 52%;
-	margin: 10% 0 10% 6%;
+	/*width: 52%;*/
+	margin: 8% 0 0 6%;
 	float: left;
 }
 .infoText p a {
 	text-decoration: none;
 	color: #cccccc;
 }
-.infoText h3, .infoText h4 {
+/*.infoText h3, .infoText h4 {
     color: #999;
-}
+}*/
 p, .boldItalics {
-	width: 100%;
+	width: 52%;
 	font: 109%/124% 'calibriregular', sans-serif;
 	margin-bottom: 2%;
     color: #999999;
@@ -551,22 +552,28 @@ p, .boldItalics {
 .boldItalics, .inBoldItalic {
 	display: inline-block;
     font-family: 'calibribold_italic', sans-serif;
-	margin-top: 5%;
-	margin-bottom: 10%;
+	/*margin-top: 5%;*/
+	margin-bottom: 5%;
     color: #fff;
 }
 .inBoldItalic {
     display: inline;
 }
-.redText {
-	color: #cc0000;
-}
 .whiteText {
 	/*letter-spacing: 1px;*/
 	color: #ffffff;
 }
+.greyText {
+	color: #999999;
+}
+.redText {
+	color: #cc0000;
+}
 .yellowText {
 	color: #ffcc66;
+}
+.cyanText {
+	color: #33ffff;
 }
 iframe {
 	position: absolute;
@@ -578,6 +585,7 @@ iframe {
 	border: #666 dotted 2px;
 }
 .feedbackForm {
+	width: 100%;
 	margin: 4% 0 0 0;
 }
 .active {
@@ -587,7 +595,8 @@ iframe {
 .whatWeDoCont,
 .ourApproachCont,
 .ourTeamCont,
-.ourInfraCont {
+.ourInfraCont,
+.designCont {
 	height: 100%;
 	/*background-size: 75%;*/
     position: relative;
@@ -695,6 +704,62 @@ iframe {
 .services li a:hover i.onlineMedia {
     background: url("../images/online_media_hover.png") center center no-repeat;   
     background-size: 100%;
+}
+.designCont {
+    background: url("../images/Design-Support.png") no-repeat right bottom;
+}
+.title {
+	font-family: 'ergoebold';
+}
+.gradientText {
+	font-family: 'calibribold_italic';
+	line-height: 140%;
+	margin: 0 10% 2% -50px;
+	padding: 1% 0 1% 50px;
+	background: url("../images/gradient_text_bg.png ") repeat-y;
+	background-size: 100%;
+}
+.bottomLinks {
+	width: 100%;
+	height: 14%;
+	position: absolute;
+	bottom: 0;
+	font-size: 100%;
+}
+.subPageLink {
+	padding: 2% 0 0 0;
+}
+.pdfSection {
+	text-align: right;
+}
+.pdfSection a {
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	padding: 6% 0 0 0;
+}
+.subPageLink,
+.pdfSection {
+	height: 100%;
+	font-family: 'calibriitalic';
+	text-decoration: none;
+	float: left;
+	margin: 0 2% 0 0;
+}
+.designPdfText {
+	font-family: 'calibribold_italic';
+}
+.downloadText {
+	font-family: 'calibriregular';
+	font-size: 90%;
+}
+
+.designPdfIcon {
+	width: 20%;
+	height: 100%;
+	float: left;
+	background: url("../images/design_support_hover.png") no-repeat;
+	margin: 0 0 0 6%;
 }
 
 /* Media Querry*/
