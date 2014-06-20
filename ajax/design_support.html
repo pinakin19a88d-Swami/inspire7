@@ -1,8 +1,8 @@
 <div class="designCont whiteText clearfix animated fadeIn de8ms">
 
 	<div class="infoText">
-		<h3 class="animated fadeInDown de1s">Enhance your communication with our</h3>
-		<h2 class="greyText animated fadeInDown de12ms">
+		<h3 class="animated fadeInUp de1s">Enhance your communication with our</h3>
+		<h2 class="greyText animated fadeInDown de1s">
 			<span class="title cyanText">Design Support</span> Retainer Package
 		</h2>
 		<div class="gradientText animated fadeInLeft de14ms">
@@ -16,7 +16,9 @@
 		</p>
 
 		<div class="bottomLinks">
-			<div class="subPageLink yellowText animated fadeInRight de22ms">Activites, Methodology &amp; Deliverables</div><i></i><i></i>
+			<div class="subPageLink animated fadeInRight de22ms">
+				<a href="#" name="ajax/design_support_activities.html" class="yellowText">Activites, Methodology &amp; Deliverables</a>
+			</div><i></i><i></i>
 			<div class="pdfSection">
 				<div class="designPdfIcon clearfix animated bounceIn de18ms"></div>
 				<a href="#" class="greyText animated fadeInLeft de22ms">
@@ -28,4 +30,14 @@
 		
 	</div><!-- infoText -->
 
+	<script type="text/javascript">
+
+		$(".subPageLink a").click(function() {
+			var current = $(this).attr("name");
+			$(".blackBox").load(current);
+			$(".gridCurtain").css("display","block");
+		});
+
+	</script>
+		
 </div>

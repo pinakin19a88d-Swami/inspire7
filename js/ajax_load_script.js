@@ -24,6 +24,12 @@ $(document).ready(function() {
 		$(".gridCurtain").css("display","block");
 	});
 
+	$(".subPageLink a").click(function() {
+		var current = $(this).attr("name");
+		$(".blackBox").load(current);
+		$(".gridCurtain").css("display","block");
+	});
+
 	$("#closeBtn").click(function(){
 		$(".gridCurtain").css("display","none");
 	});

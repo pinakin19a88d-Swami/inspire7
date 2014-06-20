@@ -405,6 +405,7 @@ a.logo img {
 	margin: 4% 0 4% -0.4%;
 	z-index: 70;
 }
+
 .imgGrid {
 	position: relative;
 	width: 600px;
@@ -485,7 +486,7 @@ border-bottom: 1px solid #e4e4e4;
     padding-top: 25%;
 
   	opacity: 0;
-  	margin-top:-20px;
+  	margin-top:-80%;
   	-webkit-transition: opacity 0.5s ease, margin-top 0.5s ease;
   	   -moz-transition: opacity 0.5s ease, margin-top 0.5s ease;
   		 -o-transition: opacity 0.5s ease, margin-top 0.5s ease;
@@ -515,7 +516,7 @@ border-bottom: 1px solid #e4e4e4;
 	list-style: none;
 }
 h2, h3, h4 {
-	width: 54%;
+	/*width: 54%;*/
 	font-family: 'ergoeregular', sans-serif;
 	font-weight: normal;
 }
@@ -532,7 +533,6 @@ h4 {
 	margin-bottom: 2%;
 }
 .infoText {
-	/*width: 52%;*/
 	margin: 8% 0 0 6%;
 	float: left;
 }
@@ -582,6 +582,7 @@ iframe {
 	/*margin: 6% 0 0 -18%;*/
 	top: 7%;
 	right: 5%;
+	padding: 0.5%;
 	border: #666 dotted 2px;
 }
 .feedbackForm {
@@ -729,6 +730,9 @@ iframe {
 .subPageLink {
 	padding: 2% 0 0 0;
 }
+.subPageLink a {
+	text-decoration: none;
+}
 .pdfSection {
 	text-align: right;
 }
@@ -760,6 +764,36 @@ iframe {
 	float: left;
 	background: url("../images/design_support_hover.png") no-repeat;
 	margin: 0 0 0 6%;
+}
+.activityCont {
+	background: url("");
+}
+.activities {
+	position: absolute;
+	height: 70%;
+	margin: 0 1% 0 0;
+}
+.activities h4 {
+	font-family: 'calibribold';
+	font-size: 100%;
+}
+.activities ul {
+	width: 95%;
+	margin: 0 0 2% 4%;
+	list-style: disc;
+}
+.alignToBullets {
+	margin: 0 0 2% 4%;
+}
+.bulletPts li {
+	width: 100%;
+	color: #999999;
+	float: none;
+	cursor: default;
+	font-family: 'calibriregular';
+	font-size: 100%;
+	line-height: 110%;
+	margin: 0 0 0.4% 0;
 }
 
 /* Media Querry*/
