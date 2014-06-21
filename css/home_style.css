@@ -355,6 +355,9 @@
   		 -o-animation-delay: 0s;
   			animation-delay: 0s;
 }
+.subMenu li:first-child {
+    margin-top: 2%;
+}
 .subMenu li a {
     font-size: 92%;
     line-height: 100%;
@@ -458,7 +461,7 @@ ul.clientLogos {
 .subMenu {
 border-bottom: 1px solid #e4e4e4;
 }
-.imgGrid li {
+.test > li {
 	position: relative;
 	float: left;
 	width: 25%;
@@ -466,12 +469,12 @@ border-bottom: 1px solid #e4e4e4;
     cursor: pointer;
     overflow: hidden;
 }
-.imgGrid li img {
+.test > li img {
 	display: block;
 	width: 100%;
 	height: 100%;
 }
-.imgGrid li:hover .hoverBox{
+.test > li:hover .hoverBox{
   	opacity: 1;
   	margin-top: 0;
 }
@@ -832,8 +835,9 @@ iframe {
      padding: 4% 0;
     }
     .subMenu li a {
-    font-size: 78%;
-    line-height: 90%;
+    /*font-size: 78%;*/
+    font-size: 71%;
+    line-height: 140%;
     padding: 1.5% 0;
     }
     a.logo {
