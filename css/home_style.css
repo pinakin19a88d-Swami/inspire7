@@ -449,7 +449,10 @@ a.logo img {
 	background-color: #0c0;
 	cursor: pointer;
 }
-.imgGrid ul, ul.nav-list, ul.subMenu {
+.imgGrid ul, 
+ul.nav-list, 
+ul.subMenu, 
+ul.clientLogos {
 	list-style: none;
 }
 .subMenu {
@@ -617,8 +620,9 @@ iframe {
 .ourInfraCont {
     background: url("../images/Our-Infrastructure.png") no-repeat right bottom;
 }
-.talkToUsCont > .infoText {
-	width: 100%;
+.talkToUsCont > .infoText,
+.ourClient > .infoText {
+	width: 94%;
 	margin: 7% 0 10% 6%;
 }
 
@@ -795,6 +799,31 @@ iframe {
 	line-height: 110%;
 	margin: 0 0 0.4% 0;
 }
+/* starts Our client */
+.ourClient > .infoText {
+    width: 86%;
+    margin: 7% 10% 10% 6%;
+}
+.ourClient p {
+    width: 100%;
+}
+.clientLogos li {
+    float: left;
+    background: #fff;
+    width: 22%;
+    height: 54%;
+    margin: 0 3% 3% 0;
+    text-align: center;
+    border-radius: 4px;
+
+}
+.clientLogos li img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+/* ends Our client */
 
 /* Media Querry*/
 @media (max-width: 1200px) {
