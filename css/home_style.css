@@ -327,7 +327,7 @@
 }
 .nav-list li a,
 .subMenu li a {
-    display: table;
+    display: inline-block;
     color: #999999;
     text-decoration: none;
     text-transform: uppercase;
@@ -620,8 +620,7 @@ iframe {
 .ourInfraCont {
     background: url("../images/Our-Infrastructure.png") no-repeat right bottom;
 }
-.talkToUsCont > .infoText,
-.ourClient > .infoText {
+.talkToUsCont > .infoText {
 	width: 94%;
 	margin: 7% 0 10% 6%;
 }
