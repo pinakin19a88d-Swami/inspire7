@@ -551,7 +551,7 @@ h4 {
 }*/
 p, .boldItalics {
 	width: 52%;
-	font: 109%/124% 'calibriregular', sans-serif;
+	font: 100%/124% 'calibriregular', sans-serif;
 	margin-bottom: 2%;
     color: #999999;
 }
@@ -580,6 +580,9 @@ p, .boldItalics {
 }
 .cyanText {
 	color: #33ffff;
+}
+.redText {
+	color: #ff0000;
 }
 iframe {
 	position: absolute;
@@ -715,6 +718,18 @@ iframe {
 .designCont {
     background: url("../images/Design-Support.png") no-repeat right bottom;
 }
+.brandCont {
+    background: url("../images/Brand-Management.png") no-repeat right bottom;
+}
+.brandCont > .infoText {
+	margin: 4% 0 0% 6%;
+}
+.brandCont > .infoText > .gradientText {
+	font-size: 90%;
+}
+.brandCont > .infoText > p {
+	font-size: 95%;
+}
 .title {
 	font-family: 'ergoebold';
 }
@@ -746,7 +761,7 @@ iframe {
 	display: block;
 	height: 100%;
 	text-decoration: none;
-	padding: 6% 0 0 0;
+	padding: 6% 0 0 5%;
 }
 .subPageLink,
 .pdfSection {
@@ -756,7 +771,8 @@ iframe {
 	float: left;
 	margin: 0 2% 0 0;
 }
-.designPdfText {
+.designPdfText,
+.brandPdfText {
 	font-family: 'calibribold_italic';
 }
 .downloadText {
@@ -764,12 +780,18 @@ iframe {
 	font-size: 90%;
 }
 
-.designPdfIcon {
+.designPdfIcon,
+.brandPdfIcon {
 	width: 20%;
 	height: 100%;
 	float: left;
-	background: url("../images/design_support_hover.png") no-repeat;
 	margin: 0 0 0 6%;
+}
+.designPdfIcon {
+	background: url("../images/design_support_hover.png") no-repeat;
+}
+.brandPdfIcon {
+	background: url("../images/brand_management_hover.png") no-repeat;
 }
 .activityCont {
 	background: url("");
