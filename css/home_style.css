@@ -634,6 +634,7 @@ iframe {
 .ourInfraCont {
     background: url("../images/Our-Infrastructure.png") no-repeat right bottom;
 }
+
 .talkToUsCont > .infoText {
 	width: 94%;
 	margin: 7% 0 10% 6%;
@@ -941,6 +942,80 @@ iframe {
 }
 /* ends Our client */
 
+/* Portfolio Starts */
+.portfolioCont {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url("../images/Portfolio-BG.png") no-repeat left bottom;
+}
+
+.portNav {
+	width: 100%;
+	height: 100%;
+	background: url("../images/Portfolio-BaseBG.png") no-repeat;
+	background-size: 100%;
+}
+
+.identitiesPencil {
+	width: 19.55%;
+	height: 19.96%;
+	margin: 28.5% 0 0 6.5%;
+}
+.identitiesPencil > a{
+	color: #cc9933;
+}
+/*.identitiesPencil > a:hover:.pencilImg {
+	background: cover url("../images/Identities-Pencil.png") no-repeat;
+}*/
+.brandPencil {
+	background: url("../images/Brand-Pencil.png") no-repeat;
+	padding: 9% 0 0 15%;
+}
+.brandPencil > a {
+	text-decoration: none;
+	color: #00e9ff;
+}
+.designPencil {
+	background: url("../images/Design-Pencil.png") no-repeat;
+	padding: 6% 0 0 35%;
+}
+.designPencil > a {
+	text-decoration: none;
+	color: #cc0000;
+}
+.mediaPencil {
+	background: url("../images/Media-Pencil.png") no-repeat;
+	padding: 16% 0 0 43%;
+}
+.mediaPencil > a {
+	text-decoration: none;
+	color: #ff9900;
+}
+.identitiesPencil,
+.brandPencil,
+.designPencil,
+.mediaPencil { 
+	position: absolute;
+}
+.identitiesPencil > a,
+.brandPencil > a,
+.designPencil > a,
+.mediaPencil > a {
+	position: absolute;
+	font-family: 'ergoeregular';
+	text-decoration: none;
+	z-index: 99;
+}
+.pencilImg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 90;
+	/*background-size: 100%;*/
+}
+/* Portfolio Ends */
+
 /* Media Querry*/
 @media (max-width: 1200px) {
     .nav-list li a {
@@ -974,5 +1049,8 @@ iframe {
     }
     .gradientText {
     	font-size: 90%;
+    }
+    .portNav a {
+    	font-size: 85%;
     }
 }

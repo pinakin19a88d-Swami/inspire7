@@ -1,0 +1,30 @@
+<div class="portfolioCont clearfix animated fadeIn de12ms">
+
+	<div class="portNav">
+		
+		<div class="identitiesPencil">
+			<a href="#">Corporate<br/>Identities</a><span class="pencilImg"></span>
+		</div>
+		<a href="#" class="brandPencil">Brand Building<br/>Campaigns</a>
+		<!-- <a href="#" class="designPencil">Design<br/>Communication</a>
+		<a href="#" class="mediaPencil">Media<br/>Campaigns</a> -->
+
+	</div><!-- portNav -->
+	
+	<script type="text/javascript">
+
+	// Portfolio Hover Logic
+	$(".identitiesPencil > a").hover(function() {
+			$(".identitiesPencil > a").css("text-decoration","underline");
+    		$(".pencilImg").css("background","url(images/Identities-Pencil.png) no-repeat");
+    		$(".pencilImg").css("background-size","100%");
+	  	}, 
+	  	function() {
+	  		$(".identitiesPencil > a").css("text-decoration","none");
+	    	$(".pencilImg").css("background","");
+	  	}
+	);
+
+	</script>
+
+</div>
