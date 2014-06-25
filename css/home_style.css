@@ -726,7 +726,8 @@ iframe {
 .designCont,
 .brandCont,
 .identityCont,
-.exhibitionCont {
+.exhibitionCont,
+.mediaCont {
 	height: 100%;
 }
 .designCont {
@@ -744,9 +745,14 @@ iframe {
 	background: url("../images/Exhibition-And-Event-Support.png") no-repeat right bottom;
 	background-position: 100% 85%;
 }
+.mediaCont {
+	background: url("../images/Online-Media-Support.png") no-repeat right bottom;
+	background-position: 100% 85%;
+}
 .brandCont > .infoText,
 .identityCont > .infoText,
-.exhibitionCont > .infoText {
+.exhibitionCont > .infoText,
+.mediaCont > .infoText {
 	margin: 4% 0 0% 6%;
 }
 /*.brandCont > .infoText > .gradientText {
@@ -818,7 +824,9 @@ iframe {
 }
 .designPdfText,
 .brandPdfText,
-.identityPdfText {
+.identityPdfText,
+.exhibitionPdfText,
+.mediaPdfText {
 	font-family: 'calibribold_italic';
 }
 .downloadText {
@@ -830,7 +838,8 @@ iframe {
 .designPdfIcon,
 .brandPdfIcon,
 .identityPdfIcon,
- .exhibitionPdfIcon {
+.exhibitionPdfIcon,
+.mediaPdfIcon {
 	width: 10%;
 	height: 100%;
 	position: absolute;
@@ -848,6 +857,9 @@ iframe {
 }
 .exhibitionPdfIcon {
 	background: url("../images/exhibition_hover.png") no-repeat;
+}
+.mediaPdfIcon {
+	background: url("../images/online_media_hover.png") no-repeat;
 }
 .activityCont {
 	background: url("");
@@ -879,6 +891,9 @@ iframe {
 	line-height: 110%;
 	margin: 0 0 0.4% 0;
 }
+.scrollContent h4 {
+	width: 60%;
+}
 .brandCont > .infoText > .scrollContent {
 	position: absolute;
 	height: 30%;
@@ -892,6 +907,11 @@ iframe {
 .exhibitionCont > .infoText > .scrollContent {
 	position: absolute;
 	height: 49%;
+	margin: 0 1% 0 0;
+}
+.mediaCont > .infoText > .scrollContent {
+	position: absolute;
+	height: 50%;
 	margin: 0 1% 0 0;
 }
 
