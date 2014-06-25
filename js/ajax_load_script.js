@@ -31,6 +31,7 @@ $(document).ready(function() {
 	// });
 
 	$("#closeBtn").click(function(){
+		$(".subMenu li a").removeClass("active");
 		$(".gridCurtain").css("display","none");
 	});
 
