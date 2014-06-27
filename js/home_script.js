@@ -4,7 +4,8 @@ $(document).ready(function(){
 	var windowHeight = $(window).height();
 
 	var bodyHeight = windowHeight * 0.84;
-	var footerHeight = windowHeight * 0.16;
+	var footerHeight = windowHeight * 0.14;
+	var footerBottomHt = windowHeight * 0.02;
 	var gridWidth = (bodyHeight * 0.86) * 1.44;
 
 	var navWidth = $(".navContainer").css("width");
@@ -15,6 +16,7 @@ $(document).ready(function(){
 
 	$(".bodySection").css("height",bodyHeight);
 	$(".footerSection").css("height",footerHeight);
+	$(".footerBottom").css("height",footerBottomHt);
 	$(".imgGrid").css("width",gridWidth);
 
 	// Sub-Menu Height Fix
@@ -46,4 +48,6 @@ $(document).ready(function(){
 
 	});
 
+	var ftBottomWidth = $(".container").css("width");
+	$(".footerBottomCont").css("width",ftBottomWidth);
 });

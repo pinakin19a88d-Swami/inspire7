@@ -5,7 +5,10 @@
 		<div class="identitiesPencil">
 			<a href="#">Corporate<br/>Identities</a><span class="pencilImg"></span>
 		</div>
-		<a href="#" class="brandPencil">Brand Building<br/>Campaigns</a>
+		
+		<div class="brandPencil">
+			<a href="#">Brand Building<br/>Campaigns</a><span class="pencilImg"></span>
+		</div>
 		<!-- <a href="#" class="designPencil">Design<br/>Communication</a>
 		<a href="#" class="mediaPencil">Media<br/>Campaigns</a> -->
 
@@ -15,13 +18,22 @@
 
 	// Portfolio Hover Logic
 	$(".identitiesPencil > a").hover(function() {
-			$(".identitiesPencil > a").css("text-decoration","underline");
-    		$(".pencilImg").css("background","url(images/Identities-Pencil.png) no-repeat");
-    		$(".pencilImg").css("background-size","100%");
+			$(".identitiesPencil > a").css({'color' : '#cc9933'});
+    		$(".identitiesPencil > .pencilImg").css({'background' : 'url(images/Identities-Pencil.png) center/100% no-repeat'});
 	  	}, 
 	  	function() {
-	  		$(".identitiesPencil > a").css("text-decoration","none");
-	    	$(".pencilImg").css("background","");
+	  		$(".identitiesPencil > a").css({'color' : '#666'});
+	    	$(".identitiesPencil > .pencilImg").css({'background' : 'url() center/100% no-repeat'});
+	  	}
+	);
+
+	$(".brandPencil > a").hover(function() {
+			$(".brandPencil > a").css({'color' : '#00e9ff'});
+    		$(".brandPencil > .pencilImg").css({'background' : 'url(images/Brand-Pencil.png) center/100% no-repeat'});
+	  	}, 
+	  	function() {
+	  		$(".brandPencil > a").css({'color' : '#666'});
+	    	$(".brandPencil > .pencilImg").css({'background' : 'url() center/100% no-repeat'});
 	  	}
 	);
 
