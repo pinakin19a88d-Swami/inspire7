@@ -395,15 +395,31 @@ a.logo img {
 	height: 100%;
 	/*background-color: #444;*/
 }
-.gridContainer > .sprites {
+.gridContainer > .spritesSection {
 	height: 14%;
 	background-color: #fff;
 }
-.sprites > img {
+.spritesSection > .spritesCont {
     float: right;
     display: block;
     margin: 4% 2% 0 0;
     width: 20%;
+}
+.fbSprite,
+.gpSprite,
+.liSprite,
+.phSprite {
+	font-size: 120%;
+}
+.fa-phone {
+	margin: -4% 0;
+}
+.fbSprite:hover,
+.gpSprite:hover,
+.liSprite:hover,
+.phSprite:hover {
+	color: #c00;
+	cursor: pointer;
 }
 
 .gridShadow {
@@ -776,6 +792,7 @@ iframe {
 	background: url("../images/Online-Media-Support.png") no-repeat right bottom;
 	background-position: 100% 85%;
 }
+.designCont > .infoText,
 .brandCont > .infoText,
 .identityCont > .infoText,
 .exhibitionCont > .infoText,
@@ -1063,4 +1080,10 @@ iframe {
     .portNav a {
     	font-size: 85%;
     }
+    .fbSprite,
+	.gpSprite,
+	.liSprite,
+	.phSprite {
+		font-size: 100%;
+	}
 }
