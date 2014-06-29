@@ -712,7 +712,7 @@ iframe {
 }
 .services li a span {
     float: left;
-    margin-top: 23%;
+    margin-top: 18%;
     font-family: 'calibriregular', sans-serif;
     color: #000;
 }
@@ -765,6 +765,9 @@ iframe {
 .services li a:hover i.onlineMedia {
     background: url("../images/online_media_hover.png") center center no-repeat;   
     background-size: 100%;
+}
+.services li a span.middleFix {
+	margin-top: 21%;
 }
 .designCont,
 .brandCont,
@@ -1063,6 +1066,10 @@ iframe {
 	color: #666;
 	text-decoration: none;
 	z-index: 99;
+}
+.identitiesPencil > a {
+	top: -10%;
+	left: 10%;
 }
 .publishingPencil > a,
 .exhibitionPencil > a,
