@@ -6,6 +6,8 @@ $(document).ready(function() {
 
 		var current = $(this).attr("name");
 		$(".blackBox").load(current);
+		$(".gridCurtain").removeClass("fadeOut");
+		$(".blackBox").removeClass("slideOutLeft");
 		$(".gridCurtain").css("display","block");
 	});
 
@@ -21,6 +23,8 @@ $(document).ready(function() {
 
 		var current = $(this).attr("name");
 		$(".blackBox").load(current);
+		$(".gridCurtain").removeClass("fadeOut");
+		$(".blackBox").removeClass("slideOutLeft");
 		$(".gridCurtain").css("display","block");
 	});
 

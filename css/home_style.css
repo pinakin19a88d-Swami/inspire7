@@ -409,7 +409,15 @@ a.logo img {
 .gpSprite,
 .liSprite,
 .phSprite {
+	position: relative;
 	font-size: 120%;
+}
+.spritesSection > .spritesCont > .phSprtie > .toolTip {
+	position: absolute;
+	width: 175px;
+	height: 153px;
+	background: url("../images/toolTipBG.png");
+	z-index: 99;
 }
 .fa-phone {
 	margin: -4% 0;
@@ -459,6 +467,12 @@ a.logo img {
 	position: relative;
 	z-index: 60;
     overflow: hidden;
+
+     -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+     	  -o-animation-duration: 1s;
+     	 -ms-animation-duration: 1s;
+     		 animation-duration: 1s;
 }
 .close {
     /*display: block;*/
@@ -602,9 +616,29 @@ border-bottom: 1px solid #e4e4e4;
 	/*width: 100%;*/
 	height: 130px;
 	/*border: #000 solid 2px;*/
+	position: relative;
 }
 .footerSection > ul {
 	list-style: none;
+}
+.ftPointer {
+	position: absolute;
+	width: 20%;
+	/*height: 8%;*/
+	height: 50%;
+	top: -40%;
+	font-family: 'calibriregular';
+	line-height: 130%;
+}
+.ftPointer > span {
+	font-family: 'calibribold';
+}
+.ftArrow {
+	display: block;
+	width: 8%;
+	height: 16%;
+	margin: 2% 0 0 14%;
+	background: url("../images/Inspire_sprite.png") 0px -69px no-repeat;
 }
 h2, h3, h4 {
 	/*width: 54%;*/
@@ -671,6 +705,9 @@ p, .boldItalics {
 }
 .redText {
 	color: #ff0000;
+}
+.blackText {
+	color: #000000;
 }
 iframe {
 	position: absolute;
