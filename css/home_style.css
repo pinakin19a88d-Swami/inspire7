@@ -498,11 +498,7 @@ border-bottom: 1px solid #e4e4e4;
 	width: 100%;
 	height: 100%;
 }
-.test > li:hover .hoverBox{
-  	opacity: 1;
-  	margin-top: 0;
-}
-.hoverBox {
+.hoverBox, .hoverBoxL, .hoverBoxR, .hoverBoxB {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -522,6 +518,48 @@ border-bottom: 1px solid #e4e4e4;
   		 -o-transition: opacity 0.25s ease, margin-top 0.25s ease;
   		-ms-transition: opacity 0.25s ease, margin-top 0.25s ease;
   			transition: opacity 0.25s ease, margin-top 0.25s ease;
+}
+.test > li:hover .hoverBox{
+  	opacity: 1;
+  	margin-top: 0;
+}
+.hoverBoxL {
+	margin-left:-80%;
+	margin-top:0;
+  	-webkit-transition: opacity 0.25s ease, margin-left 0.25s ease;
+  	   -moz-transition: opacity 0.25s ease, margin-left 0.25s ease;
+  		 -o-transition: opacity 0.25s ease, margin-left 0.25s ease;
+  		-ms-transition: opacity 0.25s ease, margin-left 0.25s ease;
+  			transition: opacity 0.25s ease, margin-left 0.25s ease;
+}
+.test > li:hover .hoverBoxL{
+  	opacity: 1;
+  	margin-left: 0;
+}
+.hoverBoxR {
+	margin-left:80%;
+	margin-top:0;
+  	-webkit-transition: opacity 0.25s ease, margin-left 0.25s ease;
+  	   -moz-transition: opacity 0.25s ease, margin-left 0.25s ease;
+  		 -o-transition: opacity 0.25s ease, margin-left 0.25s ease;
+  		-ms-transition: opacity 0.25s ease, margin-left 0.25s ease;
+  			transition: opacity 0.25s ease, margin-left 0.25s ease;
+}
+.test > li:hover .hoverBoxR{
+  	opacity: 1;
+  	margin-left: 0;
+}
+.hoverBoxB {
+	margin-top:80%;
+  	-webkit-transition: opacity 0.25s ease, margin-top 0.25s ease;
+  	   -moz-transition: opacity 0.25s ease, margin-top 0.25s ease;
+  		 -o-transition: opacity 0.25s ease, margin-top 0.25s ease;
+  		-ms-transition: opacity 0.25s ease, margin-top 0.25s ease;
+  			transition: opacity 0.25s ease, margin-top 0.25s ease;
+}
+.test > li:hover .hoverBoxB{
+  	opacity: 1;
+  	margin-top: 0;
 }
 .boxText {
 	display: inline;
@@ -1123,6 +1161,20 @@ iframe {
 	.gpSprite,
 	.liSprite,
 	.phSprite {
-		font-size: 100%;
+		font-size: 95%;
+	}
+	.multimediaPencil a {
+		left: 67%;
+	}
+	.portalsPencil a{
+		left: 70%;
+		width: 50%;
+	}
+	.exhibitionPencil a {
+		left: 57%;
+		width: 50%;
+	}
+	.identitiesPencil a {
+		top: -18%;
 	}
 }
