@@ -32,11 +32,11 @@ $(document).ready(function(){
 	    	$("#aboutNav > .subMenu").css("height","0");
 	  	}
 	);
-	$("#servicesNav").hover(function() {
-    		$("#servicesNav > .subMenu").css("height",totalHeight2);
+	$("#portfolioNav").hover(function() {
+    		$("#portfolioNav > .subMenu").css("height",totalHeight2);
 	  	}, 
 	  	function() {
-	    	$("#servicesNav > .subMenu").css("height","0");
+	    	$("#portfolioNav > .subMenu").css("height","0");
 	  	}
 	);
 
