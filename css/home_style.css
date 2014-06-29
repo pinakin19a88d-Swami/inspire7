@@ -1001,9 +1001,9 @@ iframe {
 }
 
 .identitiesPencil {
-	width: 19.55%;
-	height: 19.96%;
-	margin: 28.5% 0 0 6.5%;
+	width: 19.2%;
+	height: 18%;
+	margin: 29.2% 0 0 6.5%;
 }
 .brandPencil {
 	width: 16.5%;
@@ -1011,28 +1011,67 @@ iframe {
 	margin: 8% 0 0 16.7%;
 }
 .designPencil {
-	background: url("../images/Design-Pencil.png") no-repeat;
-	padding: 6% 0 0 35%;
+	width: 14%;
+	height: 39%;
+	margin: 5.8% 0 0 35.9%;
 }
 .mediaPencil {
-	background: url("../images/Media-Pencil.png") no-repeat;
-	padding: 16% 0 0 43%;
+	width: 12.5%;
+	height: 36%;
+	margin: 15% 0 0 40.25%;
+}
+.publishingPencil {
+	width: 22%;
+	height: 38%;
+	margin: 9.5% 0 0 51.5%;
+}
+.exhibitionPencil {
+	width: 30%;
+	height: 24%;
+	margin: 25.3% 0 0 51.3%;
+}
+.portalsPencil {
+	width: 34%;
+	height: 10%;
+	margin: 39.8% 0 0 58.8%;
+}
+.multimediaPencil {
+	width: 30.8%;
+	height: 12%;
+	margin: 48.6% 0 0 46.4%;
 }
 .identitiesPencil,
 .brandPencil,
 .designPencil,
-.mediaPencil { 
+.mediaPencil,
+.publishingPencil,
+.exhibitionPencil,
+.portalsPencil,
+.multimediaPencil { 
 	position: absolute;
 }
 .identitiesPencil > a,
 .brandPencil > a,
 .designPencil > a,
-.mediaPencil > a {
+.mediaPencil > a,
+.publishingPencil > a,
+.exhibitionPencil > a,
+.portalsPencil > a,
+.multimediaPencil > a {
 	position: absolute;
 	font-family: 'ergoeregular';
 	color: #666;
 	text-decoration: none;
 	z-index: 99;
+}
+.publishingPencil > a,
+.exhibitionPencil > a,
+.portalsPencil > a,
+.multimediaPencil > a {
+	right: 0;
+}
+.multimediaPencil > a {
+	bottom: 0;
 }
 .pencilImg {
 	width: 100%;
