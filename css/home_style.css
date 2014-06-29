@@ -1177,4 +1177,10 @@ iframe {
 	.identitiesPencil a {
 		top: -18%;
 	}
+	.talkToUsCont > .infoText {
+		margin-top: 4%;
+	}
+	.feedbackForm {
+		margin: 0;
+	}
 }
