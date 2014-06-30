@@ -9,12 +9,18 @@ $(document).ready(function() {
 		$(".gridCurtain").removeClass("fadeOut");
 		$(".blackBox").removeClass("slideOutLeft");
 		$(".gridCurtain").css("display","block");
+
+		$( "#closeBtn" ).addClass("close");
 	});
 
 	$(".nav-list li a").click(function() {
 		var current = $(this).attr("name");
 		$(".blackBox").load(current);
+		$(".gridCurtain").removeClass("fadeOut");
+		$(".blackBox").removeClass("slideOutLeft");
 		$(".gridCurtain").css("display","block");
+
+		$( "#closeBtn" ).addClass("close");
 	});
 
 	$(".services li a").click(function() {
@@ -26,6 +32,8 @@ $(document).ready(function() {
 		$(".gridCurtain").removeClass("fadeOut");
 		$(".blackBox").removeClass("slideOutLeft");
 		$(".gridCurtain").css("display","block");
+
+		$( "#closeBtn" ).addClass("close");
 	});
 
 	// $(".subPageLink a").click(function() {
@@ -36,9 +44,10 @@ $(document).ready(function() {
 
 	$("#closeBtn").click(function(){
 		$(".subMenu li a").removeClass("active");
-		// $(".gridCurtain").css("display","none");
 		$(".gridCurtain").addClass("fadeOut");
 		$(".blackBox").addClass("slideOutLeft");
+
+		$(this).removeClass("close");
 	});
 
 });
