@@ -1232,24 +1232,41 @@ ul.clientLogos {
 	}
 }
 /*testing carousel code*/
-
-.slideshow {
-	width: 100%;
-}
-.logoCarousel {
+.corporateIdentity {
 	width: 100%;
 	height: 100%;
+	margin: 8% 0 0 0;
+}
+.corporateIdentity h2 {
+	margin: 0 0 5% 5%;
+	font-size: 145%;
+}
+.slideshow {
+	width: 100%;
+	height: 100%;
+}
+.logoCarousel {
+	width: 98.5%;
+	height: 40%;
 	position: relative;
+	margin: 0 0 0 0.5%;
 }
 .logoContent {
-	margin: 8% 0 0 6%;
 	/*float: left;*/
-	width: 94%;
+	width: 100%;
 	height: 100%;
 }
 .slideshow img {
-width: 33%;
-height: 100%;
-margin-right: 0.5%;
-/*float: left;*/
+	margin-right: 0.1%;
+	 width: auto; 
+	 height: auto;
+}
+.corporateBg {
+	background: #444;
+	color: #999;
+	height: 25%;
+	-webkit-box-shadow: 2px 3px 1px rgba(35,31,32,.52); 
+	   -moz-box-shadow: 2px 3px 1px rgba(35,31,32,.52); 
+		 -o-box-shadow: 2px 3px 1px rgba(35,31,32,.52); 
+			box-shadow: 2px 3px 1px rgba(35,31,32,.52);
 }
