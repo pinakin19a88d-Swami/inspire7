@@ -50,4 +50,23 @@ $(document).ready(function(){
 
 	var ftBottomWidth = $(".container").css("width");
 	$(".footerBottomCont").css("width",ftBottomWidth);
+
+	// toolTip hover fix
+	$("#phoneId").hover(function() {
+    		$(".toolTip").css("display","block");
+    		window.setTimeout(function() {  
+         		$(".toolTip").css("opacity","1");
+			    },
+			    10
+			);
+	  	}, 
+	  	function() {
+	    	$(".toolTip").css("opacity","0");
+	    	window.setTimeout(function() {  
+         		$(".toolTip").css("display","none");
+			    },
+			    100
+			);
+	  	}
+	);
 });

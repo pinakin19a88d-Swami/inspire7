@@ -400,6 +400,7 @@ a.logo img {
 	background-color: #fff;
 }
 .spritesSection > .spritesCont {
+	position: relative;
     float: right;
     display: block;
     margin: 4% 2% 0 0;
@@ -412,12 +413,33 @@ a.logo img {
 	position: relative;
 	font-size: 120%;
 }
-.spritesSection > .spritesCont > .phSprtie > .toolTip {
+
+.toolTip {
 	position: absolute;
-	width: 175px;
-	height: 153px;
-	background: url("../images/toolTipBG.png");
+	width: 450%;
+	height: 500%;
+	background: url("../images/toolTipBG.png") top/100% no-repeat;
+	font-family: 'calibribold';
+	text-align: center;
+	font-size: 100%;
+	line-height: 130%;
+	padding: 50% 0 0 0;
+	right: -100%;
+	margin: 100% 0 0 0;
+	display: none;
+	opacity: 0;
 	z-index: 99;
+
+	-webkit-transition: all 0.25s ease;
+	   -moz-transition: all 0.25s ease;
+		-ms-transition: all 0.25s ease;
+		 -o-transition: all 0.25s ease;
+			transition: all 0.25s ease;
+}
+.toolTip > span {
+	display: inline-block;
+	font-size: 80%;
+	line-height: 100%!important;
 }
 .fa-phone {
 	margin: -4% 0;
@@ -474,17 +496,35 @@ a.logo img {
      	 -ms-animation-duration: 1s;
      		 animation-duration: 1s;
 }
-.close {
-    /*display: block;*/
-    position: absolute;
+#closeBtn {
+	position: absolute;
     top: 10%;
     right: 17%;
     z-index: 99;
-
+    
     width: 21px;
     height: 23px;
-    /*background-color: #c00;*/
     background: url("../images/Inspire_sprite.png") 0 -40px;
+
+    -webkit-transition: all 1000ms ease;
+       -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+         -o-transition: all 1000ms ease;
+         	transition: all 1000ms ease;
+        
+}
+.close {
+    -webkit-transform-origin: center center;
+       -mos-transform-origin: center center;
+    	-ms-transform-origin: center center;
+    	 -o-transform-origin: center center;
+    		transform-origin: center center;
+
+    -webkit-transform: rotate(720deg);
+       -moz-transform: rotate(720deg);
+        -ms-transform: rotate(720deg);
+         -o-transform: rotate(720deg);
+            transform: rotate(720deg);
 }
 .close:hover{
 	background-color: #0c0;
@@ -708,6 +748,13 @@ p, .boldItalics {
 }
 .blackText {
 	color: #000000;
+}
+.darkGreyText {
+	color: #333333;
+	font-family: 'calibriregular';
+}
+.blueText {
+	color: #006699;
 }
 iframe {
 	position: absolute;

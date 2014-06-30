@@ -9,12 +9,26 @@ $(document).ready(function() {
 		$(".gridCurtain").removeClass("fadeOut");
 		$(".blackBox").removeClass("slideOutLeft");
 		$(".gridCurtain").css("display","block");
+
+		window.setTimeout(function() {  
+         		$( "#closeBtn" ).addClass("close");
+			    },
+			    100
+			);
 	});
 
 	$(".nav-list li a").click(function() {
 		var current = $(this).attr("name");
 		$(".blackBox").load(current);
+		$(".gridCurtain").removeClass("fadeOut");
+		$(".blackBox").removeClass("slideOutLeft");
 		$(".gridCurtain").css("display","block");
+
+		window.setTimeout(function() {  
+         		$( "#closeBtn" ).addClass("close");
+			    },
+			    100
+			);
 	});
 
 	$(".services li a").click(function() {
@@ -26,6 +40,12 @@ $(document).ready(function() {
 		$(".gridCurtain").removeClass("fadeOut");
 		$(".blackBox").removeClass("slideOutLeft");
 		$(".gridCurtain").css("display","block");
+		
+		window.setTimeout(function() {  
+         		$( "#closeBtn" ).addClass("close");
+			    },
+			    100
+			);
 	});
 
 	// $(".subPageLink a").click(function() {
@@ -36,9 +56,15 @@ $(document).ready(function() {
 
 	$("#closeBtn").click(function(){
 		$(".subMenu li a").removeClass("active");
-		// $(".gridCurtain").css("display","none");
 		$(".gridCurtain").addClass("fadeOut");
+		window.setTimeout(function() {  
+         		$(".gridCurtain").css("display","none");
+		    },
+		    800
+		);
 		$(".blackBox").addClass("slideOutLeft");
+
+		$(this).removeClass("close");
 	});
 
 });
