@@ -10,7 +10,11 @@ $(document).ready(function() {
 		$(".blackBox").removeClass("slideOutLeft");
 		$(".gridCurtain").css("display","block");
 
-		$( "#closeBtn" ).addClass("close");
+		window.setTimeout(function() {  
+         		$( "#closeBtn" ).addClass("close");
+			    },
+			    100
+			);
 	});
 
 	$(".nav-list li a").click(function() {
@@ -20,7 +24,11 @@ $(document).ready(function() {
 		$(".blackBox").removeClass("slideOutLeft");
 		$(".gridCurtain").css("display","block");
 
-		$( "#closeBtn" ).addClass("close");
+		window.setTimeout(function() {  
+         		$( "#closeBtn" ).addClass("close");
+			    },
+			    100
+			);
 	});
 
 	$(".services li a").click(function() {
@@ -32,8 +40,12 @@ $(document).ready(function() {
 		$(".gridCurtain").removeClass("fadeOut");
 		$(".blackBox").removeClass("slideOutLeft");
 		$(".gridCurtain").css("display","block");
-
-		$( "#closeBtn" ).addClass("close");
+		
+		window.setTimeout(function() {  
+         		$( "#closeBtn" ).addClass("close");
+			    },
+			    100
+			);
 	});
 
 	// $(".subPageLink a").click(function() {
@@ -45,6 +57,11 @@ $(document).ready(function() {
 	$("#closeBtn").click(function(){
 		$(".subMenu li a").removeClass("active");
 		$(".gridCurtain").addClass("fadeOut");
+		window.setTimeout(function() {  
+         		$(".gridCurtain").css("display","none");
+		    },
+		    800
+		);
 		$(".blackBox").addClass("slideOutLeft");
 
 		$(this).removeClass("close");

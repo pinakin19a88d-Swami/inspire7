@@ -54,11 +54,19 @@ $(document).ready(function(){
 	// toolTip hover fix
 	$("#phoneId").hover(function() {
     		$(".toolTip").css("display","block");
-    		$(".toolTip").css("opacity","1");
+    		window.setTimeout(function() {  
+         		$(".toolTip").css("opacity","1");
+			    },
+			    10
+			);
 	  	}, 
 	  	function() {
-	    	$(".toolTip").css("display","none");
 	    	$(".toolTip").css("opacity","0");
+	    	window.setTimeout(function() {  
+         		$(".toolTip").css("display","none");
+			    },
+			    100
+			);
 	  	}
 	);
 });
