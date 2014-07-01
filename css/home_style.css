@@ -1285,7 +1285,7 @@ ul.clientLogos {
 	margin: 8% 0 0 0;
 }
 .corporateIdentity h2 {
-	margin: 0 0 5% 5%;
+	margin: 0 0 2% 5%;
 	font-size: 145%;
 }
 .slideshow {
@@ -1296,7 +1296,7 @@ ul.clientLogos {
 	width: 98.5%;
 	height: 40%;
 	position: relative;
-	margin: 0 0 0 0.5%;
+	margin: 0 0 2.5% 0.5%;
 }
 .logoContent {
 	/*float: left;*/
@@ -1316,4 +1316,26 @@ ul.clientLogos {
 	   -moz-box-shadow: 2px 3px 1px rgba(35,31,32,.52); 
 		 -o-box-shadow: 2px 3px 1px rgba(35,31,32,.52); 
 			box-shadow: 2px 3px 1px rgba(35,31,32,.52);
+	padding: 2%;
+}
+.corporateBg ul {
+	list-style: disc;	
+	width: 33%;
+	float: left;
+	padding: 0 3%;
+}
+.corporateBg ul li a {
+	display: block;
+	color: #999;
+	text-decoration: none;
+	font: 82%/115% 'calibriregular', sans-serif;
+	padding: 2% 0; 
+}
+.corporateBg ul li a:hover {
+	
+	color: #ffcc66;
+}
+.corporateBg ul li.active a, 
+.corporateBg ul li.active {
+	color: #ffcc66!important;
 }
