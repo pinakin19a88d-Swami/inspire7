@@ -27,16 +27,27 @@ $(document).ready(function(){
 	
 	$("#aboutNav").hover(function() {
     		$("#aboutNav > .subMenu").css("height",totalHeight1);
+    		$("#aboutNav > .subMenu").css("opacity","1");
 	  	}, 
 	  	function() {
-	    	$("#aboutNav > .subMenu").css("height","0");
+
+	  		if(!$("#aboutNav > .subMenu li a").hasClass("active"))
+	  		{
+	    		$("#aboutNav > .subMenu").css("height","0");
+	    		$("#aboutNav > .subMenu").css("opacity","0");
+	    	}
 	  	}
 	);
 	$("#portfolioNav").hover(function() {
     		$("#portfolioNav > .subMenu").css("height",totalHeight2);
+    		$("#portfolioNav > .subMenu").css("opacity","1");
 	  	}, 
 	  	function() {
-	    	$("#portfolioNav > .subMenu").css("height","0");
+	  		if(!$("#portfolioNav > .subMenu li a").hasClass("active"))
+	  		{
+	    		$("#portfolioNav > .subMenu").css("height","0");
+	    		$("#portfolioNav > .subMenu").css("opacity","0");
+	    	}
 	  	}
 	);
 

@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 	$(".subMenu li a").click(function() {
 		$(".subMenu li a").removeClass("active");
+		$(".services span").removeClass("active");
 		$(this).addClass("active");
 
 		var current = $(this).attr("name");
@@ -15,6 +16,18 @@ $(document).ready(function() {
 			    },
 			    100
 			);
+
+		if(!$("#aboutNav > .subMenu li a").hasClass("active"))
+  		{
+    		$("#aboutNav > .subMenu").css("height","0");
+    		$("#aboutNav > .subMenu").css("opacity","0");
+    	}
+
+	    if(!$("#portfolioNav > .subMenu li a").hasClass("active"))
+  		{
+    		$("#portfolioNav > .subMenu").css("height","0");
+    		$("#portfolioNav > .subMenu").css("opacity","0");
+    	}
 	});
 
 	$(".nav-list li a").click(function() {
@@ -29,11 +42,18 @@ $(document).ready(function() {
 			    },
 			    100
 			);
+
+		// $("#aboutNav > .subMenu").css("height","0");
+	 //    $("#aboutNav > .subMenu").css("opacity","0");
+	 //    $("#portfolioNav > .subMenu").css("height","0");
+	 //    $("#portfolioNav > .subMenu").css("opacity","0");
 	});
 
 	$(".services li a").click(function() {
 		$(".services li a").removeClass("active");
-		$(this).addClass("active");
+		$(".subMenu li a").removeClass("active");
+		$(".services span").removeClass("active");
+		$(this).children("span").addClass("active");
 
 		var current = $(this).attr("name");
 		$(".blackBox").load(current);
@@ -46,16 +66,18 @@ $(document).ready(function() {
 			    },
 			    100
 			);
+
+		$("#aboutNav > .subMenu").css("height","0");
+	    $("#aboutNav > .subMenu").css("opacity","0");
+	    $("#portfolioNav > .subMenu").css("height","0");
+	    $("#portfolioNav > .subMenu").css("opacity","0");
 	});
 
-	// $(".subPageLink a").click(function() {
-	// 	var current = $(this).attr("name");
-	// 	$(".blackBox").load(current);
-	// 	$(".gridCurtain").css("display","block");
-	// });
+	
 
 	$("#closeBtn").click(function(){
 		$(".subMenu li a").removeClass("active");
+		$(".services span").removeClass("active");
 		$(".gridCurtain").addClass("fadeOut");
 		window.setTimeout(function() {  
          		$(".gridCurtain").css("display","none");
@@ -65,6 +87,11 @@ $(document).ready(function() {
 		$(".blackBox").addClass("slideOutLeft");
 
 		$(this).removeClass("close");
+
+		$("#aboutNav > .subMenu").css("height","0");
+	    $("#aboutNav > .subMenu").css("opacity","0");
+	    $("#portfolioNav > .subMenu").css("height","0");
+	    $("#portfolioNav > .subMenu").css("opacity","0");
 	});
 
 });
