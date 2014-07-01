@@ -1339,3 +1339,41 @@ ul.clientLogos {
 .corporateBg ul li.active {
 	color: #ffcc66!important;
 }
+/*form*/
+.form-horizontal .control-group {
+margin-bottom: 20px;
+}
+
+.form-horizontal .control-label {
+width: 200px;
+text-align: left;
+font: 82%/115% 'calibriregular', sans-serif;
+float: left;
+color: #999999;
+}
+
+.control-group span {
+display: inline-block;
+min-width: 5px;
+float: left;
+line-height: 30px;
+margin-right: 20px;
+}
+
+.form-horizontal .controls {
+margin-left: 180px;
+}
+
+input[type="text"] {
+
+background: #ccc;
+-webkit-box-shadow: inset 0 0 3px rgba(35,31,32,.45);
+-moz-box-shadow: inset 0 0 3px rgba(35,31,32,.45);
+-o-box-shadow: inset 0 0 3px rgba(35,31,32,.45);
+box-shadow: inset 0 0 3px rgba(35,31,32,.45);
+width: 208px;
+height: 20px;
+border: none;
+border-radius: 0;
+}
+/*form ends*/
