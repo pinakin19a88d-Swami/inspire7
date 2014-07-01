@@ -803,6 +803,18 @@ iframe {
 	width: 94%;
 	margin: 7% 0 10% 6%;
 }
+.career {
+	height: 100%;
+}
+.career > .infoText {
+	height: 92%;
+	margin: 5% 0 0% 6%;
+	overflow: hidden;
+}
+.career > .infoText > .formWrap {
+	width: 98%;
+	height: 65%;
+}
 
 .services {
     width: 100%;
@@ -1085,28 +1097,36 @@ iframe {
 }
 
 /* starts Our client */
+.ourClient {
+	height: 100%;
+}
 .ourClient > .infoText {
-    width: 86%;
-    margin: 7% 10% 10% 6%;
+    width: 92%;
+	height: 86%;
+	margin: 5% 5% 5% 5%;
+    overflow: hidden;
 }
 .ourClient p {
     width: 100%;
+}
+.ourClient > .infoText > .logoWarp {
+	height: 80%;
 }
 .clientLogos li {
     float: left;
     background: #fff;
     width: 22%;
-    height: 54%;
+    /*height: 54%;*/
     margin: 0 3% 3% 0;
     text-align: center;
     border-radius: 4px;
 
 }
 .clientLogos li img {
-    display: block;
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
+    /*display: block;*/
+    width: 100%;
+    /*height: auto;
+    margin: 0 auto;*/
 }
 ul.clientLogos {
 	height: 100%;
