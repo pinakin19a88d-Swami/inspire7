@@ -1400,3 +1400,6 @@ border: none;
 border-radius: 0;
 }
 /*form ends*/
+.talkForm .form-horizontal .controls {
+margin-left: 226px;
+}
