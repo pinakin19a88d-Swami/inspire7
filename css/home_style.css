@@ -1234,70 +1234,6 @@ ul.clientLogos {
 }
 /* Portfolio Ends */
 
-/* Media Querry*/
-@media (max-width: 1200px) {
-    .nav-list li a {
-     font-size: 115%;
-     line-height: 80%; 
-     padding: 4% 0;
-    }
-    .subMenu li a {
-    /*font-size: 78%;*/
-    font-size: 71%;
-    line-height: 140%;
-    padding: 1.5% 0;
-    }
-    a.logo {
-    display: block;
-    margin-bottom: 20%;
-    width: 75%;
-    }
-    h2 {
-        font-size: 110%;
-    }
-    h3 {
-        font-size: 105%;
-    }
-    p, .boldItalics {
-        font: 82%/115% 'calibriregular', sans-serif;
-        margin-bottom: 4%;
-    }
-    .services li a span {
-    	font-size: 92%;
-    }
-    .gradientText {
-    	font-size: 90%;
-    }
-    .portNav a {
-    	font-size: 85%;
-    }
-    .fbSprite,
-	.gpSprite,
-	.liSprite,
-	.phSprite {
-		font-size: 95%;
-	}
-	.multimediaPencil a {
-		left: 67%;
-	}
-	.portalsPencil a{
-		left: 70%;
-		width: 50%;
-	}
-	.exhibitionPencil a {
-		left: 57%;
-		width: 50%;
-	}
-	.identitiesPencil a {
-		top: -18%;
-	}
-	.talkToUsCont > .infoText {
-		margin-top: 4%;
-	}
-	.feedbackForm {
-		margin: 0;
-	}
-}
 /*testing carousel code*/
 .corporateIdentity {
 	width: 100%;
@@ -1408,4 +1344,69 @@ border-radius: 0;
 /*form ends*/
 .talkForm .form-horizontal .controls {
 margin-left: 226px;
+}
+
+/* Media Querry*/
+@media (max-width: 1300px) {
+    .nav-list li a {
+     font-size: 115%;
+     line-height: 80%; 
+     padding: 4% 0;
+    }
+    .subMenu li a {
+    /*font-size: 78%;*/
+    font-size: 71%;
+    line-height: 140%;
+    padding: 1.5% 0;
+    }
+    a.logo {
+    display: block;
+    margin-bottom: 10%;
+    width: 75%;
+    }
+    h2 {
+        font-size: 110%;
+    }
+    h3 {
+        font-size: 105%;
+    }
+    p, .boldItalics {
+        font: 82%/115% 'calibriregular', sans-serif;
+        margin-bottom: 4%;
+    }
+    .services li a span {
+    	font-size: 92%;
+    }
+    .gradientText {
+    	font-size: 90%;
+    }
+    .portNav a {
+    	font-size: 85%;
+    }
+    .fbSprite,
+	.gpSprite,
+	.liSprite,
+	.phSprite {
+		font-size: 95%;
+	}
+	.multimediaPencil a {
+		left: 67%;
+	}
+	.portalsPencil a{
+		left: 70%;
+		width: 50%;
+	}
+	.exhibitionPencil a {
+		left: 57%;
+		width: 50%;
+	}
+	.identitiesPencil a {
+		top: -18%;
+	}
+	.talkToUsCont > .infoText {
+		margin-top: 4%;
+	}
+	.feedbackForm {
+		margin: 0;
+	}
 }
