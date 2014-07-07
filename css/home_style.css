@@ -1262,10 +1262,16 @@ ul.clientLogos {
 	width: 100%;
 	height: 100%;
 }
-.slideshow img {
-	margin-right: 0.1%;
+.slideshow a {
+	margin-right: 0.05%;
 	 width: auto; 
 	 height: auto;
+	 /*border-right: 1px solid #000;*/
+}
+.slideshow div img {
+	/*margin-right: 0.1%;*/
+	 width: 100%; 
+	 height: 100%;
 }
 .corporateBg {
 	background: #444;
@@ -1345,7 +1351,12 @@ border-radius: 0;
 .talkForm .form-horizontal .controls {
 margin-left: 226px;
 }
-
+#fancybox-loading, 
+.fancybox-close, 
+.fancybox-prev span, 
+.fancybox-next span {
+	background-image:url('../source/fancybox_sprite.png')
+}
 /* Media Querry*/
 @media (max-width: 1300px) {
     .nav-list li a {

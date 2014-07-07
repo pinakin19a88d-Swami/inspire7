@@ -10,14 +10,28 @@
     data-cycle-carousel-fluid="true"
     data-cycle-next="#next"
     data-cycle-prev="#prev"
+    data-cycle-slides="a"
     
     >
-    <img src="images/portfolio_logos/corporate_identities/1_logo_10thMile.jpg">
-    <img src="images/portfolio_logos/corporate_identities/2_logo_bakers_kitchen.jpg">
-    <img src="images/portfolio_logos/corporate_identities/3_logo_saffron.jpg">
-    <img src="images/portfolio_logos/corporate_identities/4_logo_ashray.jpg">
-    <img src="images/portfolio_logos/corporate_identities/5_logo_Vastuyog.jpg">
-    <img src="images/portfolio_logos/corporate_identities/6_logo_green.jpg">
+
+   <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/1_logo_10thMile.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/1_logo_10thMile.jpg">
+    </a>
+   <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/3_03.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/2_logo_bakers_kitchen.jpg">
+    </a>
+   <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/2_03.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/3_logo_saffron.jpg">
+    </a>
+   <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/4_03.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/4_logo_ashray.jpg">
+    </a>
+   <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/5_03.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/5_logo_Vastuyog.jpg">
+    </a>
+  <!--  <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/1_logo_10thMile.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/6_logo_green.jpg">
+    </a> -->
     
 </div>
 
@@ -65,8 +79,19 @@
 
 		<script src="js/jquery.cycle2.carousel.js"></script>
 		<script type="text/javascript">
-
 				
 		     $.fn.cycle.defaults.autoSelector = '.slideshow';
 
 		</script>
+
+		<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+		<link rel="stylesheet" href="css/jquery.fancybox.css" />
+
+		<script type="text/javascript">
+		$(document).ready(function() {
+
+			$('.fancybox').fancybox();
+
+
+		});
+	</script>

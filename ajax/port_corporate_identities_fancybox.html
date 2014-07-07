@@ -1,25 +1,55 @@
+
 <div class="corporateIdentity whiteText clearfix animated fadeIn de8ms">
 
 	<div class="logoContent">
 		<h2 class="animated fadeInDown de1s">Corporate Identities</h2>
 		<div class="logoCarousel">
 			<div class="slideshow clearfix" 
-    data-cycle-fx="carousel"
-    data-cycle-timeout="3000"
-    data-cycle-carousel-visible="3"
-    data-cycle-carousel-fluid="true"
-    data-cycle-next="#next"
-    data-cycle-prev="#prev"
-    
-    >
-    <img src="images/portfolio_logos/corporate_identities/1_logo_10thMile.jpg">
-    <img src="images/portfolio_logos/corporate_identities/2_logo_bakers_kitchen.jpg">
-    <img src="images/portfolio_logos/corporate_identities/3_logo_saffron.jpg">
-    <img src="images/portfolio_logos/corporate_identities/4_logo_ashray.jpg">
-    <img src="images/portfolio_logos/corporate_identities/5_logo_Vastuyog.jpg">
-    <img src="images/portfolio_logos/corporate_identities/6_logo_green.jpg">
-    
-</div>
+			    data-cycle-fx="carousel"
+			    data-cycle-timeout="3000"
+			    data-cycle-carousel-visible="3"
+			    data-cycle-carousel-fluid="true"
+			    data-cycle-next="#next"
+			    data-cycle-prev="#prev"
+			    data-cycle-slides="> div">
+
+			    <div>
+				    <a class="fancybox" rel="gallery1" href="http://malsup.github.io/images/beach1.jpg">
+				    	<img src="images/portfolio_logos/corporate_identities/1_logo_10thMile.jpg">
+					</a>
+				</div>
+
+			    <div>
+				    <a class="fancybox" rel="gallery1" href="http://malsup.github.io/images/beach1.jpg">
+				    	<img src="images/portfolio_logos/corporate_identities/2_logo_bakers_kitchen.jpg">
+					</a>
+				</div>
+
+			    <div>
+				    <a class="fancybox" rel="gallery1" href="http://malsup.github.io/images/beach1.jpg">
+				    	<img src="images/portfolio_logos/corporate_identities/3_logo_saffron.jpg">
+					</a>
+				</div>
+
+			    <div>
+				    <a class="fancybox" rel="gallery1" href="http://malsup.github.io/images/beach1.jpg">
+				    	<img src="images/portfolio_logos/corporate_identities/4_logo_ashray.jpg">
+					</a>
+				</div>
+
+			    <div>
+				    <a class="fancybox" rel="gallery1" href="http://malsup.github.io/images/beach1.jpg">
+				    	<img src="images/portfolio_logos/corporate_identities/5_logo_Vastuyog.jpg">
+					</a>
+				</div>
+
+			    <div>
+				    <a class="fancybox" rel="gallery1" href="http://malsup.github.io/images/beach1.jpg">
+				    	<img src="images/portfolio_logos/corporate_identities/6_logo_green.jpg">
+					</a>
+				</div>
+		    
+			</div><!-- slideshow -->
 
 
 		</div><!-- logoCarousel -->
@@ -57,15 +87,32 @@
 	</div><!-- logoContent -->
 
 </div>
-<link rel="stylesheet" href="css/lightbox.css" />
+
+
 <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
-<script type="text/javascript" src="js/jquery.fancybox.js"></script>
-		<script src="js/jquery.cycle2.min.js"></script>
-
+		<script src="js/jquery.cycle2.js"></script>
 		<script src="js/jquery.cycle2.carousel.js"></script>
+		
+		<script>$.fn.cycle.defaults.autoSelector = '.slideshow';</script>
+
+		<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+		<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+
 		<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
 
-				
-		     $.fn.cycle.defaults.autoSelector = '.slideshow';
+			$('.fancybox').fancybox();
 
-		</script>
+			/*
+			 *  Different effects
+			 */
+
+			
+	
+
+		});
+	</script>
+	
