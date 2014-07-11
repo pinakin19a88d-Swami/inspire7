@@ -1255,7 +1255,7 @@ ul.clientLogos {
 	width: 98.5%;
 	height: 40%;
 	position: relative;
-	margin: 0 0 2.5% 0.5%;
+	margin: 0 0 4.5% 0.5%;
 }
 .logoContent {
 	/*float: left;*/
@@ -1263,7 +1263,7 @@ ul.clientLogos {
 	height: 100%;
 }
 .slideshow a {
-	margin-right: 0.05%;
+	margin-right: 0.02%;
 	 width: auto; 
 	 height: auto;
 	 /*border-right: 1px solid #000;*/
