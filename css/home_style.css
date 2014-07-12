@@ -1015,7 +1015,6 @@ iframe {
 	font-family: 'calibriregular';
 	font-size: 90%;
 }
-
 .designPdfIcon,
 .brandPdfIcon,
 .identityPdfIcon,
@@ -1235,6 +1234,18 @@ ul.clientLogos {
 /* Portfolio Ends */
 
 /*testing carousel code*/
+.BtnWrap {
+	text-align: right;
+}
+#prev, #next {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url("../images/Inspire_sprite.png") -30px -45px no-repeat;
+}
+#next {
+	background: url("../images/Inspire_sprite.png") -30px -77px no-repeat;
+}
 .corporateIdentity {
 	width: 100%;
 	height: 100%;
@@ -1360,6 +1371,7 @@ margin-left: 226px;
 .fancybox-next span {
 	background-image:url('../source/fancybox_sprite.png')
 }
+
 /* Media Querry*/
 @media (max-width: 1300px) {
     .nav-list li a {
