@@ -1283,11 +1283,14 @@ ul.clientLogos {
 			box-shadow: 2px 3px 1px rgba(35,31,32,.52);
 	padding: 2%;
 }
+.corporateBg ul:first-child {
+	padding-left: 3%;
+}
 .corporateBg ul {
 	list-style: disc;	
 	width: 33%;
 	float: left;
-	padding: 0 3%;
+	padding: 0 3% 0 0;
 }
 .corporateBg ul li a {
 	display: block;

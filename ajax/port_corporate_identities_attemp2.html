@@ -55,15 +55,12 @@
 
 </div>
 
-
-
-
 		</div><!-- logoCarousel -->
 
 		<div class="corporateBg">
 			<ul>
 				<li class="active"><a href="#">Corporate Identities</a></li>
-				<li><a href="#">Brand Building Campaigns</a></li>
+				<li><a href="#" name="ajax/brand_management_activities.html">Brand Building Campaigns</a></li>
 				<li><a href="#">Design Communication</a></li>
 			</ul>
 
@@ -114,4 +111,20 @@
 
 
 		});
+	</script>
+
+	<script type="text/javascript">
+
+		$(".corporateBg a").click(function() {
+			var current = $(this).attr("name");
+			$(".blackBox").load(current);
+			$(".gridCurtain").css("display","block");
+		});
+
+		$(".scrollContent").mCustomScrollbar({
+	        theme:"inset-3",
+	        scrollButtons:{ enable: true },
+	        keyboard:{ enable: true }
+	    });
+
 	</script>
