@@ -3,7 +3,7 @@
 	<div class="portNav">
 		
 		<div class="identitiesPencil">
-			<a href="#">Corporate<br/>Identities</a><span class="pencilImg"></span>
+			<a href="#" name="ajax/port_corporate_identities.html">Corporate<br/>Identities</a><span class="pencilImg"></span>
 		</div>
 		
 		<div class="brandPencil">
@@ -11,7 +11,7 @@
 		</div>
 
 		<div class="designPencil">
-			<a href="#">Design<br/>Communication</a><span class="pencilImg"></span>
+			<a href="#" name="ajax/design_communication.html">Design<br/>Communication</a><span class="pencilImg"></span>
 		</div>
 
 		<div class="mediaPencil">
@@ -127,6 +127,22 @@
 	    	$(".multimediaPencil > .pencilImg").css({'background' : 'url() center/100% no-repeat'});
 	  	}
 	);
+
+	</script>
+
+	<script type="text/javascript">
+
+		$(".portNav a").click(function() {
+			var current = $(this).attr("name");
+			$(".blackBox").load(current);
+			$(".gridCurtain").css("display","block");
+		});
+
+		$(".scrollContent").mCustomScrollbar({
+	        theme:"inset-3",
+	        scrollButtons:{ enable: true },
+	        keyboard:{ enable: true }
+	    });
 
 	</script>
 

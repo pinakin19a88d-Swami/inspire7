@@ -10,39 +10,76 @@
     data-cycle-carousel-fluid="true"
     data-cycle-next="#next"
     data-cycle-prev="#prev"
+
+    data-cycle-slides="a"
     
     >
-    <img src="images/portfolio_logos/corporate_identities/1_logo_10thMile.jpg">
-    <img src="images/portfolio_logos/corporate_identities/2_logo_bakers_kitchen.jpg">
-    <img src="images/portfolio_logos/corporate_identities/3_logo_saffron.jpg">
-    <img src="images/portfolio_logos/corporate_identities/4_logo_ashray.jpg">
-    <img src="images/portfolio_logos/corporate_identities/5_logo_Vastuyog.jpg">
-    <img src="images/portfolio_logos/corporate_identities/6_logo_green.jpg">
-    
+
+   <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/1_logo_10thMile.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/1_logo_10thMile.jpg">
+    </a>
+   <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/3_03.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/2_logo_bakers_kitchen.jpg">
+    </a>
+   <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/2_03.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/3_logo_saffron.jpg">
+    </a>
+   <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/4_03.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/4_logo_ashray.jpg">
+    </a>
+   <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/5_03.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/5_logo_Vastuyog.jpg">
+    </a>
+   <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/6_03.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/6_logo_green.jpg">
+    </a>
+
+
+    <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/7_03.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/7_logo_crosslink.jpg">
+    </a>
+    <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/8_03.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/8_logo_Constro.jpg">
+    </a>
+    <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/9_03.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/9_logo_DH.jpg">
+    </a>
+    <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/10_03.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/10_logo_PJ.jpg">
+    </a>
+    <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/11_03.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/11_logo_mangalayan.jpg">
+    </a>
+    <a class="fancybox" rel="gallery1" href="images/portfolio_logos/corporate_identities/Large_view/12_03.jpg">
+    	<img src="images/portfolio_logos/corporate_identities/Thumb_view/12_logo_aci.jpg">
+    </a>
+
 </div>
-
-
+<div class="BtnWrap">
+    <a href="#" id="prev">&nbsp;</a>
+    <a href="#" id="next">&nbsp;</a>
+</div>
 
 
 		</div><!-- logoCarousel -->
 
 		<div class="corporateBg">
 			<ul>
-				<li class="active"><a href="#">Corporate Identities</a></li>
+					<li class="active"><a href="#" name="ajax/port_corporate_identities.html">Corporate Identities</a></li>
 				<li><a href="#">Brand Building Campaigns</a></li>
-				<li><a href="#">Design Communication</a></li>
+					<li><a href="#" name="ajax/design_communication.html">Design Communication</a></li>
 			</ul>
 
 			<ul>
-				<li><a href="#">Corporate Identities</a></li>
-				<li><a href="#">Brand Building Campaigns</a></li>
-				<li><a href="#">Design Communication</a></li>
+					<li><a href="#" name="ajax/corporate_product_profile.html">Corporate &amp; Product Profile</a></li>
+					<li><a href="#" name="ajax/media_campaigns.html">Media Campaigns</a></li>
+					<li><a href="#" name="ajax/specialized_publishing.html">Specialized Publishing</a></li>
 			</ul>
 
 			<ul>
-				<li><a href="#">Corporate Identities</a></li>
-				<li><a href="#">Brand Building Campaigns</a></li>
-				<li><a href="#">Design Communication</a></li>
+					<li><a href="#" name="ajax/exhibition_event_support.html">Exhibition &amp; Event Support</a></li>
+				<li><a href="#">Multimedia Presentations</a></li>
+				<li><a href="#">Web Sites &amp; Portals</a></li>
 			</ul>
 		</div><!-- corporateBg -->
 		<!-- <p class="animated fadeInRight de12ms">
@@ -65,8 +102,35 @@
 
 		<script src="js/jquery.cycle2.carousel.js"></script>
 		<script type="text/javascript">
-
 				
 		     $.fn.cycle.defaults.autoSelector = '.slideshow';
 
 		</script>
+
+		<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+		<link rel="stylesheet" href="css/jquery.fancybox.css" />
+
+		<script type="text/javascript">
+		$(document).ready(function() {
+
+			$('.fancybox').fancybox();
+
+
+		});
+	</script>
+
+	<script type="text/javascript">
+
+		$(".corporateBg a").click(function() {
+			var current = $(this).attr("name");
+			$(".blackBox").load(current);
+			$(".gridCurtain").css("display","block");
+		});
+
+		$(".scrollContent").mCustomScrollbar({
+	        theme:"inset-3",
+	        scrollButtons:{ enable: true },
+	        keyboard:{ enable: true }
+	    });
+
+	</script>
