@@ -1161,29 +1161,34 @@ a.corpoIdentity {
 	display: block;
 	position: absolute;
 	width: 19.2%;
-	height: 18%;
-	margin: 29.2% 0 0 6.5%;
+	height: 14%;
+	margin: 8% 0 0 0%;
 }
-.txtHolder {
+a.corpoIdentity > img,
+a.brandBuildingWrap > img {
+	width: 100%;
+}
+.corpoTxt, .brandTxt {
 	position: relative;
 	width: 100%;
 	height: 100%;
 	margin-left: 38%;
 }
-a.corpoIdentity #corpoHeading {
-	width: 100%;
+.brandTxt {
+	margin-left: 0;
 }
-.corpoMain {
-	display: none;
-	position: absolute;
+.corpoTxt > img,
+.brandTxt > img {
+	width: 95%;
+}
+.hoverTextBox {
+	position: absolute;	
 	font-family: 'ergoeregular';
-	width: 140%;
 	font-size: 100%;
 	line-height: 120%;
 	color: #666;
 	background: #fff;
 	z-index: 200;
-	top: 2%;
 	padding: 10%;
 
 	-o-box-shadow: 4px 8px 2px rgba(35,31,32,.78); 
@@ -1192,18 +1197,21 @@ a.corpoIdentity #corpoHeading {
 	-moz-box-shadow: 4px 8px 2px rgba(35,31,32,.78); 
 	box-shadow: 4px 8px 2px rgba(35,31,32,.78); 
 	border: solid 1px #333;
-
+}
+.corpoTxtHover {
+	display: none;
+	/*position: absolute;	*/
+	width: 140%;	
+	top: 2%;
+	
 	-webkit-transition: All 6s;
 	   -moz-transition: All 6s;
 		 -o-transition: All 6s;
 			transition: All 6s;
 			/*transition-timing-function: easeInOut;*/
 }
-#corpotxt {
-	width: 90%;
-	/*margin-left: 50%;*/
-}
-a.corpoIdentity:hover .txtHolder .corpoMain {
+a.corpoIdentity:hover .corpoTxt .corpoTxtHover,
+a.brandBuildingWrap:hover .brandTxt .brandTxtHover {
 	display: block;
 	-webkit-transition: All 6s;
 	   -moz-transition: All 6s;
@@ -1216,6 +1224,18 @@ a.corpoIdentity:hover .txtHolder .corpoMain {
 	width: 16.5%;
 	height: 41%;
 	margin: 8% 0 0 16.7%;
+}
+a.brandBuildingWrap {
+	display: block;
+	position: absolute;
+	width: 19.2%;
+	height: 13%;
+	margin: 0% 0 0 27%;	
+}
+.brandTxtHover {
+	display: none;
+	width: 190%;
+	top: 2%;
 }
 .designPencil {
 	width: 14%;
@@ -1294,10 +1314,11 @@ a.corpoIdentity:hover .txtHolder .corpoMain {
 /* Portfolio Ends */
 /*servisex start*/
 .serviceNav {
-	width: 100%;
-	height: 100%;
+	width: 90%;
+	height: 86%;
 	background: url("../images/our_service.png") no-repeat;
 	background-size: 100%;
+	margin: 5%;
 }
 /*servisex ens*/
 /*testing carousel code*/
@@ -1438,7 +1459,9 @@ margin-left: 226px;
 .fancybox-next span {
 	background-image:url('../source/fancybox_sprite.png')
 }
-
+.serviceNav h2 {
+	color: #fff;
+}
 /* Media Querry*/
 @media (max-width: 1300px) {
     .nav-list li a {
