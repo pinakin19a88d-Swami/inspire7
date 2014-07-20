@@ -1173,13 +1173,6 @@ a.corpoIdentity {
 a.corpoIdentity #corpoHeading {
 	width: 100%;
 }
-a.corpoIdentity #corpotxt {
-	width: 90%;
-	/*margin-left: 50%;*/
-}
-a.corpoIdentity:hover .corpoMain {
-	display: block;
-}
 .corpoMain {
 	display: none;
 	position: absolute;
@@ -1200,10 +1193,22 @@ a.corpoIdentity:hover .corpoMain {
 	box-shadow: 4px 8px 2px rgba(35,31,32,.78); 
 	border: solid 1px #333;
 
-	-webkit-transition:All 6s;
-	   -moz-transition:All 6s;
-		 -o-transition:All 6s;
-			transition:All 6s;
+	-webkit-transition: All 6s;
+	   -moz-transition: All 6s;
+		 -o-transition: All 6s;
+			transition: All 6s;
+			/*transition-timing-function: easeInOut;*/
+}
+#corpotxt {
+	width: 90%;
+	/*margin-left: 50%;*/
+}
+a.corpoIdentity:hover .txtHolder .corpoMain {
+	display: block;
+	-webkit-transition: All 6s;
+	   -moz-transition: All 6s;
+		 -o-transition: All 6s;
+			transition: All 6s;
 			transition-timing-function: easeInOut;
 }
 /*a.corpoIdentity:*/

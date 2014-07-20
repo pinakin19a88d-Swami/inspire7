@@ -51,6 +51,8 @@ $(document).ready(function(){
 	  	}
 	);
 
+
+
 	$(window).resize(function(){
 
 		$(".bodySection").css("height",bodyHeight);
@@ -58,6 +60,7 @@ $(document).ready(function(){
 		$(".imgGrid").css("width",gridWidth);
 
 	});
+
 
 	var ftBottomWidth = $(".container").css("width");
 	$(".footerBottomCont").css("width",ftBottomWidth);
