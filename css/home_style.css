@@ -1165,7 +1165,8 @@ a.corpoIdentity {
 	margin: 8% 0 0 0%;
 }
 a.corpoIdentity > img,
-a.brandBuildingWrap > img {
+a.brandBuildingWrap > img,
+a.specilPublishWrap {
 	width: 100%;
 }
 .corpoTxt, .brandTxt {
@@ -1178,7 +1179,8 @@ a.brandBuildingWrap > img {
 	margin-left: 0;
 }
 .corpoTxt > img,
-.brandTxt > img {
+.brandTxt > img,
+.sPublishTxt >img {
 	width: 95%;
 }
 .hoverTextBox {
@@ -1251,6 +1253,13 @@ a.brandBuildingWrap {
 	width: 22%;
 	height: 38%;
 	margin: 9.5% 0 0 51.5%;
+}
+a.specilPublishWrap {
+	display: block;
+	position: absolute;
+	width: 19.2%;
+	height: 13%;
+	margin: 2% 0 0 55%;
 }
 .exhibitionPencil {
 	width: 30%;
