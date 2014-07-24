@@ -92,7 +92,13 @@ $(document).ready(function() {
 	    $("#aboutNav > .subMenu").css("opacity","0");
 	    $("#portfolioNav > .subMenu").css("height","0");
 	    $("#portfolioNav > .subMenu").css("opacity","0");
+
+	    $("body #cboxOverlay").remove();
+	    $("body #colorbox").remove();
+
 	});
+
+	
 
 });
 
