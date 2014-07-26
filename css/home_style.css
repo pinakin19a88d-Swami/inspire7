@@ -567,11 +567,11 @@ border-bottom: 1px solid #e4e4e4;
 
   	opacity: 0;
   	margin-top:-80%;
-  	-webkit-transition: opacity 0.25s ease, margin-top 0.25s ease;
-  	   -moz-transition: opacity 0.25s ease, margin-top 0.25s ease;
-  		 -o-transition: opacity 0.25s ease, margin-top 0.25s ease;
-  		-ms-transition: opacity 0.25s ease, margin-top 0.25s ease;
-  			transition: opacity 0.25s ease, margin-top 0.25s ease;
+  	-webkit-transition: opacity 0.5s ease, margin-top 0.5s ease;
+  	   -moz-transition: opacity 0.5s ease, margin-top 0.5s ease;
+  		 -o-transition: opacity 0.5s ease, margin-top 0.5s ease;
+  		-ms-transition: opacity 0.5s ease, margin-top 0.5s ease;
+  			transition: opacity 0.5s ease, margin-top 0.5s ease;
 }
 .test > li:hover .hoverBox{
   	opacity: 1;
@@ -580,11 +580,11 @@ border-bottom: 1px solid #e4e4e4;
 .hoverBoxL {
 	margin-left:-80%;
 	margin-top:0;
-  	-webkit-transition: opacity 0.25s ease, margin-left 0.25s ease;
-  	   -moz-transition: opacity 0.25s ease, margin-left 0.25s ease;
-  		 -o-transition: opacity 0.25s ease, margin-left 0.25s ease;
-  		-ms-transition: opacity 0.25s ease, margin-left 0.25s ease;
-  			transition: opacity 0.25s ease, margin-left 0.25s ease;
+  	-webkit-transition: opacity 0.5s ease, margin-left 0.5s ease;
+  	   -moz-transition: opacity 0.5s ease, margin-left 0.5s ease;
+  		 -o-transition: opacity 0.5s ease, margin-left 0.5s ease;
+  		-ms-transition: opacity 0.5s ease, margin-left 0.5s ease;
+  			transition: opacity 0.5s ease, margin-left 0.5s ease;
 }
 .test > li:hover .hoverBoxL{
   	opacity: 1;
@@ -593,11 +593,11 @@ border-bottom: 1px solid #e4e4e4;
 .hoverBoxR {
 	margin-left:80%;
 	margin-top:0;
-  	-webkit-transition: opacity 0.25s ease, margin-left 0.25s ease;
-  	   -moz-transition: opacity 0.25s ease, margin-left 0.25s ease;
-  		 -o-transition: opacity 0.25s ease, margin-left 0.25s ease;
-  		-ms-transition: opacity 0.25s ease, margin-left 0.25s ease;
-  			transition: opacity 0.25s ease, margin-left 0.25s ease;
+  	-webkit-transition: opacity 0.5s ease, margin-left 0.5s ease;
+  	   -moz-transition: opacity 0.5s ease, margin-left 0.5s ease;
+  		 -o-transition: opacity 0.5s ease, margin-left 0.5s ease;
+  		-ms-transition: opacity 0.5s ease, margin-left 0.5s ease;
+  			transition: opacity 0.5s ease, margin-left 0.5s ease;
 }
 .test > li:hover .hoverBoxR{
   	opacity: 1;
@@ -605,11 +605,11 @@ border-bottom: 1px solid #e4e4e4;
 }
 .hoverBoxB {
 	margin-top:80%;
-  	-webkit-transition: opacity 0.25s ease, margin-top 0.25s ease;
-  	   -moz-transition: opacity 0.25s ease, margin-top 0.25s ease;
-  		 -o-transition: opacity 0.25s ease, margin-top 0.25s ease;
-  		-ms-transition: opacity 0.25s ease, margin-top 0.25s ease;
-  			transition: opacity 0.25s ease, margin-top 0.25s ease;
+  	-webkit-transition: opacity 0.5s ease, margin-top 0.5s ease;
+  	   -moz-transition: opacity 0.5s ease, margin-top 0.5s ease;
+  		 -o-transition: opacity 0.5s ease, margin-top 0.5s ease;
+  		-ms-transition: opacity 0.5s ease, margin-top 0.5s ease;
+  			transition: opacity 0.5s ease, margin-top 0.5s ease;
 }
 .test > li:hover .hoverBoxB{
   	opacity: 1;
