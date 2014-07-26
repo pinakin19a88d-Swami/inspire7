@@ -322,9 +322,9 @@ a {
     /*background-color: #c44;*/
 	/*border: 1px solid #c44;*/
 }
-.nav-list li {
+#aboutNav {
     /*padding-right: 20px;*/
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 .nav-list li:hover > a {
     color: #333333;
@@ -936,12 +936,7 @@ iframe {
 .mediaCont > .infoText {
 	margin: 4% 0 0% 6%;
 }
-/*.brandCont > .infoText > .gradientText {
-	font-size: 90%;
-}
-.brandCont > .infoText > p {
-	font-size: 95%;
-}*/
+
 .title {
 	font-family: 'ergoebold';
 }
@@ -1499,6 +1494,11 @@ margin-left: 226px;
 	color: #fff;
 }
 /* Media Querry*/
+@media (min-width: 1300px) and (max-width: 1400px) {
+	.spritesSection > .spritesCont {
+		width: 25%;
+	}
+}
 @media (max-width: 1300px) {
     .nav-list li a {
      font-size: 115%;
