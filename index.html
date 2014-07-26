@@ -122,7 +122,7 @@
 								<img src="images/grid_img_2.jpg">
 							</div>
 							<div class="hoverBox">
-								<div class="boxText">Websites &amp; Portals<i class="searchIcon"></i></div>
+								<div class="boxText" name="pendingPage">Websites &amp; Portals<i class="searchIcon"></i></div>
 							</div>
 						</li>
 						<li>
@@ -184,7 +184,7 @@
 								<img src="images/grid_img_9.jpg">
 							</div>
 							<div class="hoverBoxR">
-								<div class="boxText">Websites &amp; Portals<i class="searchIcon"></i></div>
+								<div class="boxText" name="pendingPage">Websites &amp; Portals<i class="searchIcon"></i></div>
 							</div>
 						</li>
 						<li>
@@ -243,7 +243,7 @@
 								<img src="images/grid_img_16.jpg">
 							</div>
 							<div class="hoverBoxB">
-								<div class="boxText">Multimedia Presentations<i class="searchIcon"></i></div>
+								<div class="boxText" name="pendingPage">Multimedia Presentations<i class="searchIcon"></i></div>
 							</div>
 						</li>
 						
@@ -259,10 +259,13 @@
 
 			$(".hoverBox, .hoverBoxL, .hoverBoxR, .hoverBoxB").click(function() {
 				var current = $(this).children().attr("name");
-				$(".blackBox").load(current);
-				$(".gridCurtain").removeClass("fadeOut");
-				$(".blackBox").removeClass("slideOutLeft");
-				$(".gridCurtain").css("display","block");
+				if(current != "pendingPage")
+				{
+					$(".blackBox").load(current);
+					$(".gridCurtain").removeClass("fadeOut");
+					$(".blackBox").removeClass("slideOutLeft");
+					$(".gridCurtain").css("display","block");
+				}
 			});
 			
 		</script>
