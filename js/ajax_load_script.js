@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$(".subMenu li a").click(function() {
+		$(".subMenu li a").click(function() {
 		$(".subMenu li a").removeClass("active");
 		$(".services span").removeClass("active");
 		$(this).addClass("active");
@@ -30,8 +30,21 @@ $(document).ready(function() {
     	}
 	});
 
-	$(".nav-list li a").click(function() {
+		$(".nav-list li a").click(function() {
 		var current = $(this).attr("name");
+		if(current == "ajax/who_we_are.html")
+		{
+			$(".subMenu li a").removeClass("active");
+			$(".services span").removeClass("active");
+			$("#whoWeAreNav").addClass("active");
+		}
+		else if($(this).hasClass("subMenuFalse"))
+		{
+			$("#aboutNav > .subMenu").css("height","0");
+	    	$("#aboutNav > .subMenu").css("opacity","0");
+	    	$(".subMenu li a").removeClass("active");
+			$(".services span").removeClass("active");
+		}
 		$(".blackBox").load(current);
 		$(".gridCurtain").removeClass("fadeOut");
 		$(".blackBox").removeClass("slideOutLeft");
@@ -44,12 +57,12 @@ $(document).ready(function() {
 			);
 
 		// $("#aboutNav > .subMenu").css("height","0");
-	 //    $("#aboutNav > .subMenu").css("opacity","0");
-	 //    $("#portfolioNav > .subMenu").css("height","0");
-	 //    $("#portfolioNav > .subMenu").css("opacity","0");
+	    // $("#aboutNav > .subMenu").css("opacity","0");
+	    // $("#portfolioNav > .subMenu").css("height","0");
+	    // $("#portfolioNav > .subMenu").css("opacity","0");
 	});
 
-	$(".services li a").click(function() {
+		$(".services li a").click(function() {
 		$(".services li a").removeClass("active");
 		$(".subMenu li a").removeClass("active");
 		$(".services span").removeClass("active");
@@ -75,7 +88,7 @@ $(document).ready(function() {
 
 	
 
-	$("#closeBtn").click(function(){
+		$("#closeBtn").click(function(){
 		$(".subMenu li a").removeClass("active");
 		$(".services span").removeClass("active");
 		$(".gridCurtain").addClass("fadeOut");
