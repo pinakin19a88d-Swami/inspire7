@@ -23,7 +23,7 @@
 		</p>
 
 		<span class="boldItalics feedbackForm animated fadeInRight de2s">
-			<a class="yellowText">
+			<a href="#" name="ajax/talk_to_us_form.html" class="yellowText">
 				Give your Feedback and Contact details Today
 				<i class="subPageArrow arrowMargin1"></i>
 				<i class="subPageArrow arrowMargin2"></i>
@@ -35,4 +35,12 @@
 	
 	<iframe class="animated fadeIn de22ms" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Inspire+Multimedia+Pune&key=AIzaSyBQs2_y2fkEl7qUX94KonUAxUYxj7dN33E"></iframe>
 
+<script type="text/javascript">
+
+		$(".feedbackForm a").click(function() {
+			var current = $(this).attr("name");
+			$(".blackBox").load(current);
+			$(".gridCurtain").css("display","block");
+		});
+</script>
 </div>
