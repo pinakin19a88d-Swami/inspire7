@@ -1038,6 +1038,13 @@ iframe {
 .mediaPdfIcon {
 	background: url("../images/online_media_hover.png") no-repeat;
 }
+.designPdfIcon,
+.brandPdfIcon,
+.identityPdfIcon,
+.exhibitionPdfIcon,
+.mediaPdfIcon {
+	background-size: 88%;
+}
 .activityCont {
 	background: url("");
 }
