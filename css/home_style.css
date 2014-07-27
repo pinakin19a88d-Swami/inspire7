@@ -404,7 +404,7 @@ a.logo img {
     float: right;
     display: block;
     margin: 4% 2% 0 0;
-    width: 20%;
+    width: 21%;
 }
 .fbSprite,
 .gpSprite,
@@ -1220,8 +1220,8 @@ a.webWrap > img, {
 	margin-top: -106%;
 }
 .webTxt {
-	margin-left: 74%;
-	margin-top: -22%;
+	margin-left: 75%;
+	margin-top: -20%;
 }
 .corpoTxt > img,
 .brandTxt > img,
@@ -1255,7 +1255,7 @@ a.webWrap > img, {
 	border: solid 1px #333;
 }
 .corpoTxtHover {
-	display: none;
+	/*display: none;*/
 	/*position: absolute;	*/
 	width: 140%;	
 	top: 2%;
@@ -1266,13 +1266,24 @@ a.webWrap > img, {
 			transition: All 6s;
 			/*transition-timing-function: easeInOut;*/
 }
+.corpoArrow {
+	width: 10%;
+	/*height: 7%;*/
+	top: -10%;
+	position: absolute;
+}
+.corpoArrow img {
+	display: block;
+	width: 100%;
+}
 a.corpoIdentity:hover .corpoTxt .corpoTxtHover,
 a.brandBuildingWrap:hover .brandTxt .brandTxtHover, 
 a.specilPublishWrap:hover .sPublishTxt .sPublishTxtHover, 
 a.designWrap:hover .designTxt .designTxtHover,
 a.multimediaWrap:hover .multiMediaTxt .multiMediaTxtHover,
 a.mediaWrap:hover .mediaTxt .mediaTxtHover,
-a.exhibWrap:hover .exhibTxt .exhibTxtHover {
+a.exhibWrap:hover .exhibTxt .exhibTxtHover,
+a.webWrap:hover .webTxt .webTxtHover {
 	display: block;
 	-webkit-transition: All 6s;
 	   -moz-transition: All 6s;
@@ -1378,6 +1389,9 @@ a.exhibWrap {
 }
 .webTxtHover {
 	display: none;
+	top: 10%;
+	left: 2%;
+	width: 146%;
 }
 a.webWrap {
 	position: absolute;
@@ -1574,8 +1588,18 @@ background: #ccc;
 -moz-box-shadow: inset 0 0 3px rgba(35,31,32,.45);
 -o-box-shadow: inset 0 0 3px rgba(35,31,32,.45);
 box-shadow: inset 0 0 3px rgba(35,31,32,.45);
-width: 208px;
+width: 205px;
 height: 20px;
+border: none;
+border-radius: 0;
+}
+textarea {
+background: #ccc;
+-webkit-box-shadow: inset 0 0 3px rgba(35,31,32,.45);
+-moz-box-shadow: inset 0 0 3px rgba(35,31,32,.45);
+-o-box-shadow: inset 0 0 3px rgba(35,31,32,.45);
+box-shadow: inset 0 0 3px rgba(35,31,32,.45);
+width: 208px;	
 border: none;
 border-radius: 0;
 }
