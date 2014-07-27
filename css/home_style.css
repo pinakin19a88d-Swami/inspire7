@@ -807,13 +807,14 @@ iframe {
 	height: 100%;
 }
 .career > .infoText {
-	height: 92%;
+	width: 92%;
+	height: 85%;
 	margin: 5% 0 0% 6%;
 	overflow: hidden;
 }
 .career > .infoText > .formWrap {
-	width: 98%;
-	height: 65%;
+	width: 100%;
+	height: 85%;
 }
 
 .services {
@@ -836,7 +837,7 @@ iframe {
     display: inline-block;
     /*width: 60px;
     height: 60px;*/
-    width: 34%;
+    width: 30%;
     height: 100%;
     /*background: red;*/
     /*background: url("../images/Inspire_sprite.png") 0 0 no-repeat;*/
@@ -847,6 +848,7 @@ iframe {
 .services li a span {
     float: left;
     margin-top: 18%;
+    margin-left: 4%;
     font-family: 'calibriregular', sans-serif;
     color: #000;
 }
