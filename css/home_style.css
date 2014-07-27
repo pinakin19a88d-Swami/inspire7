@@ -1162,13 +1162,15 @@ a.corpoIdentity {
 a.corpoIdentity > img,
 a.brandBuildingWrap > img,
 a.specilPublishWrap > img,
-a.designWrap > img {
+a.designWrap > img,
+a.multimediaWrap > img {
 	width: 100%;
 }
 .corpoTxt, 
 .brandTxt,
 .sPublishTxt,
-.designTxt {
+.designTxt,
+.multiMediaTxt {
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -1183,10 +1185,14 @@ a.designWrap > img {
 .designTxt {
 	margin-left: -61px;
 }
+.multiMediaTxt {
+	margin-left: -61px;
+}
 .corpoTxt > img,
 .brandTxt > img,
 .sPublishTxt >img,
-.designWrap >  img {
+.designTxt > img,
+.multiMediaTxt > img {
 	width: 95%;
 }
 .hoverTextBox {
@@ -1220,7 +1226,8 @@ a.designWrap > img {
 }
 a.corpoIdentity:hover .corpoTxt .corpoTxtHover,
 a.brandBuildingWrap:hover .brandTxt .brandTxtHover, 
-a.specilPublishWrap:hover .sPublishTxt .sPublishTxtHover {
+a.specilPublishWrap:hover .sPublishTxt .sPublishTxtHover, 
+a.designWrap:hover .designTxt .designTxtHover {
 	display: block;
 	-webkit-transition: All 6s;
 	   -moz-transition: All 6s;
@@ -1261,16 +1268,27 @@ a.designWrap {
 	position: absolute;
 	width: 19.2%;
 	height: 13%;
-	margin: 12% 0 0 72%;
+	margin: 12% 0 0 68%;
 }
 .designTxtHover {
-	
+	display: none;
+	width: 188%;
+	font-size: 94%;
+	top: 8%;
+	left: -44%;
 }
 .mediaPencil {
 	width: 12.5%;
 	height: 36%;
 	margin: 15% 0 0 40.25%;
 }
+/*a.mediaWrap {
+	display: block;
+	position: absolute;
+	width: 19.2%;
+	height: 13%;
+	margin: 12% 0 0 72%;
+}*/
 .publishingPencil {
 	width: 22%;
 	height: 38%;
@@ -1297,6 +1315,18 @@ a.specilPublishWrap {
 	width: 30.8%;
 	height: 12%;
 	margin: 48.6% 0 0 46.4%;
+}
+a.multimediaWrap {
+	position: absolute;
+	width: 19.2%;
+	height: 13%;
+	margin: 32% 0 0 72%;
+}
+.multiMediaTxtHover {
+	width: 133%;
+	font-size: 94%;
+	top: 8%;
+	left: -44%;
 }
 .identitiesPencil,
 .brandPencil,
