@@ -1163,7 +1163,10 @@ a.corpoIdentity > img,
 a.brandBuildingWrap > img,
 a.specilPublishWrap > img,
 a.designWrap > img,
-a.multimediaWrap > img {
+a.multimediaWrap > img,
+a.mediaWrap > img,
+a.exhibWrap > img, 
+a.webWrap > img, {
 	width: 100%;
 }
 .corpoTxt, 
@@ -1188,12 +1191,36 @@ a.multimediaWrap > img {
 .multiMediaTxt {
 	margin-left: -35px;
 }
+.mediaTxt,
+.exhibTxt,
+.webTxt {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-top: -95%;
+}
+.mediaTxt >img {
+	margin-left: -10%;
+}
+.exhibTxt {
+	margin-left: 33%;
+	margin-top: -102%;
+}
+.webTxt {
+	margin-left: 33%;
+	margin-top: -102%;
+}
 .corpoTxt > img,
 .brandTxt > img,
 .sPublishTxt >img,
 .designTxt > img,
-.multiMediaTxt > img {
+.multiMediaTxt > img,
+.exhibTxt > img,
+.webTxt > img {
 	width: 95%;
+}
+.mediaTxt > img {
+	width: 54%;
 }
 .hoverTextBox {
 	position: absolute;	
@@ -1227,7 +1254,9 @@ a.multimediaWrap > img {
 a.corpoIdentity:hover .corpoTxt .corpoTxtHover,
 a.brandBuildingWrap:hover .brandTxt .brandTxtHover, 
 a.specilPublishWrap:hover .sPublishTxt .sPublishTxtHover, 
-a.designWrap:hover .designTxt .designTxtHover {
+a.designWrap:hover .designTxt .designTxtHover,
+a.multimediaWrap:hover .multiMediaTxt .multiMediaTxtHover,
+a.mediaWrap:hover .mediaTxt .mediaTxtHover {
 	display: block;
 	-webkit-transition: All 6s;
 	   -moz-transition: All 6s;
@@ -1282,13 +1311,21 @@ a.designWrap {
 	height: 36%;
 	margin: 15% 0 0 40.25%;
 }
-/*a.mediaWrap {
+a.mediaWrap {
 	display: block;
 	position: absolute;
 	width: 19.2%;
 	height: 13%;
-	margin: 12% 0 0 72%;
-}*/
+	margin: 47% 0 0 44%;
+}
+.mediaTxtHover{
+	display: none;
+	width: 95%;
+	padding: 10% 20%;
+	font-size: 94%;
+	top: -40%;
+	left: -44%;
+}
 .publishingPencil {
 	width: 22%;
 	height: 38%;
@@ -1306,10 +1343,29 @@ a.specilPublishWrap {
 	height: 24%;
 	margin: 25.3% 0 0 51.3%;
 }
+a.exhibWrap {
+	display: block;
+	position: absolute;
+	width: 19.2%;
+	height: 13%;
+	margin: 50% 0 0 18%;
+}
+.exhibTxtHover {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: -110%;
+}
 .portalsPencil {
 	width: 34%;
 	height: 10%;
 	margin: 39.8% 0 0 58.8%;
+}
+a.webWrap {
+	position: absolute;
+	width: 19.2%;
+	height: 13%;
+	margin: 36% 0 0 1%
 }
 .multimediaPencil {
 	width: 30.8%;
@@ -1323,6 +1379,7 @@ a.multimediaWrap {
 	margin: 32% 0 0 72%;
 }
 .multiMediaTxtHover {
+	display: none;
 	width: 133%;
 	font-size: 94%;
 	top: 8%;
@@ -1553,7 +1610,7 @@ margin-left: 226px;
         font-size: 105%;
     }
     p, .boldItalics {
-        font: 82%/115% 'calibriregular', sans-serif;
+        /*font: 82%/115% 'calibriregular', sans-serif;*/
         margin-bottom: 4%;
     }
     .services li a span {
