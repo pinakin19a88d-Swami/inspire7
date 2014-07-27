@@ -90,7 +90,7 @@
 			    <span style="color:#fff">:</span>
 			    <div class="controls">
 			      <input type="submit" value="Submit" name="submit">
-		      	  <input type="reset" value="Reset" name="reset">
+		      	  <input type="reset" value="Reset" name="reset" class="resetBtn">
 			    </div><!-- controls -->
 			  </div><!-- control-group -->
 
@@ -111,57 +111,67 @@
 
 	</script>
 
+	<script type="text/javascript">
+
+		$(".resetBtn").click(function(){
+
+			$(".controls label").css("display","none");
+
+		});
+
+	</script>
+
 	<script>
   
-  // When the browser is ready...
-  $(function() {
-  
-    // Setup form validation on the #register-form element
-    $("#career-form").validate({
-    
-        // Specify the validation rules
-        rules: {
-            inputPost: "required",
-            inputName: "required",
-            inputEdu: "required",
-            inputExpertise: "required",
-            inputExp: "required",
-            inputAddrs: "required",
-            inputPhone: {
-                required: true,
-                digits: true,
-                minlength: 8
-            },
-            inputEmail: {
-                required: true,
-                email: true
-            },
-            inputSalary: {
-                required: true,
-                digits: true
-            }
-        },
-        
-        // Specify the validation error messages
-        messages: {
-            inputPost: "Please enter post you are applying for",
-            inputName: "Please enter your full name",
-            inputEdu: "Please enter your educational qualification",
-            inputExpertise: "Please enter your area of expertise",
-            inputExp: "How much experience do you have",
-            inputAddrs: "Please enter your address",
-            inputPhone: "Please enter a valid phone number (digits only)",
-            inputEmail: "Please enter a valid email address",
-            inputSalary: "Please enter your current salary (per annum)"
-        },
-        
-        submitHandler: function(form) {
-            form.submit();
-        }
-    });
+		  // When the browser is ready...
+		  $(function() {
+		  
+		    // Setup form validation on the #register-form element
+		    $("#career-form").validate({
+		    
+		        // Specify the validation rules
+		        rules: {
+		            inputPost: "required",
+		            inputName: "required",
+		            inputEdu: "required",
+		            inputExpertise: "required",
+		            inputExp: "required",
+		            inputAddrs: "required",
+		            inputPhone: {
+		                required: true,
+		                digits: true,
+		                minlength: 8
+		            },
+		            inputEmail: {
+		                required: true,
+		                email: true
+		            },
+		            inputSalary: {
+		                required: true,
+		                digits: true
+		            }
+		        },
+		        
+		        // Specify the validation error messages
+		        messages: {
+		            inputPost: "Please enter post you are applying for",
+		            inputName: "Please enter your full name",
+		            inputEdu: "Please enter your educational qualification",
+		            inputExpertise: "Please enter your area of expertise",
+		            inputExp: "How much experience do you have",
+		            inputAddrs: "Please enter your address",
+		            inputPhone: "Please enter a valid phone number (digits only)",
+		            inputEmail: "Please enter a valid email address",
+		            inputSalary: "Please enter your current salary (per annum)"
+		        },
+		        
+		        submitHandler: function(form) {
+		            form.submit();
+		        }
+		    });
 
-  });
-  
-  </script>
+		  });
+	  
+	  </script>
 
 </div>
