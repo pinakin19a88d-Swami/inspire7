@@ -1,5 +1,7 @@
 <div class="career whiteText clearfix animated fadeIn de8ms">
 
+	<script type="text/javascript" src="js/fontsize_fix.js"></script>
+
 	<div class="infoText">
 		<h2 class="animated fadeInDown de1s">Careers</h2>
 		<p class="animated fadeInRight de12ms">

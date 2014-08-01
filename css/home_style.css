@@ -791,11 +791,11 @@ iframe {
 .whatWeDoCont,
 .ourApproachCont,
 .ourTeamCont,
-.ourInfraCont,
-.designCont {
+.ourInfraCont {
 	height: 100%;
 	/*background-size: 75%;*/
     position: relative;
+    margin: 8% 0 0 6%;
 }
 .whoWeAreCont {
     background: url("../images/Who-We-Are.png") no-repeat right bottom;
@@ -812,6 +812,7 @@ iframe {
 .ourInfraCont {
     background: url("../images/Our-Infrastructure.png") no-repeat right bottom;
 }
+
 
 .talkToUsCont > .infoText {
 	width: 94%;
