@@ -420,7 +420,9 @@ a.logo img {
 	position: absolute;
 	width: 450%;
 	height: 500%;
-	background: url("../images/toolTipBG.png") top/100% no-repeat;
+	background: url("../images/toolTipBG.png") no-repeat;
+	background-position: center top;
+	background-size: 100%;
 	font-family: 'calibribold';
 	text-align: center;
 	font-size: 100%;
@@ -688,19 +690,20 @@ h2, h3, h4 {
 	font-weight: normal;
 }
 h2 {
-	font-size: 170%;
+	/*font-size: 170%;*/
 	margin-bottom: 2%;
 }
 h3 {
-	font-size: 145%;
-	margin-bottom: 2%;
+	/*font-size: 145%;*/
+	margin-bottom: 1%;
 }
 h4 {
-	font-size: 100%;
+	/*font-size: 100%;*/
 	margin-bottom: 2%;
 }
 .infoText {
-	margin: 8% 0 0 6%;
+	height: 94%;
+	/*margin: 8% 0 0 6%;*/
 	float: left;
 }
 .infoText p a {
@@ -714,7 +717,9 @@ p, .boldItalics {
 	/*width: 52%;
 	font: 100%/124% 'calibriregular', sans-serif;*/
 	width: 53%;
-	font: 96%/111% 'calibriregular', sans-serif;
+	font-family: 'calibriregular', sans-serif;
+	/*font-size: 96%;*/
+	line-height: 111%;
 	margin-bottom: 2%;
     color: #999999;
 }
@@ -771,8 +776,13 @@ iframe {
 	border: #666 dotted 2px;
 }
 .feedbackForm {
+	position: absolute;
 	width: 100%;
-	margin: 5% 0 0 0;
+	margin: 0 0 0 0;
+	bottom: 5%;
+}
+.feedbackForm a {
+	text-decoration: none;
 }
 .active {
 	color: #ee0000!important;
@@ -818,7 +828,7 @@ iframe {
 }
 .career > .infoText > .formWrap {
 	width: 100%;
-	height: 85%;
+	height: 75%;
 }
 
 .services {
@@ -860,12 +870,17 @@ iframe {
 .services li a i.designSupport {
  /*   background-position: -5px -90px;
     background-position: -5px -68px;*/
+    /*height: 65%;
+    margin-top: 8%;*/
     background: url("../images/design_support.png") center center no-repeat;
     background-size: 100%;
+    /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/design_support.png',sizingMethod='scale');*/
 }
 .services li a:hover i.designSupport {
+	/*height: 65%;*/
     background: url("../images/design_support_hover.png") center center no-repeat;   
     background-size: 100%;
+    /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/design_support_hover.png',sizingMethod='scale');*/
 }
 .services li a i.brandManagement {
  /*   background-position: -5px -90px;
@@ -944,19 +959,46 @@ iframe {
 	margin: 4% 0 0% 6%;
 }
 
+/*.preTitle {
+	height: 5%;
+}
+.preTitle h3 {
+	font-size: 150%;
+}
+
+.mainTitle {
+	height: 5%;
+}
+.mainTitle h2 {
+	font-size: 170%;
+}
+
+.infoText p {
+	font-size: 100%;
+}
+
+.bottomLinks {
+	font-size: 100%;
+}*/
+
 .title {
 	font-family: 'ergoebold';
 }
 .gradientText {
 	font-family: 'calibribold_italic';
 	/*line-height: 140%;*/
-	margin: 0 10% 2% -50px;
-	padding: 0 0 0.5% 50px;
+	margin: 0 8% 2% -50px;
+	padding: 1% 0 1% 50px;
 	background: url("../images/gradient_text_bg.png ") repeat-y;
 	background-size: 100%;
 	line-height: 122%;
-font-size: 90%;
+	/*font-size: 90%;*/
 }
+
+.brandCont .infoText .gradientText {
+	margin: 0 0 2% -50px;
+}
+
 .bottomLinks {
 	width: 85%;
 	height: 14%;
@@ -991,7 +1033,7 @@ font-size: 90%;
 	/*text-align: right;*/
 	padding: 2% 0 0 0%;
 	right: 0;
-	width: 50%;
+	width: 49%;
 }
 .pdfSection a {
 	display: inline-block;
@@ -1088,24 +1130,23 @@ font-size: 90%;
 }
 .brandCont > .infoText > .scrollContent {
 	position: absolute;
-	/*height: 30%;*/
-	height: 19%;
+	/*height: 19%;*/
 	margin: 0 1% 0 0;
 }
 .identityCont > .infoText > .scrollContent {
 	position: absolute;
 	/*height: 50%;*/
-	height: 40%;
+	/*height: 40%;*/
 	margin: 0 1% 0 0;
 }
 .exhibitionCont > .infoText > .scrollContent {
 	position: absolute;
-	height: 49%;
+	/*height: 49%;*/
 	margin: 0 1% 0 0;
 }
 .mediaCont > .infoText > .scrollContent {
 	position: absolute;
-	height: 50%;
+	height: 55%;
 	margin: 0 1% 0 0;
 }
 
@@ -1668,7 +1709,7 @@ margin-left: 226px;
         font-size: 105%;
     }
     p, .boldItalics {
-        /*font: 82%/115% 'calibriregular', sans-serif;*/
+        font: 82%/115% 'calibriregular', sans-serif;
         margin-bottom: 4%;
     }
     .services li a span {

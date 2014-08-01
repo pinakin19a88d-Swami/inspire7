@@ -4,8 +4,8 @@ $(document).ready(function(){
 	var windowHeight = $(window).height();
 
 	var bodyHeight = windowHeight * 0.84;
-	var footerHeight = windowHeight * 0.14;
-	var footerBottomHt = windowHeight * 0.02;
+	var footerHeight = windowHeight * 0.13;
+	var footerBottomHt = windowHeight * 0.03;
 	var gridWidth = (bodyHeight * 0.86) * 1.44;
 
 	var navWidth = $(".navContainer").css("width");
