@@ -709,7 +709,8 @@ h4 {
 }
 .infoText {
 	/*height: 94%;*/
-	height: 86%;
+	/*height: 86%;*/
+	height: 100%;
 	/*margin: 8% 0 0 6%;*/
 	float: left;
 	margin-right: 1%;
@@ -774,10 +775,11 @@ iframe {
 .ourApproachCont,
 .ourTeamCont,
 .ourInfraCont {
-	height: 100%;
+	/*height: 100%;*/
+	height: 90%;
 	/*background-size: 75%;*/
     position: relative;
-    margin: 8% 0 0 6%;
+    margin: 7% 0 0 6%;
 }
 .whoWeAreCont {
     background: url("../images/Who-We-Are.png") no-repeat right bottom;
