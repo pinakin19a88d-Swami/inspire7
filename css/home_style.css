@@ -737,7 +737,8 @@ p, .boldItalics {
 }
 .boldItalics, .inBoldItalic {
 	display: inline-block;
-    font-family: 'calibribold_italic', sans-serif;
+    /*font-family: 'calibribold_italic', sans-serif;*/
+    font-family: 'calibriregular', sans-serif;
 	/*margin-top: 5%;*/
 	margin-bottom: 5%;
     color: #fff;
@@ -778,6 +779,7 @@ iframe {
 	/*height: 100%;*/
 	height: 90%;
 	/*background-size: 75%;*/
+	background-size: 70%;
     position: relative;
     margin: 7% 0 0 6%;
 }
@@ -1206,6 +1208,7 @@ a.corpoIdentity {
 	width: 19.2%;
 	height: 14%;
 	margin: 8% 0 0 0%;
+	text-decoration: none;
 }
 a.corpoIdentity > img,
 a.brandBuildingWrap > img,
@@ -1342,6 +1345,7 @@ a.brandBuildingWrap {
 	width: 19.2%;
 	height: 13%;
 	margin: 0% 0 0 24%;	
+	text-decoration: none;
 }
 .brandTxtHover {
 	display: none;
@@ -1364,6 +1368,7 @@ a.designWrap {
 	width: 19.2%;
 	height: 13%;
 	margin: 9% 0 0 73%;
+	text-decoration: none;
 }
 .designTxtHover {
 	display: none;
@@ -1382,7 +1387,10 @@ a.mediaWrap {
 	position: absolute;
 	width: 19.2%;
 	height: 13%;
-	margin: 48% 0 0 56%;
+	/*margin: 48% 0 0 56%;*/
+	bottom: 5%;
+	left: 61%;
+	text-decoration: none;
 }
 .mediaTxtHover{
 	display: none;
@@ -1403,6 +1411,7 @@ a.specilPublishWrap {
 	width: 19.2%;
 	height: 13%;
 	margin: 1% 0 0 52%;
+	text-decoration: none;
 }
 .exhibitionPencil {
 	width: 30%;
@@ -1414,7 +1423,10 @@ a.exhibWrap {
 	position: absolute;
 	width: 19.2%;
 	height: 13%;
-	margin: 51% 0 0 26%;
+	/*margin: 51% 0 0 26%;*/
+	bottom: 1%;
+	left: 30%;
+	text-decoration: none;
 }
 .exhibTxtHover {
 	display: none;
@@ -1436,7 +1448,9 @@ a.webWrap {
 	position: absolute;
 	width: 19.2%;
 	height: 13%;
-	margin: 34% 0 0 1%
+	/*margin: 34% 0 0 1%;*/
+	bottom: 22%;
+	text-decoration: none;
 }
 .multimediaPencil {
 	width: 30.8%;
@@ -1447,7 +1461,10 @@ a.multimediaWrap {
 	position: absolute;
 	width: 19.2%;
 	height: 13%;
-	margin: 30% 0 0 75%;
+	/*margin: 30% 0 0 75%;*/
+	bottom: 30%;
+	left: 80%;
+	text-decoration: none;
 }
 .multiMediaTxtHover {
 	display: none;
