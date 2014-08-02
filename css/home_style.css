@@ -407,6 +407,7 @@ a.logo img {
     margin: 4% 2% 0 0;
     width: 25%;
     text-align: right;
+    color: #aaa;
 }
 .fbSprite,
 .gpSprite,
@@ -414,6 +415,10 @@ a.logo img {
 .phSprite {
 	position: relative;
 	font-size: 120%;
+}
+
+.phSprite {
+	color: #c00;
 }
 
 .toolTip {
@@ -643,6 +648,7 @@ border-bottom: 1px solid #e4e4e4;
 	position: relative;
 	height: 100%;
 	margin: 0 auto;
+	padding: 0.3% 0 0 0;
 }
 .footerBottom .copyright {
 	height: 100%;
@@ -738,38 +744,7 @@ p, .boldItalics {
 .inBoldItalic {
     display: inline;
 }
-.maroonText {
-	color: #990000;
-}
-.whiteText {
-	/*letter-spacing: 1px;*/
-	color: #ffffff;
-}
-.greyText {
-	color: #999999;
-}
-.redText {
-	color: #cc0000;
-}
-.yellowText {
-	color: #ffcc66;
-}
-.cyanText {
-	color: #33ffff;
-}
-.redText {
-	color: #ff0000;
-}
-.blackText {
-	color: #000000;
-}
-.darkGreyText {
-	color: #333333;
-	font-family: 'calibriregular';
-}
-.blueText {
-	color: #006699;
-}
+
 iframe {
 	position: absolute;
 	width: 55%;
@@ -787,6 +762,8 @@ iframe {
 	bottom: 5%;
 }
 .feedbackForm a {
+	display: block;
+	width: 80%;
 	text-decoration: none;
 }
 .active {
@@ -1185,8 +1162,9 @@ iframe {
 
 }
 .clientLogos li img {
-    /*display: block;*/
+    display: block;
     width: 100%;
+    border-radius: 5px;
     /*height: auto;
     margin: 0 auto;*/
 }
@@ -1680,6 +1658,40 @@ margin-left: 226px;
 }
 .serviceNav h2 {
 	color: #fff;
+}
+
+/*Color Classes*/
+.maroonText {
+	color: #990000;
+}
+.whiteText {
+	/*letter-spacing: 1px;*/
+	color: #ffffff;
+}
+.greyText {
+	color: #999999;
+}
+.redText {
+	color: #cc0000;
+}
+.yellowText {
+	color: #ffcc66!important;
+}
+.cyanText {
+	color: #33ffff;
+}
+.redText {
+	color: #ff0000;
+}
+.blackText {
+	color: #000000;
+}
+.darkGreyText {
+	color: #333333;
+	font-family: 'calibriregular';
+}
+.blueText {
+	color: #006699;
 }
 /* Media Querry*/
 @media (min-width: 1300px) and (max-width: 1400px) {
