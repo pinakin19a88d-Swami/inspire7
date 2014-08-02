@@ -19,6 +19,9 @@ $(document).ready(function(){
 	$(".footerBottom").css("height",footerBottomHt);
 	$(".imgGrid").css("width",gridWidth);
 
+	var newSpritesMargin = $(".imgGrid").css("margin-right");
+	$(".spritesCont").css("margin-right",newSpritesMargin);
+
 	// Sub-Menu Height Fix
 	var liHeight = $(".subMenu > li").height();
 	var liPadding = (1.2 / liHeight) * 100;

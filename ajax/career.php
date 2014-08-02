@@ -226,7 +226,7 @@
 
 			  <div class="control-group animated fadeInRight de16ms">
 			    <label class="control-label" for="inputResume">&nbsp;</label>
-			    <span style="color:#fff">:</span>
+			    <span style="color:#fff">&nbsp;</span>
 			    <div class="controls">
 			      <input type="submit" value="Submit" name="submit">
 		      	  <input type="reset" value="Reset" name="reset" class="resetBtn">
