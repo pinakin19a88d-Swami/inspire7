@@ -5,8 +5,9 @@
 	<div class="infoText">
 		<h2 class="animated fadeInDown de1s">Careers</h2>
 		<p class="animated fadeInRight de12ms">
-			We are looking for young energetic, self-motivated and hardworking candidates for our expansion plans. If you want to be a part of our organisation please fill up the following form or mail your resume at <a href="mailto:Career@inspiremultimedia.co.in">Career@inspiremultimedia.co.in</a>
-			
+			We are looking for young energetic, self-motivated and hardworking candidates for our expansion plans. 
+			If you want to be a part of our organisation please fill up the following form or mail your resume at 
+			<a href="mailto:career@inspiremultimedia.co.in">career@inspiremultimedia.co.in</a>			
 		</p>
 		<!-- <span class="boldItalics animated fadeInRight de12ms">
 			We always treat people the way we want to be treated, with integrity, with fairness and with respect.
@@ -43,8 +44,8 @@
 	            	!isset($_POST["inputExp"]) ||
 	            	!isset($_POST["inputAddrs"]) ||
 	            	!isset($_POST["inputPhone"]) ||
-	               !isset($_POST["inputEmail"]) ||
-	               !isset($_POST["inputSalary"]))
+	               !isset($_POST["inputEmail"]))
+	               // !isset($_POST["inputSalary"]))
 	            {
 	                died("We are sorry, but there appears to be a problem with the form you submitted.");      
 	            }
@@ -57,7 +58,7 @@
 	            $inputAddrs = $_POST["inputAddrs"]; // required
 	            $inputPhone = $_POST["inputPhone"]; // required
 	            $inputEmail = $_POST["inputEmail"]; // required
-	            $inputSalary = $_POST["inputSalary"]; // required
+	            // $inputSalary = $_POST["inputSalary"]; // required
 	         
 	            $error_message = "";
 	            $email_exp = "/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/";
@@ -102,10 +103,10 @@
 	            {
 	                $error_message .= "Phone Number not valid.<br />";
 	            }
-	            if(!preg_match($number_exp,$inputSalary)) 
-	            {
-	                $error_message .= "Salary text not valid.<br />";
-	            }
+	            // if(!preg_match($number_exp,$inputSalary)) 
+	            // {
+	            //     $error_message .= "Salary text not valid.<br />";
+	            // }
 	            
 	            if(strlen($error_message) > 0) 
 	            {
@@ -128,7 +129,7 @@
 	            $email_message .= "Address : ".clean_string($inputAddrs)."\n";
 	            $email_message .= "Phone Number : ".clean_string($inputPhone)."\n";
 	            $email_message .= "Email : ".clean_string($inputEmail)."\n";
-	            $email_message .= "Current Salary (per annum) : ".clean_string($inputSalary)."\n";
+	            // $email_message .= "Current Salary (per annum) : ".clean_string($inputSalary)."\n";
 	         
 	            // create email headers
 	             
@@ -215,15 +216,13 @@
 			    </div><!-- controls -->
 			  </div><!-- control-group -->
 
-			  <div class="control-group animated fadeInRight de16ms">
+			  <!-- <div class="control-group animated fadeInRight de16ms">
 			    <label class="control-label" for="inputSalary">Current Salary (per annum)</label>
 			    <span>:</span>
 			    <div class="controls">
 			      <input type="text" id="inputSalary" name="inputSalary">
-			    </div><!-- controls -->
-			  </div><!-- control-group -->
-
-		
+			    </div>
+			  </div> -->		
 
 			  <div class="control-group animated fadeInRight de16ms">
 			    <label class="control-label" for="inputResume">&nbsp;</label>
