@@ -702,9 +702,14 @@ h4 {
 	margin-bottom: 2%;
 }
 .infoText {
-	height: 94%;
+	/*height: 94%;*/
+	height: 86%;
 	/*margin: 8% 0 0 6%;*/
 	float: left;
+	margin-right: 1%;
+}
+.lLineHeight p {
+	line-height: 120%;
 }
 .infoText p a {
 	text-decoration: none;
@@ -807,11 +812,12 @@ iframe {
     background: url("../images/Our-Approach.png") no-repeat right bottom;
 }
 .ourTeamCont {
-    background: url("../images/Our-Team.png") no-repeat right bottom;
-}
-.ourInfraCont {
+    /*background: url("../images/Our-Team.png") no-repeat right bottom;*/
     background: url("../images/Our-Infrastructure.png") no-repeat right bottom;
 }
+/*.ourInfraCont {
+    background: url("../images/Our-Infrastructure.png") no-repeat right bottom;
+}*/
 
 
 .talkToUsCont > .infoText {
@@ -986,7 +992,8 @@ iframe {
 	font-family: 'ergoebold';
 }
 .gradientText {
-	font-family: 'calibribold_italic';
+	/*font-family: 'calibribold_italic';*/
+	font-family: 'calibriregular', sans-serif;
 	/*line-height: 140%;*/
 	margin: 0 8% 2% -50px;
 	padding: 1% 0 1% 50px;
