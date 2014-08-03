@@ -485,6 +485,13 @@ a.logo img {
 	font-size: 80%;
 	line-height: 100%!important;
 }
+.toolTip > a {
+	text-decoration: none;
+}
+.toolTip > a:hover {
+	text-decoration: underline;
+	color: #013955;
+}
 .fa-phone {
 	margin: -4% 0;
 }
@@ -1330,23 +1337,27 @@ a.webWrap > img, {
 	color: #666;
 	background: #fff;
 	/*z-index: 200;*/
-	padding: 10%;
+	padding: 8%;
 
 	-o-box-shadow: 4px 8px 2px rgba(35,31,32,.78); 
 	-ms-box-shadow: 4px 8px 2px rgba(35,31,32,.78); 
 	-webkit-box-shadow: 4px 8px 2px rgba(35,31,32,.78); 
 	-moz-box-shadow: 4px 8px 2px rgba(35,31,32,.78); 
 	box-shadow: 4px 8px 2px rgba(35,31,32,.78); 
+
 	border: solid 1px #333;
+	border-radius: 4px;
 }
 .hoverWrap {
 	position: absolute;
 	z-index: 200;
+	top: 0;
+	display: none;
 }
 .corpoTxtHover {
 	/*display: none;*/
 	/*position: absolute;	*/
-	width: 140%;	
+	width: 130%;	
 	top: 2%;
 	
 	-webkit-transition: All 6s;
@@ -1356,17 +1367,24 @@ a.webWrap > img, {
 			/*transition-timing-function: easeInOut;*/
 }
 .corpoArrow {
-	width: 10%;
-	/*height: 7%;*/
-	/*top: -12%;*/
-	/*position: absolute;*/
+	width: 16%;
+	margin-left: 7%;
 }
-.corpoArrow img {
+.brandArrow {
+	width: 16%;
+	margin-left: 51%;
+}
+.corpoArrow img,
+.brandArrow img {
 	display: block;
 	width: 100%;
+	margin-bottom: -1px;
 }
-a.corpoIdentity:hover .corpoTxt .corpoTxtHover,
-a.brandBuildingWrap:hover .brandTxt .brandTxtHover, 
+/*a.corpoIdentity:hover .corpoTxt .corpoTxtHover,
+a.corpoIdentity:hover .corpoTxt .corpoTxtHover,*/
+a.corpoIdentity:hover .corpoTxt .hoverWrap,
+/*a.brandBuildingWrap:hover .brandTxt .brandTxtHover, */
+a.brandBuildingWrap:hover .brandTxt .hoverWrap, 
 a.specilPublishWrap:hover .sPublishTxt .sPublishTxtHover, 
 a.designWrap:hover .designTxt .designTxtHover,
 a.multimediaWrap:hover .multiMediaTxt .multiMediaTxtHover,
@@ -1395,8 +1413,8 @@ a.brandBuildingWrap {
 	text-decoration: none;
 }
 .brandTxtHover {
-	display: none;
-	width: 190%;
+	/*display: none;*/
+	width: 165%;
 	top: 2%;
 }
 .sPublishTxtHover {
