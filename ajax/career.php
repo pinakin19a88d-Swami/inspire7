@@ -7,7 +7,7 @@
 		<p class="animated fadeInRight de12ms">
 			We are looking for young energetic, self-motivated and hardworking candidates for our expansion plans. 
 			If you want to be a part of our organisation please fill up the following form or mail your resume at 
-			<a href="mailto:career@inspiremultimedia.co.in">career@inspiremultimedia.co.in</a>			
+			<a href="mailto:info@inspiremultimedia.co.in">info@inspiremultimedia.co.in</a>			
 		</p>
 		<!-- <span class="boldItalics animated fadeInRight de12ms">
 			We always treat people the way we want to be treated, with integrity, with fairness and with respect.
