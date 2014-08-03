@@ -464,12 +464,14 @@ a.logo img {
 	text-align: center;
 	font-size: 100%;
 	line-height: 130%;
-	padding: 50% 0 0 0;
+	/*padding: 50% 0 0 0;*/
+	padding: 78% 0 0 0;
 	right: -100%;
 	margin: 100% 0 0 0;
 	display: none;
 	opacity: 0;
 	z-index: 99;
+	cursor: default;
 
 	-webkit-transition: all 0.25s ease;
 	   -moz-transition: all 0.25s ease;
@@ -477,7 +479,8 @@ a.logo img {
 		 -o-transition: all 0.25s ease;
 			transition: all 0.25s ease;
 }
-.toolTip > span {
+.toolTip > span,
+.toolTip > a {
 	display: inline-block;
 	font-size: 80%;
 	line-height: 100%!important;
@@ -1320,13 +1323,13 @@ a.webWrap > img, {
 	width: 54%;
 }
 .hoverTextBox {
-	position: absolute;	
+	/*position: absolute;	*/
 	font-family: 'ergoeregular';
 	font-size: 100%;
 	line-height: 120%;
 	color: #666;
 	background: #fff;
-	z-index: 200;
+	/*z-index: 200;*/
 	padding: 10%;
 
 	-o-box-shadow: 4px 8px 2px rgba(35,31,32,.78); 
@@ -1335,6 +1338,10 @@ a.webWrap > img, {
 	-moz-box-shadow: 4px 8px 2px rgba(35,31,32,.78); 
 	box-shadow: 4px 8px 2px rgba(35,31,32,.78); 
 	border: solid 1px #333;
+}
+.hoverWrap {
+	position: absolute;
+	z-index: 200;
 }
 .corpoTxtHover {
 	/*display: none;*/
@@ -1351,8 +1358,8 @@ a.webWrap > img, {
 .corpoArrow {
 	width: 10%;
 	/*height: 7%;*/
-	top: -12%;
-	position: absolute;
+	/*top: -12%;*/
+	/*position: absolute;*/
 }
 .corpoArrow img {
 	display: block;
@@ -1658,8 +1665,9 @@ margin-bottom: 2.5%;
 }
 
 .form-horizontal .control-label {
-width: 200px;
-text-align: right;
+/*width: 200px;*/
+width: 153px;
+/*text-align: right;*/
 padding: 0 2% 0 0;
 font: 82%/115% 'calibriregular', sans-serif;
 float: left;
@@ -1713,7 +1721,8 @@ border-radius: 0;
 }
 /*form ends*/
 .talkForm .form-horizontal .controls {
-margin-left: 226px;
+/*margin-left: 226px;*/
+margin-left: 180px;
 }
 #fancybox-loading, 
 .fancybox-close, 
