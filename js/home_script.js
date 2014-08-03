@@ -26,14 +26,18 @@ $(document).ready(function(){
 	$(".spritesCont").css("margin-right",newSpritesMargin);
 
 	var ratio = windowWidth / windowHeight;
-
 	if(ratio > 1.4){
 		var newOuterCont = contWidth + (contWidth*0.05) + (contWidth*0.05);
 		$(".outerContainer").css("width",newOuterCont);
 	}
-	else
+	else if(ratio > 1.32 && ratio < 1.4)
 	{
 		var newOuterCont = contWidth + (contWidth*0.05);
+		$(".outerContainer").css("width",newOuterCont);
+	}
+	else
+	{
+		var newOuterCont = contWidth + (contWidth*0.02);
 		$(".outerContainer").css("width",newOuterCont);
 	}
 	
