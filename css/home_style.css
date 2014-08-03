@@ -1361,6 +1361,17 @@ a.webWrap > img, {
 	top: 0;
 	display: none;
 }
+.designTxt .hoverWrap {
+	left: -50%;
+	top: -7%;
+}
+.multiMediaTxt .hoverWrap {
+	left: -40%;
+}
+.mediaTxt .hoverWrap {
+	top: -49%;
+	left: -17%;
+}
 .corpoTxtHover {
 	/*display: none;*/
 	/*position: absolute;	*/
@@ -1381,22 +1392,54 @@ a.webWrap > img, {
 	width: 16%;
 	margin-left: 51%;
 }
+.sPubArrow {
+	width: 16%;
+	margin-left: 65%;
+}
+.desArrow {
+	width: 16%;
+	margin-left: 65%;
+}
+.multiArrow {
+	width: 16%;
+	margin-left: 65%;
+}
+.mediaArrow {
+	width: 16%;
+	margin-left: 65%;
+}
 .corpoArrow img,
-.brandArrow img {
+.brandArrow img,
+.sPubArrow img, 
+.desArrow img,
+.multiArrow img,
+.exhiArrow img {
 	display: block;
 	width: 100%;
 	margin-bottom: -1px;
 }
+.mediaArrow img,
+.exhiArrow img {
+	display: block;
+	width: 100%;
+	margin-top: -1px;
+}
+
 /*a.corpoIdentity:hover .corpoTxt .corpoTxtHover,
 a.corpoIdentity:hover .corpoTxt .corpoTxtHover,*/
 a.corpoIdentity:hover .corpoTxt .hoverWrap,
 /*a.brandBuildingWrap:hover .brandTxt .brandTxtHover, */
 a.brandBuildingWrap:hover .brandTxt .hoverWrap, 
-a.specilPublishWrap:hover .sPublishTxt .sPublishTxtHover, 
-a.designWrap:hover .designTxt .designTxtHover,
-a.multimediaWrap:hover .multiMediaTxt .multiMediaTxtHover,
-a.mediaWrap:hover .mediaTxt .mediaTxtHover,
-a.exhibWrap:hover .exhibTxt .exhibTxtHover,
+/*a.specilPublishWrap:hover .sPublishTxt .sPublishTxtHover, */
+a.specilPublishWrap:hover .sPublishTxt .hoverWrap,
+/*a.designWrap:hover .designTxt .designTxtHover,*/
+a.designWrap:hover .designTxt .hoverWrap,
+/*a.multimediaWrap:hover .multiMediaTxt .multiMediaTxtHover,*/
+a.multimediaWrap:hover .multiMediaTxt .hoverWrap,
+/*a.mediaWrap:hover .mediaTxt .mediaTxtHover,*/
+a.mediaWrap:hover .mediaTxt .hoverWrap,
+/*a.exhibWrap:hover .exhibTxt .exhibTxtHover,*/
+a.exhibWrap:hover .exhibTxt .hoverWrap,
 a.webWrap:hover .webTxt .webTxtHover {
 	display: block;
 	-webkit-transition: All 6s;
@@ -1421,13 +1464,13 @@ a.brandBuildingWrap {
 }
 .brandTxtHover {
 	/*display: none;*/
-	width: 165%;
+	width: 168%;
 	top: 2%;
 }
 .sPublishTxtHover {
-	display: none;
-	width: 160%;
-	top: 2%;
+	/*display: none;*/
+	width: 148%;
+	top: 0%;
 }
 .designPencil {
 	width: 14%;
@@ -1443,11 +1486,12 @@ a.designWrap {
 	text-decoration: none;
 }
 .designTxtHover {
-	display: none;
-	width: 188%;
+	/*display: none;*/
+	/*width: 180%;*/
+	width: 125%;
 	font-size: 94%;
 	top: 8%;
-	left: -44%;
+	/*left: -44%;*/
 }
 .mediaPencil {
 	width: 12.5%;
@@ -1465,12 +1509,9 @@ a.mediaWrap {
 	text-decoration: none;
 }
 .mediaTxtHover{
-	display: none;
-	width: 95%;
-	padding: 10% 20%;
-	font-size: 94%;
-	top: -40%;
-	left: -44%;
+	/*display: none;*/
+	width: 106%;
+	/*font-size: 94%!important;*/
 }
 .publishingPencil {
 	width: 22%;
@@ -1501,7 +1542,7 @@ a.exhibWrap {
 	text-decoration: none;
 }
 .exhibTxtHover {
-	display: none;
+	/*display: none;*/
 	width: 160%;
 	top: -77%;
 }
@@ -1539,8 +1580,8 @@ a.multimediaWrap {
 	text-decoration: none;
 }
 .multiMediaTxtHover {
-	display: none;
-	width: 133%;
+	/*display: none;*/
+	width: 124%;
 	font-size: 94%;
 	top: 8%;
 	left: -44%;
