@@ -16,7 +16,7 @@ $(document).ready(function() {
 	// $(".infoText p, p").css("font-size",newFontSize);
 
 	var newFontSize = boxWidth * 0.020;
-	$(".infoText p, .bulletPts li, .activities h4, p").css("font-size",newFontSize);
+	$(".infoText p, .bulletPts li, .activities h4, .form-horizontal, p").css("font-size",newFontSize);
 
 	var newFontSize = boxWidth * 0.020;
 	$(".infoText .boldItalics").css("font-size",newFontSize);
@@ -29,4 +29,10 @@ $(document).ready(function() {
 
 	var newFontSize = boxWidth * 0.0193;
 	$(".pdfSection").css("font-size",newFontSize);
+
+	var newFontSize = $(".imgGrid").width() * 0.017;
+	$(".boxText, .corporateBg ul li a").css("font-size",newFontSize);
+
+	var newFontSize = $(".footerBottom").width() * 0.013;
+	$(".services li a").css("font-size",newFontSize);
 });
