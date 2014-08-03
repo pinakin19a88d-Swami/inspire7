@@ -22,9 +22,6 @@ $(document).ready(function(){
 	$(".leftBox, .rightBox").css("height",windowHeight);
 	$(".leftBox, .rightBox").css("width",contWidth*0.10);
 
-	var newSpritesMargin = $(".imgGrid").css("margin-right");
-	$(".spritesCont").css("margin-right",newSpritesMargin);
-
 	var ratio = windowWidth / windowHeight;
 	if(ratio > 1.4){
 		var newOuterCont = contWidth + (contWidth*0.05) + (contWidth*0.05);
@@ -107,5 +104,6 @@ $(document).ready(function(){
 	  	}
 	);
 
-	
+	var newSpritesMargin = ($(".gridContainer").width() - $(".imgGrid").width()) / 2;
+	$(".spritesCont").css("margin-right",newSpritesMargin);
 });

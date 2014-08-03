@@ -1101,6 +1101,13 @@ iframe {
 	left: 40%;
 	right: 40%;
 }
+.mediaPdfIcon {
+	left: 0;
+	right: auto;
+}
+#mediaPdfSection {
+	left: 10%;
+}
 .designPdfIcon {
 	background: url("../images/design_support_hover.png") no-repeat;
 }
