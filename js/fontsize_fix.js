@@ -16,7 +16,7 @@ $(document).ready(function() {
 	// $(".infoText p, p").css("font-size",newFontSize);
 
 	var newFontSize = boxWidth * 0.020;
-	$(".infoText p, p").css("font-size",newFontSize);
+	$(".infoText p, .bulletPts li, .activities h4, p").css("font-size",newFontSize);
 
 	var newFontSize = boxWidth * 0.020;
 	$(".infoText .boldItalics").css("font-size",newFontSize);
