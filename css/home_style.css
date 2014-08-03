@@ -481,7 +481,7 @@ a.logo img {
 }
 .toolTip > span,
 .toolTip > a {
-	display: inline-block;
+	/*display: inline-block;*/
 	font-size: 80%;
 	line-height: 100%!important;
 }
