@@ -899,7 +899,7 @@ iframe {
 }
 .services li a span {
     float: left;
-    margin-top: 18%;
+    margin-top: 17%;
     margin-left: 4%;
     font-family: 'calibriregular', sans-serif;
     color: #000;
@@ -961,7 +961,7 @@ iframe {
     background-size: 100%;
 }
 .services li a span.middleFix {
-	margin-top: 21%;
+	margin-top: 20%;
 }
 .designCont,
 .brandCont,
