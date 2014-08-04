@@ -1187,7 +1187,7 @@ iframe {
 }
 .exhibitionCont > .infoText > .scrollContent {
 	position: absolute;
-	/*height: 49%;*/
+	height: 49%;
 	margin: 0 1% 0 0;
 }
 .mediaCont > .infoText > .scrollContent {
