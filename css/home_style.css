@@ -1174,6 +1174,10 @@ iframe {
 .scrollContent h4 {
 	width: 60%;
 }
+
+.designCont .infoText .scrollContent {
+	height: 50%;
+}
 .brandCont > .infoText > .scrollContent {
 	position: absolute;
 	/*height: 19%;*/
