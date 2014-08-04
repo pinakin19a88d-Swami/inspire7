@@ -1296,8 +1296,9 @@ a.corpoIdentity {
 }*/
 .serviceTxt .hoverTextBox {
 	top: 0;
-	width: 112%;
+	width: 130%;
 	padding: 5%;
+	font-size: 90%;
 }
 
 a.corpoIdentity > img,
