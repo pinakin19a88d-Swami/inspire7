@@ -1372,6 +1372,9 @@ a.webWrap > img, {
 	top: -49%;
 	left: -17%;
 }
+.exhibTxt .hoverWrap {
+	top: -36%;
+}
 .corpoTxtHover {
 	/*display: none;*/
 	/*position: absolute;	*/
@@ -1408,18 +1411,26 @@ a.webWrap > img, {
 	width: 16%;
 	margin-left: 65%;
 }
+.exhibArrow {
+	width: 24%;
+	margin-left: 28%;
+}
+.webArrow {
+	width: 16%;
+	margin-left: 7%;
+}
 .corpoArrow img,
 .brandArrow img,
 .sPubArrow img, 
 .desArrow img,
 .multiArrow img,
-.exhiArrow img {
+.webArrow img {
 	display: block;
 	width: 100%;
 	margin-bottom: -1px;
 }
 .mediaArrow img,
-.exhiArrow img {
+.exhibArrow img {
 	display: block;
 	width: 100%;
 	margin-top: -1px;
@@ -1440,7 +1451,8 @@ a.multimediaWrap:hover .multiMediaTxt .hoverWrap,
 a.mediaWrap:hover .mediaTxt .hoverWrap,
 /*a.exhibWrap:hover .exhibTxt .exhibTxtHover,*/
 a.exhibWrap:hover .exhibTxt .hoverWrap,
-a.webWrap:hover .webTxt .webTxtHover {
+/*a.webWrap:hover .webTxt .webTxtHover {*/
+a.webWrap:hover .webTxt .hoverWrap {
 	display: block;
 	-webkit-transition: All 6s;
 	   -moz-transition: All 6s;
@@ -1512,6 +1524,8 @@ a.mediaWrap {
 	/*display: none;*/
 	width: 106%;
 	/*font-size: 94%!important;*/
+	font-size: 90%;
+	padding: 6%;
 }
 .publishingPencil {
 	width: 22%;
@@ -1543,8 +1557,8 @@ a.exhibWrap {
 }
 .exhibTxtHover {
 	/*display: none;*/
-	width: 160%;
-	top: -77%;
+	/*width: 160%;	*/
+	width: 148%;	
 }
 .portalsPencil {
 	width: 34%;
@@ -1552,10 +1566,11 @@ a.exhibWrap {
 	margin: 39.8% 0 0 58.8%;
 }
 .webTxtHover {
-	display: none;
+	/*display: none;*/
 	top: 10%;
 	left: 2%;
-	width: 146%;
+	/*width: 146%;*/
+	width: 138%;
 }
 a.webWrap {
 	position: absolute;
