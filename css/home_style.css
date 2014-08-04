@@ -1267,6 +1267,33 @@ a.corpoIdentity {
 	margin: 8% 0 0 0%;
 	text-decoration: none;
 }
+.servicesWrap {
+	position: absolute;
+	width: 22%;	
+/*	margin: 29% 0 0 35%;
+	text-decoration: none;*/
+	margin: 22% 0 0 28%;
+	text-decoration: none;
+	padding-top: 7%;
+	padding-left: 7%;
+	cursor: pointer;
+}
+.servicesWrap img {
+	display: block;
+	width: 160%;
+}
+.serviceTxt {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-top: -38%;
+	margin-left: -41%;	
+}
+.serviceTxtHover {
+	top: 0;
+	width: 215%;
+}
+
 a.corpoIdentity > img,
 a.brandBuildingWrap > img,
 a.specilPublishWrap > img,
@@ -1300,7 +1327,7 @@ a.webWrap > img, {
 	margin-left: -29px;
 	margin-top: -6%;
 }
-.mediaTxt,
+.mediaCTxt,
 .exhibTxt,
 .webTxt {
 	position: relative;
@@ -1308,10 +1335,10 @@ a.webWrap > img, {
 	height: 100%;
 	margin-top: -95%;
 }
-.mediaTxt {
-	margin-top: -79%;
+.mediaCTxt {
+	margin-top: -87%;
 }
-.mediaTxt >img {
+.mediaCTxt >img {
 	margin-left: -10%;
 }
 .exhibTxt {
@@ -1333,12 +1360,13 @@ a.webWrap > img, {
 .multiMediaTxt > img {
 	width: 85%
 }
-.mediaTxt > img {
-	width: 54%;
+.mediaCTxt > img {
+	/*width: 54%;*/
+	width: 70%;
 }
 .hoverTextBox {
 	/*position: absolute;	*/
-	font-family: 'ergoeregular';
+	font-family: 'ergoeregular', sans-serif;
 	font-size: 100%;
 	line-height: 120%;
 	color: #666;
@@ -1368,7 +1396,7 @@ a.webWrap > img, {
 .multiMediaTxt .hoverWrap {
 	left: -40%;
 }
-.mediaTxt .hoverWrap {
+.mediaCTxt .hoverWrap {
 	top: -49%;
 	left: -17%;
 }
@@ -1408,7 +1436,7 @@ a.webWrap > img, {
 	margin-left: 65%;
 }
 .mediaArrow {
-	width: 16%;
+	width: 25%;
 	margin-left: 65%;
 }
 .exhibArrow {
@@ -1447,12 +1475,13 @@ a.specilPublishWrap:hover .sPublishTxt .hoverWrap,
 a.designWrap:hover .designTxt .hoverWrap,
 /*a.multimediaWrap:hover .multiMediaTxt .multiMediaTxtHover,*/
 a.multimediaWrap:hover .multiMediaTxt .hoverWrap,
-/*a.mediaWrap:hover .mediaTxt .mediaTxtHover,*/
-a.mediaWrap:hover .mediaTxt .hoverWrap,
+/*a.mediaWrap:hover .mediaCTxt .mediaCTxtHover,*/
+a.mediaWrap:hover .mediaCTxt .hoverWrap,
 /*a.exhibWrap:hover .exhibTxt .exhibTxtHover,*/
 a.exhibWrap:hover .exhibTxt .hoverWrap,
 /*a.webWrap:hover .webTxt .webTxtHover {*/
-a.webWrap:hover .webTxt .hoverWrap {
+a.webWrap:hover .webTxt .hoverWrap,
+.servicesWrap:hover .serviceTxt .hoverWrap{
 	display: block;
 	-webkit-transition: All 6s;
 	   -moz-transition: All 6s;
@@ -1515,15 +1544,12 @@ a.mediaWrap {
 	position: absolute;
 	width: 19.2%;
 	height: 13%;
-	/*margin: 48% 0 0 56%;*/
 	bottom: 5%;
 	left: 61%;
 	text-decoration: none;
 }
-.mediaTxtHover{
-	/*display: none;*/
-	width: 106%;
-	/*font-size: 94%!important;*/
+.mediaCTxtHover{
+	width: 106%!important;
 	font-size: 90%;
 	padding: 6%;
 }
@@ -1868,7 +1894,6 @@ margin-left: 180px;
     }
     .subMenu li a {
     font-size: 78%;
-    /*font-size: 71%;*/
     line-height: 140%;
     padding: 1.5% 0;
     }
