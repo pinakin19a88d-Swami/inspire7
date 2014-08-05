@@ -376,6 +376,9 @@ body {
     font: 142%/92% 'ergoeregular', sans-serif;
     letter-spacing: 1px;
 }
+.nav-list li#careersNav a {
+	border-bottom: none;
+}
 .subMenu {
 	height: 0;
 	opacity: 0;
@@ -1328,8 +1331,9 @@ a.corpoIdentity {
 }*/
 .serviceTxt .hoverTextBox {
 	top: 0;
-	width: 112%;
+	width: 130%;
 	padding: 5%;
+	font-size: 90%;
 }
 
 a.corpoIdentity > img,
@@ -1820,7 +1824,8 @@ margin-bottom: 2.5%;
 width: 153px;
 /*text-align: right;*/
 padding: 0 2% 0 0;
-font: 82%/115% 'calibriregular', sans-serif;
+/*font: 82%/115% 'calibriregular', sans-serif;*/
+font: 95%/115% 'calibriregular', sans-serif;
 float: left;
 color: #999999;
 }
@@ -1861,7 +1866,7 @@ border-radius: 0;
 }
 
 .checkbox {
-	font: 82%/115% 'calibriregular', sans-serif;
+	font: 95%/115% 'calibriregular', sans-serif;
 }
 
 .error {
