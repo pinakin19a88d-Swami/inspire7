@@ -23,11 +23,11 @@ $(document).ready(function(){
 	$(".leftBox, .rightBox").css("width",contWidth*0.10);
 
 	var ratio = windowWidth / windowHeight;
-	if(ratio > 1.4){
+	if(ratio > 1.44){
 		var newOuterCont = contWidth + (contWidth*0.05) + (contWidth*0.05);
 		$(".outerContainer").css("width",newOuterCont);
 	}
-	else if(ratio > 1.32 && ratio < 1.4)
+	else if(ratio > 1.32 && ratio < 1.44)
 	{
 		var newOuterCont = contWidth + (contWidth*0.05);
 		$(".outerContainer").css("width",newOuterCont);
