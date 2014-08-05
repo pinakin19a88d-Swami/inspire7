@@ -376,6 +376,9 @@ body {
     font: 142%/92% 'ergoeregular', sans-serif;
     letter-spacing: 1px;
 }
+.nav-list li#careersNav a {
+	border-bottom: none;
+}
 .subMenu {
 	height: 0;
 	opacity: 0;
@@ -1793,7 +1796,8 @@ margin-bottom: 2.5%;
 width: 153px;
 /*text-align: right;*/
 padding: 0 2% 0 0;
-font: 82%/115% 'calibriregular', sans-serif;
+/*font: 82%/115% 'calibriregular', sans-serif;*/
+font: 95%/115% 'calibriregular', sans-serif;
 float: left;
 color: #999999;
 }
@@ -1834,7 +1838,7 @@ border-radius: 0;
 }
 
 .checkbox {
-	font: 82%/115% 'calibriregular', sans-serif;
+	font: 95%/115% 'calibriregular', sans-serif;
 }
 
 .error {
