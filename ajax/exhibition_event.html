@@ -60,6 +60,17 @@
 			var current = $(this).attr("name");
 			$(".blackBox").load(current);
 			$(".gridCurtain").css("display","block");
+
+			var parentDiv = $(this).parent();
+	    	if(parentDiv.hasClass("subPageLink")) {
+
+	    		$("#backBtn").css("display","block");
+	    		$("#backBtn").removeClass("slideOutLeft");
+	    		$("#backBtn").addClass("flipInX de1s");
+	    		$("#backBtn").attr("name","ajax/exhibition_event.html");
+
+	    	}
+	    	
 		});
 
 		$(".scrollContent").mCustomScrollbar({

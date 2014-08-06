@@ -111,7 +111,7 @@ $(document).ready(function() {
 	$("#backBtn").click(function(){
 
 		var current = $(this).attr("name");
-		$(this).removeClass("slideInLeft");
+		$(this).removeClass("slideInLeft de1s");
 		$(this).addClass("slideOutLeft");
 		$(".blackBox").load(current);
 
