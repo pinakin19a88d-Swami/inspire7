@@ -437,19 +437,46 @@ a.logo img {
 }
 .spritesSection > .spritesCont {
 	position: relative;
-    float: right;
-    display: block;
-    margin: 4% 2% 0 0;
-    width: 25%;
-    text-align: right;
-    color: #aaa;
+	width: 16%;
+	height: 32%;
+	float: right;
+	margin: 4% 2% 0 0;
 }
+.fbSprite {
+	background: url("../images/fbSprite.png") no-repeat;
+}
+.fbSprite:hover {
+	background: url("../images/fbSpriteHover.png") no-repeat;
+	background-size: 100%;
+}
+.gpSprite {
+	background: url("../images/gpSprite.png") no-repeat;
+}
+.gpSprite:hover {
+	background: url("../images/gpSpriteHover.png") no-repeat;
+	background-size: 100%;
+}
+.liSprite {
+	background: url("../images/liSprite.png") no-repeat;
+}
+.liSprite:hover {
+	background: url("../images/liSpriteHover.png") no-repeat;
+	background-size: 100%;
+}
+.phSprite {
+	background: url("../images/phSprite.png") no-repeat;
+}
+
 .fbSprite,
 .gpSprite,
 .liSprite,
 .phSprite {
 	position: relative;
-	font-size: 120%;
+	width: 20%;
+	height: 100%;
+	float: left;
+	margin-left: 5%;
+	background-size: 100%;
 }
 
 .phSprite {
@@ -466,7 +493,7 @@ a.logo img {
 	font-family: 'calibribold';
 	text-align: center;
 	font-size: 100%;
-	line-height: 130%;
+	line-height: 120%;
 	/*padding: 50% 0 0 0;*/
 	padding: 78% 0 0 0;
 	right: -100%;
@@ -1928,7 +1955,8 @@ margin-left: 180px;
 /* Media Querry*/
 @media (min-width: 1300px) and (max-width: 1400px) {
 	.spritesSection > .spritesCont {
-		width: 25%;
+		width: 20%;
+		height: 40%;
 	}
 }
 /*@media (min-width: 1200px) and (max-width: 1300px) {
