@@ -1,0 +1,21 @@
+.bodySection, .footerSection, .footerBottom {
+	display: none;
+}
+.ie8_notice {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 150px;
+	background-color: #444;
+	margin: 0;
+	padding: 0;
+}
+.ie8_notice h1 {
+	position: relative;
+	color: #fff;
+	text-align: center;
+	margin: 50px auto;
+	font-family: 'calibribold';
+	font-size: 150%;
+	font-weight: 200;
+}

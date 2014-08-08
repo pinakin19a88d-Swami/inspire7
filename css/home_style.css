@@ -1,3 +1,6 @@
+.ie8_notice {
+	display: none;
+}
 .clearfix {
   *zoom: 1;
 }
@@ -609,7 +612,7 @@ a.logo img {
     background-size: 100%;
 }
 #backBtn:hover {
-	background-position: 0 -49px;
+	background-position: 0 95%;
 }
 #backBtn a {
 	position: absolute;
@@ -876,11 +879,9 @@ iframe {
 .ourTeamCont,
 .ourInfraCont {
 	/*height: 100%;*/
-	height: 90%;
-	/*background-size: 75%;*/
-	background-size: 70%;
+	height: 93%;
     position: relative;
-    margin: 7% 0 0 6%;
+    margin: 5% 0 0 6%;
 }
 .whoWeAreCont {
     background: url("../images/Who-We-Are.png") no-repeat right bottom;
@@ -889,16 +890,25 @@ iframe {
     background: url("../images/What-Do-We-Do.png") no-repeat right bottom;
 }
 .ourApproachCont {
-    background: url("../images/Our-Approach.png") no-repeat right bottom;
+    /*background: url("../images/Our-Approach.png") no-repeat right bottom;*/
+    background: url("../images/Our-Approach-NEW.png") no-repeat right bottom;
 }
 .ourTeamCont {
     /*background: url("../images/Our-Team.png") no-repeat right bottom;*/
-    background: url("../images/Our-Infrastructure.png") no-repeat right bottom;
+    /*background: url("../images/Our-Infrastructure.png") no-repeat right bottom;*/
+    background: url("../images/Our-Infrastructure-NEW.png") no-repeat right bottom;
 }
 /*.ourInfraCont {
     background: url("../images/Our-Infrastructure.png") no-repeat right bottom;
 }*/
 
+.whoWeAreCont,
+.whatWeDoCont,
+.ourApproachCont,
+.ourTeamCont,
+.ourInfraCont {
+	background-size: 50%;
+}
 
 .talkToUsCont > .infoText {
 	width: 94%;
@@ -1246,12 +1256,12 @@ iframe {
 }
 .exhibitionCont > .infoText > .scrollContent {
 	position: absolute;
-	height: 49%;
+	height: 55%;
 	margin: 0 1% 0 0;
 }
 .mediaCont > .infoText > .scrollContent {
 	position: absolute;
-	height: 55%;
+	height: 60%;
 	margin: 0 1% 0 0;
 }
 
@@ -1367,8 +1377,8 @@ a.designWrap > img,
 a.multimediaWrap > img,
 a.mediaWrap > img,
 a.exhibWrap > img, 
-a.webWrap > img, {
-	width: 100%;
+a.webWrap > img {
+	width: 80%;
 }
 .corpoTxt, 
 .brandTxt,
@@ -1454,6 +1464,13 @@ a.webWrap > img, {
 	z-index: 200;
 	top: 0;
 	display: none;
+	opacity: 0;
+
+	-webkit-transition: All 0.5s;
+	   -moz-transition: All 0.5s;
+		 -o-transition: All 0.5s;
+			transition: All 0.5s;
+			transition-timing-function: ease;
 }
 .designTxt .hoverWrap {
 	left: -50%;
@@ -1463,7 +1480,7 @@ a.webWrap > img, {
 	left: -40%;
 }
 .mediaCTxt .hoverWrap {
-	top: -49%;
+	top: -30%;
 	left: -17%;
 }
 .exhibTxt .hoverWrap {
@@ -1475,11 +1492,11 @@ a.webWrap > img, {
 	width: 130%;	
 	top: 2%;
 	
-	-webkit-transition: All 6s;
-	   -moz-transition: All 6s;
-		 -o-transition: All 6s;
-			transition: All 6s;
-			/*transition-timing-function: easeInOut;*/
+	-webkit-transition: All 0.5s;
+	   -moz-transition: All 0.5s;
+		 -o-transition: All 0.5s;
+			transition: All 0.5s;
+			transition-timing-function: ease;
 }
 .corpoArrow {
 	width: 16%;
@@ -1508,7 +1525,7 @@ a.webWrap > img, {
 }
 .mediaArrow {
 	width: 25%;
-	margin-left: 65%;
+	margin-left: 10%;
 }
 .exhibArrow {
 	width: 24%;
@@ -1538,28 +1555,24 @@ a.webWrap > img, {
 
 /*a.corpoIdentity:hover .corpoTxt .corpoTxtHover,
 a.corpoIdentity:hover .corpoTxt .corpoTxtHover,*/
-a.corpoIdentity:hover .corpoTxt .hoverWrap,
+a.corpoIdentity:hover .corpoTxt > .hoverWrap,
 /*a.brandBuildingWrap:hover .brandTxt .brandTxtHover, */
-a.brandBuildingWrap:hover .brandTxt .hoverWrap, 
+a.brandBuildingWrap:hover .brandTxt > .hoverWrap, 
 /*a.specilPublishWrap:hover .sPublishTxt .sPublishTxtHover, */
-a.specilPublishWrap:hover .sPublishTxt .hoverWrap,
+a.specilPublishWrap:hover .sPublishTxt > .hoverWrap,
 /*a.designWrap:hover .designTxt .designTxtHover,*/
-a.designWrap:hover .designTxt .hoverWrap,
+a.designWrap:hover .designTxt > .hoverWrap,
 /*a.multimediaWrap:hover .multiMediaTxt .multiMediaTxtHover,*/
-a.multimediaWrap:hover .multiMediaTxt .hoverWrap,
+a.multimediaWrap:hover .multiMediaTxt > .hoverWrap,
 /*a.mediaWrap:hover .mediaCTxt .mediaCTxtHover,*/
-a.mediaWrap:hover .mediaCTxt .hoverWrap,
+a.mediaWrap:hover .mediaCTxt > .hoverWrap,
 /*a.exhibWrap:hover .exhibTxt .exhibTxtHover,*/
-a.exhibWrap:hover .exhibTxt .hoverWrap,
+a.exhibWrap:hover .exhibTxt > .hoverWrap,
 /*a.webWrap:hover .webTxt .webTxtHover {*/
-a.webWrap:hover .webTxt .hoverWrap,
-.servicesWrap:hover .serviceTxt .hoverWrap{
+a.webWrap:hover .webTxt > .hoverWrap,
+.servicesWrap:hover .serviceTxt > .hoverWrap{
 	display: block;
-	-webkit-transition: All 6s;
-	   -moz-transition: All 6s;
-		 -o-transition: All 6s;
-			transition: All 6s;
-			transition-timing-function: easeInOut;
+	opacity: 1
 }
 /*a.corpoIdentity:*/
 .brandPencil {
@@ -1621,9 +1634,9 @@ a.mediaWrap {
 	text-decoration: none;
 }
 .mediaCTxtHover{
-	width: 106%!important;
-	font-size: 90%;
-	padding: 6%;
+	width: 70%!important;
+	font-size: 100%;
+	padding: 8%;
 }
 .publishingPencil {
 	width: 22%;
@@ -1750,7 +1763,7 @@ a.multimediaWrap {
 	height: 86%;
 	/*background: url("../images/our_service.png") no-repeat;*/
 	background-size: 100%;
-	margin: 5%;
+	margin: 4% 5%;
 }
 /*servisex ens*/
 /*testing carousel code*/
@@ -1912,6 +1925,7 @@ margin-left: 180px;
 }
 .serviceNav h2 {
 	color: #fff;
+	text-align: center;
 }
 
 /*Color Classes*/
@@ -1952,6 +1966,59 @@ margin-left: 180px;
 	display: none!important;
 	margin-left: -9999px;
 }
+
+/*CSS Loader Animation*/
+.cssLoader {
+	border:3px solid #fff;
+    border-radius:30px;
+    height:30px;
+    left:50%;
+    margin:-15px 0 0 -15px;
+    opacity:0;
+    position:absolute;
+    top:50%;
+    width:30px;
+    z-index: 0;
+ 	
+ 	-webkit-animation: pulsate 1s ease-out;
+ 	-webkit-animation-iteration-count:infinite;
+ 	-moz-animation: pulsate 1s ease-out;
+ 	-moz-animation-iteration-count:infinite;
+    animation: pulsate 1s ease-out;
+    animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+      -webkit-transform:scale(.1);
+      transform:scale(.1);
+      opacity: 0.0;
+    }
+    50% {
+      opacity:1;
+    }
+    100% {
+      -webkit-transform:scale(1.2);
+      transform:scale(1.2);
+      opacity:0;
+    }
+}
+
+@keyframes pulsate {
+    0% {
+      transform:scale(.1);
+      opacity: 0.0;
+    }
+    50% {
+      opacity:1;
+    }
+    100% {
+      transform:scale(1.2);
+      opacity:0;
+    }
+}
+/*CSS Loader Animation - Ends*/
+
 /* Media Querry*/
 @media (min-width: 1300px) and (max-width: 1400px) {
 	.spritesSection > .spritesCont {

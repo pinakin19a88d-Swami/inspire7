@@ -124,6 +124,8 @@
 
 	$(".corporateBg a").click(function() {
 		var current = $(this).attr("name");
+		$(".blackBox").html("");
+		$(".blackBox").load("ajax/cssLoader.html");
 		$(".blackBox").load(current);
 		$(".gridCurtain").css("display","block");
 	});

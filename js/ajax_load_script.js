@@ -138,6 +138,9 @@ $(document).ready(function() {
 	    $("body #cboxOverlay").remove();
 	    $("body #colorbox").remove();
 
+	    // Empty the BlackBox for new content
+	    $(".blackBox").empty();
+
 	});
 
 });

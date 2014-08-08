@@ -9,6 +9,9 @@ $(document).ready(function() {
 	var newFontSize = boxWidth * 0.032;
 	$(".infoText h2, h2").css("font-size",newFontSize);
 
+	var newFontSize = boxWidth * 0.045;
+	$(".serviceNav h2").css("font-size",newFontSize);
+
 	var newFontSize = boxWidth * 0.020;
 	$(".gradientText").css("font-size",newFontSize);
 
@@ -21,7 +24,7 @@ $(document).ready(function() {
 	var newFontSize = boxWidth * 0.020;
 	$(".infoText .boldItalics").css("font-size",newFontSize);
 
-	var newFontSize = boxWidth * 0.018;
+	var newFontSize = boxWidth * 0.020;
 	$(".infoText h4, h4").css("font-size",newFontSize);
 
 	var newFontSize = boxWidth * 0.0193;

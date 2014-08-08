@@ -69,7 +69,7 @@
 
 		</div><!-- logoCarousel -->
 
-		<div class="corporateBg">
+		<div class="corporateBg portLinks">
 			<ul>
 				<li class="active"><a href="#" name="ajax/port_corporate_identities.html">Corporate Identities</a></li>
 				<li><a href="#" name="ajax/corporate_product_profile.html">Brand Building Campaigns</a></li>
@@ -127,6 +127,8 @@
 
 	$(".corporateBg a").click(function() {
 		var current = $(this).attr("name");
+		$(".blackBox").html("");
+		$(".blackBox").load("ajax/cssLoader.html");
 		$(".blackBox").load(current);
 		$(".gridCurtain").css("display","block");
 	});
