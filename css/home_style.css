@@ -890,13 +890,11 @@ iframe {
     background: url("../images/What-Do-We-Do.png") no-repeat right bottom;
 }
 .ourApproachCont {
-    /*background: url("../images/Our-Approach.png") no-repeat right bottom;*/
-    background: url("../images/Our-Approach-NEW.png") no-repeat right bottom;
+    background: url("../images/Our-Approach.png") no-repeat right bottom;
 }
 .ourTeamCont {
     /*background: url("../images/Our-Team.png") no-repeat right bottom;*/
-    /*background: url("../images/Our-Infrastructure.png") no-repeat right bottom;*/
-    background: url("../images/Our-Infrastructure-NEW.png") no-repeat right bottom;
+    background: url("../images/Our-Infrastructure.png") no-repeat right bottom;
 }
 /*.ourInfraCont {
     background: url("../images/Our-Infrastructure.png") no-repeat right bottom;
