@@ -3,244 +3,248 @@
 	<script type="text/javascript" src="js/fontsize_fix.js"></script>
 
 	<div class="infoText">
+
 		<h2 class="animated fadeInDown de1s">Careers</h2>
 		<p class="animated fadeInRight de12ms">
 			We are looking for young energetic, self-motivated and hardworking candidates for our expansion plans. 
 			If you want to be a part of our organisation please fill up the following form or mail your resume at 
 			<a href="mailto:info@inspiremultimedia.co.in">info@inspiremultimedia.co.in</a>			
 		</p>
-		<!-- <span class="boldItalics animated fadeInRight de12ms">
-			We always treat people the way we want to be treated, with integrity, with fairness and with respect.
-		</span> -->
-
-		<div class="formWrap mCustomScrollbar animated fadeIn de14ms">
+		
 		<?php
-						        
-	        if(isset($_POST['email'])) 
-	        {
-	            // EDIT THE 2 LINES BELOW AS REQUIRED
-	         
-	            $email_to = "info@inspiremultimedia.co.in";
-	            $email_subject = "Inspire Multimedia - Careers Form";
-	         
-	            function died($error) 
-	            {
-	                // your error code can go here
-	         
-	                echo "<br/><br/>We are very sorry, but there were error(s) found with the form you submitted. ";
-	                echo "These errors appear below.<br /><br />";
-	                echo $error."<br /><br />";
-	                echo "Please go back and fix these errors.<br /><br />";
-	         
-	                die();
-	            }
-	         
-	            // validation expected data exists
-	         
-	            if(!isset($_POST["inputPost"]) ||
-	            	!isset($_POST["inputName"]) ||
-	            	!isset($_POST["inputEdu"]) ||
-	            	!isset($_POST["inputExpertise"]) ||
-	            	!isset($_POST["inputExp"]) ||
-	            	!isset($_POST["inputAddrs"]) ||
-	            	!isset($_POST["inputPhone"]) ||
-	               !isset($_POST["inputEmail"]))
-	               // !isset($_POST["inputSalary"]))
-	            {
-	                died("We are sorry, but there appears to be a problem with the form you submitted.");      
-	            }
-	         
-	            $inputPost = $_POST["inputPost"]; // required
-	            $inputName = $_POST["inputName"]; // required
-	            $inputEdu = $_POST["inputEdu"]; // required
-	            $inputExpertise = $_POST["inputExpertise"]; // required
-	            $inputExp = $_POST["inputExp"]; // required
-	            $inputAddrs = $_POST["inputAddrs"]; // required
-	            $inputPhone = $_POST["inputPhone"]; // required
-	            $inputEmail = $_POST["inputEmail"]; // required
-	            // $inputSalary = $_POST["inputSalary"]; // required
-	         
-	            $error_message = "";
-	            $email_exp = "/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/";
-	         
-	            if(!preg_match($email_exp,$inputEmail)) 
-	            {
-	                $error_message .= "The Email Address you entered does not appear to be valid.<br />";
-	            }
-	            
-	            // $string_exp = "/^[A-Za-z .'-]+$/";
-	            $string_exp = "/^[a-zA-Z0-9?$@#()'!,+\-=_:.&€£*%\s]+$/";
-				
-				if(!preg_match($string_exp,$inputPost)) 
-	            {
-	                $error_message .= "Post applying for text not valid.<br />";
-	            }            
-	            if(!preg_match($string_exp,$inputName)) 
-	            {
-	                $error_message .= "Candidate Name not valid.<br />";
-	            }
-	            if(!preg_match($string_exp,$inputEdu)) 
-	            {
-	                $error_message .= "Qualification text not valid.<br />";
-	            }
-	            if(!preg_match($string_exp,$inputExpertise)) 
-	            {
-	                $error_message .= "Area Of Expertise text not valid.<br />";
-	            }
+        if(isset($_POST['email'])) 
+        {
+            // EDIT THE 2 LINES BELOW AS REQUIRED
+         
+            $email_to = "chinmay412@gmail.com";
+            $email_subject = "Someone wrote about you!";
+         
+            function died($error) 
+            {
+                // your error code can go here
+         
+                echo "<br/><br/>We are very sorry, but there were error(s) found with the form you submitted. ";
+                echo "These errors appear below.<br /><br />";
+                echo $error."<br /><br />";
+                echo "Please go back and fix these errors.<br /><br />";
+         
+                die();
+            }
+         
+            // validation expected data exists
+         
+            if(!isset($_POST['first_name']) ||
+               !isset($_POST['last_name']) ||
+               !isset($_POST['email']) ||
+               !isset($_POST['telephone']) ||
+               !isset($_POST['comments'])) 
+            {
+                died('We are sorry, but there appears to be a problem with the form you submitted.');      
+            }
+         
+            $first_name = $_POST['first_name']; // required
+            $last_name = $_POST['last_name']; // required
+            $email_from = $_POST['email']; // required
+            $telephone = $_POST['telephone']; // not required
+            $comments = $_POST['comments']; // required
+         
+            $error_message = "";
+            $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+         
+            if(!preg_match($email_exp,$email_from)) 
+            {
+                $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+            }
+            
+            $string_exp = "/^[A-Za-z .'-]+$/";
+            
+            if(!preg_match($string_exp,$first_name)) 
+            {
+                $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+            }
+            
+            if(!preg_match($string_exp,$last_name)) 
+            {
+                $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
+            }
+            
+            if(strlen($comments) < 2) 
+            {
+                $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+            }
+            
+            if(strlen($error_message) > 0) 
+            {
+                died($error_message);
+            }
+         
+            $email_message = "Form details below.\n\n";
+         
+            function clean_string($string) 
+            {
+              $bad = array("content-type","bcc:","to:","cc:","href");
+              return str_replace($bad,"",$string);
+            }
+         
+            $email_message .= "First Name: ".clean_string($first_name)."\n";
+            $email_message .= "Last Name: ".clean_string($last_name)."\n";
+            $email_message .= "Email: ".clean_string($email_from)."\n";
+            $email_message .= "Telephone: ".clean_string($telephone)."\n";
+            $email_message .= "Comments: ".clean_string($comments)."\n";
+         
+            // create email headers
+             
+            $headers = 'From: '.$email_from."\r\n".
+             
+            'Reply-To: '.$email_from."\r\n" .
+             
+            'X-Mailer: PHP/' . phpversion();
+             
+            @mail($email_to, $email_subject, $email_message, $headers); 
+             
+            ?>
+            <br/><br/>
+            Thank you for contacting us. We will be in touch with you very soon.
+         
+            <?php
+             
+        }
+        else
+        {
+        ?>
+            <br/>
+            <br/>
+            <form name="contactform" method="post">
+                
+                <div id="feedback_form">
+                    
+                    <ul>
+                    <li>
+<!-- FirstName -->      <label for="first_name">First Name *</label>
+                        <input  type="text" name="first_name" maxlength="50" size="30">
+                    </li>
+                    
+                    <li>
+<!-- LastName -->       <label for="last_name">Last Name *</label>
+                        <input  type="text" name="last_name" maxlength="50" size="30">
+                    </li>
+                 
+                    <li>
+<!-- Email -->          <label for="email">Email Address *</label>
+                        <input  type="text" name="email" maxlength="80" size="30">
+                    </li>
+                 
+                    <li>
+<!-- Telephone -->      <label for="telephone">Telephone Number</label>
+                        <input  type="text" name="telephone" maxlength="30" size="30">
+                    </li>
+                    </ul>
+                    
+                    <ul>
+                    <li>
+<!-- Comments -->       <label for="comments" id="commentsLabel">Comments *</label>
+                        <textarea  name="comments" maxlength="1000" cols="30" rows="3" id="commentsTextArea"></textarea>
+                    </li>
+                    
+                    <li>
+<!-- Sumbit -->         <input type="submit" value="Submit" id="submitButton">
+                    </li>
+                    </ul>
+                 
+                </div>
+             
+            </form>
+            <?php
+        }
+    ?>
 
-	            $string_totalExp = "/^[0-9A-Za-z .'-]+$/";
-	            if(!preg_match($string_totalExp,$inputExp)) 
-	            {
-	                $error_message .= "Total Experience text not valid.<br />";
-	            }
-	            if(!preg_match($string_exp,$inputAddrs)) 
-	            {
-	                $error_message .= "Address text not valid.<br />";
-	            }
-
-	            $number_exp = "/^[0-9.-]/";
-	            if(!preg_match($number_exp,$inputPhone)) 
-	            {
-	                $error_message .= "Phone Number not valid.<br />";
-	            }
-	            // if(!preg_match($number_exp,$inputSalary)) 
-	            // {
-	            //     $error_message .= "Salary text not valid.<br />";
-	            // }
-	            
-	            if(strlen($error_message) > 0) 
-	            {
-	                died($error_message);
-	            }
-	         
-	            $email_message = "Form details below.\n\n";
-	         
-	            function clean_string($string) 
-	            {
-	              $bad = array("content-type","bcc:","to:","cc:","href");
-	              return str_replace($bad,"",$string);
-	            }
-	            
-	            $email_message .= "Post applying for : ".clean_string($inputPost)."\n";
-	            $email_message .= "Name of the Candidate : ".clean_string($inputName)."\n";
-	            $email_message .= "Educational Qualification : ".clean_string($inputEdu)."\n";
-	            $email_message .= "Area of Expertise : ".clean_string($inputExpertise)."\n";
-	            $email_message .= "Total Experience : ".clean_string($inputExp)."\n";
-	            $email_message .= "Address : ".clean_string($inputAddrs)."\n";
-	            $email_message .= "Phone Number : ".clean_string($inputPhone)."\n";
-	            $email_message .= "Email : ".clean_string($inputEmail)."\n";
-	            // $email_message .= "Current Salary (per annum) : ".clean_string($inputSalary)."\n";
-	         
-	            // create email headers
-	             
-	            $headers = "From: ".$inputEmail."\r\n".
-	             
-	            "Reply-To: ".$inputEmail."\r\n" .
-	             
-	            "X-Mailer: PHP/" . phpversion();
-	             
-	            @mail($email_to, $email_subject, $email_message, $headers); 
-	             
-	            ?>
-	            <br/><br/>
-	            Thank you for contacting us. We will be in touch with you very soon.
-	         
-	            <?php
-	             
-	        }
-	        else
-	        {
-	        ?>
-			<form method="post" id="career-form" novalidate="novalidate" class="form-horizontal carrersForm">
-			  <div class="control-group animated fadeInRight de16ms">
-			    <label class="control-label" for="inputPost">Post applying for</label>
-			    <span>:</span>	    
-			    <div class="controls">
-			      <input type="text" id="inputPost" name="inputPost">
-			    </div><!-- controls -->
-			  </div><!-- control-group -->
-
-			  <div class="control-group animated fadeInRight de16ms">
-			    <label class="control-label" for="inputName">Name of the Candidate</label>
-			    <span>:</span>
-			    <div class="controls">
-			      <input type="text" id="inputName" name="inputName">
-			    </div><!-- controls -->
-			  </div><!-- control-group -->
-
-			  <div class="control-group animated fadeInRight de16ms">
-			    <label class="control-label" for="inputEdu">Educational Qualification</label>
-			    <span>:</span>
-			    <div class="controls">
-			      <input type="text" id="inputEdu" name="inputEdu">
-			    </div><!-- controls -->
-			  </div><!-- control-group -->
-
-			  <div class="control-group animated fadeInRight de16ms">
-			    <label class="control-label" for="inputExpertise">Area of Expertise</label>
-			    <span>:</span>
-			    <div class="controls">
-			      <input type="text" id="inputExpertise" name="inputExpertise">
-			    </div><!-- controls -->
-			  </div><!-- control-group -->
-
-			  <div class="control-group animated fadeInRight de16ms">
-			    <label class="control-label" for="inputExp">Total Experience</label>
-			    <span>:</span>
-			    <div class="controls">
-			      <input type="text" id="inputExp" name="inputExp">
-			    </div><!-- controls -->
-			  </div><!-- control-group -->
-
-			  <div class="control-group animated fadeInRight de16ms">
-			    <label class="control-label" for="inputAddrs">Address</label>
-			    <span>:</span>
-			    <div class="controls">
-			      <textarea rows="3"  id="inputAddrs" name="inputAddrs"></textarea>
-			    </div><!-- controls -->
-			  </div><!-- control-group -->
-
-			  <div class="control-group animated fadeInRight de16ms">
-			    <label class="control-label" for="inputPhone">Phone Number</label>
-			    <span>:</span>
-			    <div class="controls">
-			      <input type="text" id="inputPhone" name="inputPhone">
-			    </div><!-- controls -->
-			  </div><!-- control-group -->
-
-			  <div class="control-group animated fadeInRight de16ms">
-			    <label class="control-label" for="inputEmail">Email</label>
-			    <span>:</span>
-			    <div class="controls">
-			      <input type="text" id="inputEmail" name="inputEmail">
-			    </div><!-- controls -->
-			  </div><!-- control-group -->
-
-			  <!-- <div class="control-group animated fadeInRight de16ms">
-			    <label class="control-label" for="inputSalary">Current Salary (per annum)</label>
-			    <span>:</span>
-			    <div class="controls">
-			      <input type="text" id="inputSalary" name="inputSalary">
-			    </div>
-			  </div> -->		
-
-			  <div class="control-group animated fadeInRight de16ms">
-			    <label class="control-label" for="inputResume">&nbsp;</label>
-			    <span style="color:#fff">&nbsp;</span>
-			    <div class="controls">
-			      <input type="submit" value="Submit" name="submit">
-		      	  <input type="reset" value="Reset" name="reset" class="resetBtn">
-			    </div><!-- controls -->
-			  </div><!-- control-group -->
-
-
-
-		</form>
-		<?php
-	        }
-	    ?>
-		</div><!-- formWrap -->
 	</div><!-- infoText -->
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $("#submit_btn").click(function() { 
+		        //collect input field values
+		        var user_post       = $('input[name=inputPost]').val();  //user post
+		        var user_name       = $('input[name=inputName]').val();  //user name
+		        var user_edu      	= $('input[name=inputEdu]').val(); //user edu
+		        var user_expertise 	= $('input[name=inputExpertise]').val(); //user espertise
+		        var user_exp 		= $('input[name=inputExp]').val(); //user experience
+		        var user_addrs 		= $('textarea[name=inputAddrs]').val(); //user address
+		        var user_phone      = $('input[name=inputPhone]').val(); //user phone
+		        var user_email      = $('input[name=inputEmail]').val(); //user email
+		        
+		        //simple validation at client's end
+		        //we simply change border color to red if empty field using .css()
+		        var proceed = true;
+		        if(user_post==""){
+		            $('input[name=inputPost]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_name==""){ 
+		            $('input[name=inputName]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_edu==""){ 
+		            $('input[name=inputEdu]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_expertise==""){ 
+		            $('input[name=inputExpertise]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_exp==""){ 
+		            $('input[name=inputExp]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_addrs==""){ 
+		            $('textarea[name=inputAddrs]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_phone==""){ 
+		            $('input[name=inputPhone]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_email==""){ 
+		            $('input[name=inputEmail]').css('border-color','red'); 
+		            proceed = false;
+		        }
+
+		        //everything looks good! proceed...
+		        if(proceed) 
+		        {
+		            //data to be sent to server
+		            post_data = {'userName':user_name, 'userEmail':user_email, 'userPhone':user_phone};
+		            
+		            //Ajax post data to server
+		            $.post('ajax/emailCareerForm.php', post_data, function(response){  
+		                
+		                //load json data from server and output message     
+		                if(response.type == 'error')
+		                {
+		                    output = '<div class="error">'+response.text+'</div>';
+		                }else{
+		                
+		                    output = '<div class="success">'+response.text+'</div>';
+		                    
+		                    //reset values in all input fields
+		                    $('#contact_form input').val(''); 
+		                    $('#contact_form textarea').val(''); 
+		                }
+		                
+		                $("#result").hide().html(output).slideDown();
+		            }, 'json');
+		            
+		        }
+		    });
+		    
+		    //reset previously set border colors and hide all message on .keyup()
+		    $("#contact_form input, #contact_form textarea").keyup(function() { 
+		        $("#contact_form input, #contact_form textarea").css('border-color',''); 
+		        $("#result").slideUp();
+		    });
+		    
+		});
+	</script>
 
 	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript">
@@ -262,58 +266,5 @@
 		});
 
 	</script>
-
-	<script>
-  
-		  // When the browser is ready...
-		  $(function() {
-		  
-		    // Setup form validation on the #register-form element
-		    $("#career-form").validate({
-		    
-		        // Specify the validation rules
-		        rules: {
-		            inputPost: "required",
-		            inputName: "required",
-		            inputEdu: "required",
-		            inputExpertise: "required",
-		            inputExp: "required",
-		            inputAddrs: "required",
-		            inputPhone: {
-		                required: true,
-		                digits: true,
-		                minlength: 8
-		            },
-		            inputEmail: {
-		                required: true,
-		                email: true
-		            },
-		            inputSalary: {
-		                required: true,
-		                digits: true
-		            }
-		        },
-		        
-		        // Specify the validation error messages
-		        messages: {
-		            inputPost: "Please enter post you are applying for",
-		            inputName: "Please enter your full name",
-		            inputEdu: "Please enter your educational qualification",
-		            inputExpertise: "Please enter your area of expertise",
-		            inputExp: "How much experience do you have",
-		            inputAddrs: "Please enter your address",
-		            inputPhone: "Please enter a valid phone number (digits only)",
-		            inputEmail: "Please enter a valid email address",
-		            inputSalary: "Please enter your current salary (per annum)"
-		        },
-		        
-		        submitHandler: function(form) {
-		            form.submit();
-		        }
-		    });
-
-		  });
-	  
-	  </script>
 
 </div>

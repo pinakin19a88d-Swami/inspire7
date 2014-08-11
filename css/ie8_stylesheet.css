@@ -1,3 +1,6 @@
+body {
+	background-color: #fff;
+}
 .bodySection, .footerSection, .footerBottom {
 	display: none;
 }
@@ -5,17 +8,20 @@
 	display: block;
 	position: absolute;
 	width: 100%;
-	height: 150px;
-	background-color: #444;
-	margin: 0;
+	height: 120px;
+	margin: 3% 0 0 0;
 	padding: 0;
 }
+.ie8_notice img {
+	width: 10%;
+	height: 100%;
+	float: left;
+	margin: 0 0 0 4%;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/Inspire_Logo.jpg", sizingMethod="scale");
+}
 .ie8_notice h1 {
-	position: relative;
-	color: #fff;
-	text-align: center;
-	margin: 50px auto;
+	color: #c00;
+	margin: 3% 0 0 16%;
 	font-family: 'calibribold';
-	font-size: 150%;
-	font-weight: 200;
+	font-size: 120%;
 }
