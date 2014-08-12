@@ -1331,7 +1331,8 @@ a.corpoIdentity {
 	position: absolute;
 	width: 19.2%;
 	height: 14%;
-	margin: 8% 0 0 0%;
+	/*margin: 8% 0 0 0%;*/
+	margin: 14% 0 0 6%;
 	text-decoration: none;
 }
 .servicesWrap {
@@ -1355,8 +1356,8 @@ a.corpoIdentity {
 	margin-left: 27%;*/	
 }
 .serviceTxt .hoverWrap {
-	margin-left: -45%;	
-	/*margin-left: -10%;*/
+	/*margin-left: -45%;	*/
+	margin-left: -12%;
 }
 /*.serviceTxtHover {
 	top: 0;
@@ -1364,7 +1365,7 @@ a.corpoIdentity {
 }*/
 .serviceTxt .hoverTextBox {
 	top: 0;
-	width: 130%;
+	width: 110%;
 	padding: 5%;
 	font-size: 90%;
 }
@@ -1584,7 +1585,8 @@ a.brandBuildingWrap {
 	position: absolute;
 	width: 19.2%;
 	height: 13%;
-	margin: 0% 0 0 24%;	
+	/*margin: 0% 0 0 24%;	*/
+	margin: 4% 0 0 27%;	
 	text-decoration: none;
 }
 .brandTxtHover {
@@ -1607,7 +1609,8 @@ a.designWrap {
 	position: absolute;
 	width: 19.2%;
 	height: 13%;
-	margin: 9% 0 0 73%;
+	/*margin: 9% 0 0 73%;*/
+	margin: 14% 0 0 71%;
 	text-decoration: none;
 }
 .designTxtHover {
@@ -1628,7 +1631,7 @@ a.mediaWrap {
 	position: absolute;
 	width: 19.2%;
 	height: 13%;
-	bottom: 5%;
+	bottom: 9%;
 	left: 61%;
 	text-decoration: none;
 }
@@ -1647,7 +1650,8 @@ a.specilPublishWrap {
 	position: absolute;
 	width: 19.2%;
 	height: 13%;
-	margin: 1% 0 0 52%;
+	/*margin: 1% 0 0 52%;*/
+	margin: 6% 0 0 52%;
 	text-decoration: none;
 }
 .exhibitionPencil {
@@ -1661,7 +1665,7 @@ a.exhibWrap {
 	width: 19.2%;
 	height: 13%;
 	/*margin: 51% 0 0 26%;*/
-	bottom: 1%;
+	bottom: 5%;
 	left: 30%;
 	text-decoration: none;
 }
@@ -1687,7 +1691,7 @@ a.webWrap {
 	width: 19.2%;
 	height: 13%;
 	/*margin: 34% 0 0 1%;*/
-	bottom: 22%;
+	bottom: 26%;
 	text-decoration: none;
 }
 .multimediaPencil {
@@ -1700,7 +1704,7 @@ a.multimediaWrap {
 	width: 19.2%;
 	height: 13%;
 	/*margin: 30% 0 0 75%;*/
-	bottom: 30%;
+	bottom: 27%;
 	left: 80%;
 	text-decoration: none;
 }
@@ -1768,6 +1772,9 @@ a.multimediaWrap {
 /*testing carousel code*/
 .BtnWrap {
 	text-align: right;
+	position: absolute;
+	right: 0;
+	bottom: -10%;
 }
 #prev, #next {
 	display: inline-block;
