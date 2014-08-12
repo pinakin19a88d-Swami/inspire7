@@ -1,0 +1,205 @@
+<div class="career whiteText clearfix animated fadeIn de8ms">
+
+	<script type="text/javascript" src="js/fontsize_fix.js"></script>
+
+	<div class="infoText">
+
+		<h2 class="animated fadeInDown de1s">Careers</h2>
+		<p class="animated fadeInRight de12ms">
+			We are looking for young energetic, self-motivated and hardworking candidates for our expansion plans. 
+			If you want to be a part of our organisation please fill up the following form or mail your resume at 
+			<a href="mailto:info@inspiremultimedia.co.in">info@inspiremultimedia.co.in</a>			
+		</p>
+		
+		<div class="formWrap mCustomScrollbar animated fadeIn de14ms">
+				<form class="form-horizontal carrersForm">
+				<fieldset id="contact_form">
+				<div id="result"></div>
+			    
+			    <div class="control-group animated fadeInRight de16ms">
+			    <label class="control-label" for="inputPost">Post applying for</label>
+			    <span>:</span>	    
+			    <div class="controls">
+			      <input type="text" id="inputPost" name="inputPost">
+			    </div><!-- controls -->
+			  </div><!-- control-group -->
+
+			  <div class="control-group animated fadeInRight de16ms">
+			    <label class="control-label" for="inputName">Name of the Candidate</label>
+			    <span>:</span>
+			    <div class="controls">
+			      <input type="text" id="inputName" name="inputName">
+			    </div><!-- controls -->
+			  </div><!-- control-group -->
+
+			  <div class="control-group animated fadeInRight de16ms">
+			    <label class="control-label" for="inputEdu">Educational Qualification</label>
+			    <span>:</span>
+			    <div class="controls">
+			      <input type="text" id="inputEdu" name="inputEdu">
+			    </div><!-- controls -->
+			  </div><!-- control-group -->
+
+			  <div class="control-group animated fadeInRight de16ms">
+			    <label class="control-label" for="inputExpertise">Area of Expertise</label>
+			    <span>:</span>
+			    <div class="controls">
+			      <input type="text" id="inputExpertise" name="inputExpertise">
+			    </div><!-- controls -->
+			  </div><!-- control-group -->
+
+			  <div class="control-group animated fadeInRight de16ms">
+			    <label class="control-label" for="inputExp">Total Experience</label>
+			    <span>:</span>
+			    <div class="controls">
+			      <input type="text" id="inputExp" name="inputExp">
+			    </div><!-- controls -->
+			  </div><!-- control-group -->
+
+			  <div class="control-group animated fadeInRight de16ms">
+			    <label class="control-label" for="inputAddrs">Address</label>
+			    <span>:</span>
+			    <div class="controls">
+			      <textarea rows="3"  id="inputAddrs" name="inputAddrs"></textarea>
+			    </div><!-- controls -->
+			  </div><!-- control-group -->
+
+			  <div class="control-group animated fadeInRight de16ms">
+			    <label class="control-label" for="inputPhone">Phone Number</label>
+			    <span>:</span>
+			    <div class="controls">
+			      <input type="text" id="inputPhone" name="inputPhone">
+			    </div><!-- controls -->
+			  </div><!-- control-group -->
+
+			  <div class="control-group animated fadeInRight de16ms">
+			    <label class="control-label" for="inputEmail">Email</label>
+			    <span>:</span>
+			    <div class="controls">
+			      <input type="text" id="inputEmail" name="inputEmail">
+			    </div><!-- controls -->
+			  </div><!-- control-group -->		
+
+			  <div class="control-group animated fadeInRight de16ms">
+			    <label class="control-label" for="inputResume">&nbsp;</label>
+			    <span style="color:#fff">&nbsp;</span>
+			    <div class="controls">
+			      <input type="submit" value="Submit" name="submit" id="submit_btn">
+		      	  <input type="reset" value="Reset" name="reset" class="resetBtn">
+			    </div><!-- controls -->
+			  </div><!-- control-group -->
+			  </fieldset>
+			  </form>
+			
+		</div><!-- formWrap -->
+
+	</div><!-- infoText -->
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $("#submit_btn").click(function() { 
+		        //collect input field values
+		        var user_post       = $('input[name=inputPost]').val();  //user post
+		        var user_name       = $('input[name=inputName]').val();  //user name
+		        var user_edu      	= $('input[name=inputEdu]').val(); //user edu
+		        var user_expertise 	= $('input[name=inputExpertise]').val(); //user espertise
+		        var user_exp 		= $('input[name=inputExp]').val(); //user experience
+		        var user_addrs 		= $('textarea[name=inputAddrs]').val(); //user address
+		        var user_phone      = $('input[name=inputPhone]').val(); //user phone
+		        var user_email      = $('input[name=inputEmail]').val(); //user email
+		        
+		        //simple validation at client's end
+		        //we simply change border color to red if empty field using .css()
+		        var proceed = true;
+		        if(user_post==""){
+		            $('input[name=inputPost]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_name==""){ 
+		            $('input[name=inputName]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_edu==""){ 
+		            $('input[name=inputEdu]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_expertise==""){ 
+		            $('input[name=inputExpertise]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_exp==""){ 
+		            $('input[name=inputExp]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_addrs==""){ 
+		            $('textarea[name=inputAddrs]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_phone==""){ 
+		            $('input[name=inputPhone]').css('border-color','red'); 
+		            proceed = false;
+		        }
+		        if(user_email==""){ 
+		            $('input[name=inputEmail]').css('border-color','red'); 
+		            proceed = false;
+		        }
+
+		        //everything looks good! proceed...
+		        if(proceed) 
+		        {
+		            //data to be sent to server
+		            post_data = {'userName':user_name, 'userEmail':user_email, 'userPhone':user_phone};
+		            
+		            //Ajax post data to server
+		            $.post('ajax/emailCareerForm.php', post_data, function(response){  
+		                
+		                //load json data from server and output message     
+		                if(response.type == 'error')
+		                {
+		                    output = '<div class="error">'+response.text+'</div>';
+		                }else{
+		                
+		                    output = '<div class="success">'+response.text+'</div>';
+		                    
+		                    //reset values in all input fields
+		                    $('#contact_form input').val(''); 
+		                    $('#contact_form textarea').val(''); 
+		                }
+		                
+		                $("#result").hide().html(output).slideDown();
+		            }, 'json');
+		            
+		        }
+		    });
+		    
+		    //reset previously set border colors and hide all message on .keyup()
+		    $("#contact_form input, #contact_form textarea").keyup(function() { 
+		        $("#contact_form input, #contact_form textarea").css('border-color',''); 
+		        $("#result").slideUp();
+		    });
+		    
+		});
+	</script>
+
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript">
+
+		$(".formWrap").mCustomScrollbar({
+	        theme:"inset-3",
+	        scrollButtons:{ enable: true },
+	        keyboard:{ enable: true }
+	    });
+
+	</script>
+
+	<script type="text/javascript">
+
+		$(".resetBtn").click(function(){
+
+			$(".controls label").css("display","none");
+
+		});
+
+	</script>
+
+</div>

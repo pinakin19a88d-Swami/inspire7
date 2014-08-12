@@ -214,15 +214,7 @@
 			    <div class="controls">
 			      <input type="text" id="inputEmail" name="inputEmail">
 			    </div><!-- controls -->
-			  </div><!-- control-group -->
-
-			  <!-- <div class="control-group animated fadeInRight de16ms">
-			    <label class="control-label" for="inputSalary">Current Salary (per annum)</label>
-			    <span>:</span>
-			    <div class="controls">
-			      <input type="text" id="inputSalary" name="inputSalary">
-			    </div>
-			  </div> -->		
+			  </div><!-- control-group -->		
 
 			  <div class="control-group animated fadeInRight de16ms">
 			    <label class="control-label" for="inputResume">&nbsp;</label>
@@ -232,10 +224,7 @@
 		      	  <input type="reset" value="Reset" name="reset" class="resetBtn">
 			    </div><!-- controls -->
 			  </div><!-- control-group -->
-
-
-
-		</form>
+			</form>
 		<?php
 	        }
 	    ?>

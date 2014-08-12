@@ -21,7 +21,7 @@
 		<script type="text/javascript" src="js/home_script.js"></script>
 		<script type="text/javascript" src="js/ajax_load_script.js"></script>
 
-		<!--[if LTE 8]>
+		<!--[if lte IE 8]>
 		<link rel="stylesheet" type="text/css" href="css/ie8_stylesheet.css" />
 		<![endif]-->
 
@@ -30,6 +30,7 @@
 	<body>
 
 	<div class="ie8_notice">
+		<img src=""/>
 		<h1>Internet Explorer browser version 8 and below are not supported by this website.<br/>
 		Please upgrade or use another browser and try again!</h1>
 	</div>
@@ -57,6 +58,8 @@
 					<li id="servicesNav"><a href="#" name="ajax/services.html" class="subMenuFalse">Services</a>
 						
 					</li>
+
+					<!-- <li id="portfolioNav"><a href="#" name="ajax/portfolio.html" class="subMenuFalse">Portfolio</a> -->
 					<li id="portfolioNav"><a href="#" name="ajax/port_corporate_identities.html" class="subMenuFalse">Portfolio</a>
 						<!-- <ul class="subMenu">
 							<li><a href="#" id="identitiesNav" name="ajax/port_corporate_identities.html">Corporate Identities</a></li>
@@ -71,7 +74,7 @@
 					</li>
 					<li id="ourClientsNav"><a href="#" name="ajax/our_clients.html" class="subMenuFalse">Our Clients</a></li>
 					<li id="talkToUsNav"><a href="#" name="ajax/talk_to_us.html" class="subMenuFalse">Talk To Us</a></li>
-					<li id="careersNav"><a href="#" name="ajax/career.php" class="subMenuFalse">Careers</a></li>
+					<li id="careersNav"><a href="#" name="ajax/career.html" class="subMenuFalse">Careers</a></li>
 				</ul>
 			</div><!-- navContainer -->
 
@@ -290,6 +293,10 @@
 					$(".gridCurtain").removeClass("fadeOut");
 					$(".blackBox").removeClass("slideOutLeft");
 					$(".gridCurtain").css("display","block");
+
+					window.setTimeout(function() {  
+	         			$( "#closeBtn" ).addClass("close");
+				    }, 100);
 				}
 			});
 			
