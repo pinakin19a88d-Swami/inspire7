@@ -1774,7 +1774,8 @@ a.multimediaWrap {
 	text-align: right;
 	position: absolute;
 	right: 0;
-	bottom: -10%;
+	/*bottom: -10%;*/
+	bottom: 3%;
 }
 #prev, #next {
 	display: inline-block;
@@ -1803,9 +1804,11 @@ a.multimediaWrap {
 }
 .logoCarousel {
 	width: 98.5%;
-	height: 40%;
+	/*height: 40%;*/
+	height: 52%;
 	position: relative;
-	margin: 0 0 4.5% 0.5%;
+	/*margin: 0 0 4.5% 0.5%;*/
+	margin: 0 0 0.5% 0.5%;
 }
 .logoContent {
 	/*float: left;*/
@@ -1826,7 +1829,8 @@ a.multimediaWrap {
 .corporateBg {
 	background: #444;
 	color: #999;
-	height: 25%;
+	/*height: 25%;*/
+	height: 22%;
 	-webkit-box-shadow: 2px 3px 1px rgba(35,31,32,.52); 
 	   -moz-box-shadow: 2px 3px 1px rgba(35,31,32,.52); 
 		 -o-box-shadow: 2px 3px 1px rgba(35,31,32,.52); 

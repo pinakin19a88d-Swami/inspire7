@@ -1,0 +1,122 @@
+<script type="text/javascript">
+	
+	$("body #cboxOverlay").remove();
+	$("body #colorbox").remove();
+
+</script>
+
+<script type="text/javascript" src="js/fontsize_fix.js"></script>
+
+<div class="corporateIdentity whiteText clearfix animated fadeIn de8ms">
+
+	<div class="logoContent">
+		<h2 class="animated fadeInDown de1s">Web Sites &amp; Portals </h2>
+		<div class="logoCarousel">
+			<div class="slideshow clearfix" 
+			     data-cycle-fx="carousel"
+			     data-cycle-timeout="3000"
+			     data-cycle-carousel-visible="3"
+			     data-cycle-carousel-fluid="true"
+			     data-cycle-next="#next"
+			     data-cycle-prev="#prev"
+			     data-cycle-slides="a">
+
+   <a class="gallery3" href="images/portfolio_logos/websites_portals/Large_view/1_website_large.jpg">
+    	<img src="images/portfolio_logos/websites_portals/Thumb_view/1_website.png">
+    </a>
+   <a class="gallery3" href="images/portfolio_logos/websites_portals/Large_view/2_website_large.jpg">
+    	<img src="images/portfolio_logos/websites_portals/Thumb_view/2_website.png">
+    </a>
+   <a class="gallery3" href="images/portfolio_logos/websites_portals/Large_view/3_website_large.jpg">
+    	<img src="images/portfolio_logos/websites_portals/Thumb_view/3_website.png">
+    </a>
+   <a class="gallery3" href="images/portfolio_logos/websites_portals/Large_view/4_website_large.jpg">
+    	<img src="images/portfolio_logos/websites_portals/Thumb_view/4_website.png">
+    </a>
+   <a class="gallery3" href="images/portfolio_logos/websites_portals/Large_view/5_website_large.jpg">
+    	<img src="images/portfolio_logos/websites_portals/Thumb_view/5_website.png">
+    </a>
+   <a class="gallery3" href="images/portfolio_logos/websites_portals/Large_view/6_website_large.jpg">
+    	<img src="images/portfolio_logos/websites_portals/Thumb_view/6_website.png">
+    </a>
+
+
+    <a class="gallery3" href="images/portfolio_logos/websites_portals/Large_view/7_website_large.jpg">
+    	<img src="images/portfolio_logos/websites_portals/Thumb_view/7_website.png.png">
+    </a>
+   
+
+</div>
+<div class="BtnWrap">
+    <a href="#" id="prev">&nbsp;</a>
+    <a href="#" id="next">&nbsp;</a>
+</div>
+
+
+		</div><!-- logoCarousel -->
+
+		<div class="corporateBg">
+			<ul>
+				<li><a href="#" name="ajax/port_corporate_identities.html">Corporate Identities</a></li>
+				<li><a href="#" name="ajax/corporate_product_profile.html">Brand Building Campaigns</a></li>
+				<li><a href="#" name="ajax/design_communication.html">Design Communication</a></li>
+			</ul>
+
+			<ul>
+				<li><a href="#" name="ajax/corporate_product_profile.html">Corporate &amp; Product Profile</a></li>
+				<li><a href="#" name="ajax/media_campaigns.html">Media Campaigns</a></li>
+				<li><a href="#" name="ajax/specialized_publishing.html">Specialized Publishing</a></li>
+			</ul>
+
+			<ul>
+				<li><a href="#" name="ajax/exhibition_event_support.html">Exhibition &amp; Event Support</a></li>
+				<li><a href="#">Multimedia Presentations</a></li>
+				<li class="active"><a href="#" name="ajax/websites_portals.html">Web Sites &amp; Portals</a></li>
+			</ul>
+		</div><!-- corporateBg -->
+		
+	</div><!-- logoContent -->
+
+</div>
+
+<!-- For Cycle 2 -->
+<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+<script src="js/jquery.cycle2.min.js"></script>
+
+<script src="js/jquery.cycle2.carousel.js"></script>
+<script type="text/javascript">
+		
+     $.fn.cycle.defaults.autoSelector = '.slideshow';
+
+</script>
+
+<!-- For ColorBox -->
+
+<link rel="stylesheet" href="css/colorbox.css" />
+<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+	 	if ( ($("#cboxOverlay").length <= 1) && ($("#colorbox").length <= 1) )
+	 	{
+		 	$('a.gallery3').colorbox({	transition:'elastic',
+		 								rel:'gallery3',
+		 								opacity:0.8,
+		 								trapFocus:true });
+		}
+
+	});
+</script>
+
+<script type="text/javascript">
+
+	$(".corporateBg a").click(function() {
+		var current = $(this).attr("name");
+		$(".blackBox").html("");
+		$(".blackBox").load("ajax/cssLoader.html");
+		$(".blackBox").load(current);
+		$(".gridCurtain").css("display","block");
+	});
+
+</script>
