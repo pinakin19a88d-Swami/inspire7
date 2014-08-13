@@ -1339,8 +1339,8 @@ a.corpoIdentity {
 	position: absolute;
 	/*width: 26%;	*/
 	width: 44%;	
-	bottom: 33%;
-	left: 32%;
+	bottom: 35%;
+	left: 28%;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -1816,6 +1816,7 @@ a.multimediaWrap {
 	float: left;
 }
 .brandBuildingCamp .textCont h3 {
+	width: 95%;
 	margin-bottom: 4%;
 }
 .brandBuildingCamp .textCont p {

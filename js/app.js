@@ -29,9 +29,14 @@ $(function() {
 			$(formMessages).text(response);
 
 			// Clear the form.
-			$('#name').val('');
+			$('#postAppliedFor').val('');
+			$('#nameOfCandidate').val('');
+			$('#eduQualification').val('');
+			$('#areaOfExpertise').val('');
+			$('#totalExperience').val('');
+			$('#address').val('');
+			$('#phoneNumber').val('');
 			$('#email').val('');
-			$('#message').val('');
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
