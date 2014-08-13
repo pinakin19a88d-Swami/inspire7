@@ -1,0 +1,96 @@
+<script type="text/javascript">
+	
+	$("body #cboxOverlay").remove();
+	$("body #colorbox").remove();
+
+</script>
+
+<script type="text/javascript" src="js/fontsize_fix.js"></script>
+
+<div class="brandBuildingCamp whiteText clearfix animated fadeIn de8ms">
+
+	<div class="logoContent">
+		<h2 class="animated fadeInDown de1s">Brand Building Campaigns</h2>
+		
+		<div class="infoContainer">
+			
+			<div class="textCont">
+				<h3 class="greyText animated fadeInDown de12ms">“A brand is built action by action, just as houses are built brick by brick"</h3>
+				<p class="animated fadeInRight de14ms">
+					Brand Building is a carefully crafted and strategized process. One has to analyze, understand and work towards creating the right brand personality. We call it '5 Step Approach', Know the brand offerings, Identify the core attributes, Study the market competi tion, Understand the behavior of target  customers and position the brand in most dynamic way with optimum budget and long term strategy.
+				</p>
+				<p class="animated fadeInRight de16ms">
+					At Inspire we have been working on various brands with this approach and partnering brand success with our clients. Here are some examples how we support our clients with wide spectrum of services to build their brands for Success.
+				</p>				
+			</div>
+			<div class="thumbsCont animated fadeInRight de18ms">
+				<ul>
+					<li>
+						<img src="images/Client_logos/Constro.jpg" alt="Constro">
+						<img src="images/Client_logos/Tenth_Mile.jpg" alt="Tenth_Mile">
+					</li>
+					
+					<li>
+						<img src="images/Client_logos/IDD_Pump.jpg" alt="IDD_Pump">
+						<img src="images/Client_logos/D_And_H_India.jpg" alt="D_And_H_India">
+					</li>
+					
+					<li>
+						<img src="images/Client_logos/Fleetguard.jpg" alt="Fleetguard">
+						<img src="images/Client_logos/Accurate.jpg" alt="Accurate">
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="BtnWrap">
+		    <a href="#" id="prev">&nbsp;</a>
+		    <a href="#" id="next">&nbsp;</a>
+		</div>
+		
+	</div><!-- logoContent -->
+
+</div>
+
+<!-- For Cycle 2 -->
+<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+<script src="js/jquery.cycle2.min.js"></script>
+
+<script src="js/jquery.cycle2.carousel.js"></script>
+<script type="text/javascript">
+		
+     $.fn.cycle.defaults.autoSelector = '.slideshow';
+
+</script>
+
+<!-- For ColorBox -->
+
+<link rel="stylesheet" href="css/colorbox.css" />
+<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+	 	if ( ($("#cboxOverlay").length <= 1) && ($("#colorbox").length <= 1) )
+	 	{
+		 	$('a.gallery1').colorbox({	transition:'elastic',
+		 								rel:'gallery1',
+		 								opacity:0.8,
+		 								trapFocus:true });
+		}
+
+	});
+</script>
+
+<script type="text/javascript">
+
+	$(".corporateBg a").click(function() {
+		var current = $(this).attr("name");
+		$(".blackBox").html("");
+		$(".blackBox").load("ajax/cssLoader.html");
+		$(".blackBox").load(current);
+		$(".gridCurtain").css("display","block");
+	});
+	
+</script>

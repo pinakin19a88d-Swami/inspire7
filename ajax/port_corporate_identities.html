@@ -72,7 +72,7 @@
 		<div class="corporateBg portLinks">
 			<ul>
 				<li class="active"><a href="#" name="ajax/port_corporate_identities.html">Corporate Identities</a></li>
-				<li><a href="#" name="ajax/corporate_product_profile.html">Brand Building Campaigns</a></li>
+				<li><a href="#" name="ajax/brand_building_campaigns.html">Brand Building Campaigns</a></li>
 				<li><a href="#" name="ajax/design_communication.html">Design Communication</a></li>
 			</ul>
 
@@ -131,6 +131,15 @@
 		$(".blackBox").load("ajax/cssLoader.html");
 		$(".blackBox").load(current);
 		$(".gridCurtain").css("display","block");
+
+		if(current == "ajax/brand_building_campaigns.html"){
+
+	    		$("#backBtn").css("display","block");
+	    		$("#backBtn").removeClass("slideOutLeft");
+	    		$("#backBtn").addClass("flipInX de1s");
+	    		$("#backBtn").attr("name","ajax/port_corporate_identities.html");
+
+		}
 	});
 	
 </script>
