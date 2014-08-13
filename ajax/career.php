@@ -31,9 +31,8 @@
 
 		    <div class="field">
 		        <button type="submit">Send</button>
-		    </div>  
+		    </div>
 		</form>
-
 	</div><!-- infoText -->
 
 	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>

@@ -1,8 +1,5 @@
 <?php
-    // My modifications to mailer script from:
-    // http://blog.teamtreehouse.com/create-ajax-contact-form
-    // Added input sanitizing to prevent injection
-
+    
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
@@ -21,10 +18,10 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "chinmay412@gmail.com";
+        $recipient = "info@inspiremultimedia.co.in";
 
         // Set the email subject.
-        $subject = "New contact from $name";
+        $subject = "New Career Form from $name";
 
         // Build the email content.
         $email_content = "Name: $name\n";
@@ -38,12 +35,7 @@
         if (mail($recipient, $subject, $email_content, $email_headers)) {
             // Set a 200 (okay) response code.
             // http_response_code(200);
-            // echo "Thank You! Your message has been sent.";
-        ?>
-        <script type="text/javascript">
-            $(".infoText").html("<h2>Thank You! Your message has been sent.</h2>");
-        </script>
-        <?php
+            echo "Thank You! Your message has been sent.";
         } else {
             // Set a 500 (internal server error) response code.
             // http_response_code(500);

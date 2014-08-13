@@ -1772,6 +1772,7 @@ a.multimediaWrap {
 	display: inline-block;
 	width: 20px;
 	height: 20px;
+	text-decoration: none;
 	background: url("../images/Inspire_sprite.png") -30px -45px no-repeat;
 }
 #next {
