@@ -1339,8 +1339,8 @@ a.corpoIdentity {
 	position: absolute;
 	/*width: 26%;	*/
 	width: 44%;	
-	bottom: 33%;
-	left: 32%;
+	bottom: 35%;
+	left: 28%;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -1781,6 +1781,7 @@ a.multimediaWrap {
 	display: inline-block;
 	width: 20px;
 	height: 20px;
+	text-decoration: none;
 	background: url("../images/Inspire_sprite.png") -30px -45px no-repeat;
 }
 #next {
@@ -1794,6 +1795,61 @@ a.multimediaWrap {
 .corporateIdentity h2 {
 	margin: 0 0 2% 5%;
 	font-size: 145%;
+}
+.brandBuildingCamp {
+	width: 94%;
+	height: 85%;
+	margin: 10% 0 0 6%;
+}
+.brandBuildingCamp .infoContainer {
+	width: 100%;
+	height: 90%;
+}
+.brandBuildingCamp .BtnWrap{
+	right: 2%;
+}
+.brandBuildingCamp h2 {
+	margin-bottom: 4%;
+}
+.brandBuildingCamp .textCont {
+	width: 50%;
+	float: left;
+}
+.brandBuildingCamp .textCont h3 {
+	width: 95%;
+	margin-bottom: 4%;
+}
+.brandBuildingCamp .textCont p {
+	width: 95%;
+	margin-bottom: 4%;
+}
+.brandBuildingCamp .thumbsCont {
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+.brandBuildingCamp .thumbsCont ul {
+	height: 100%;
+}
+.brandBuildingCamp .thumbsCont ul li {
+	float: left;
+	/*background: #fff;*/
+	width: 100%;
+	margin: 0 4% 4% 0;
+	text-align: center;
+	border-radius: 4px;
+}
+.brandBuildingCamp .thumbsCont ul li img {
+	display: block;
+	width: 42%;
+	border-radius: 5px;
+	float: left;
+	margin: 0 4% 0 0;
+	-webkit-box-shadow: 2px 2px 5px #000;
+	-moz-box-shadow: 2px 2px 5px #000;
+	-ms-box-shadow: 2px 2px 5px #000;
+	-o-box-shadow: 2px 2px 5px #000;
+	box-shadow: 2px 2px 5px #000;
 }
 .slideshow {
 	width: 100%;

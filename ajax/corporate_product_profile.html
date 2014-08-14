@@ -72,12 +72,12 @@
 		<div class="corporateBg">
 			<ul>
 				<li><a href="#" name="ajax/port_corporate_identities.html">Corporate Identities</a></li>
-				<li><a href="#" name="ajax/corporate_product_profile.html">Brand Building Campaigns</a></li>
+				<li><a href="#" name="ajax/brand_building_campaigns.html">Brand Building Campaigns</a></li>
 				<li><a href="#" name="ajax/design_communication.html">Design Communication</a></li>
 			</ul>
 
 			<ul>
-				<li cladd="active"><a href="#" name="ajax/corporate_product_profile.html">Corporate &amp; Product Profile</a></li>
+				<li class="active"><a href="#" name="ajax/corporate_product_profile.html">Corporate &amp; Product Profile</a></li>
 				<li><a href="#" name="ajax/media_campaigns.html">Media Campaigns</a></li>
 				<li><a href="#" name="ajax/specialized_publishing.html">Specialized Publishing</a></li>
 			</ul>
@@ -128,6 +128,15 @@
 		$(".blackBox").load("ajax/cssLoader.html");
 		$(".blackBox").load(current);
 		$(".gridCurtain").css("display","block");
+		
+		if(current == "ajax/brand_building_campaigns.html"){
+
+	    		$("#backBtn").css("display","block");
+	    		$("#backBtn").removeClass("slideOutLeft");
+	    		$("#backBtn").addClass("flipInX de1s");
+	    		$("#backBtn").attr("name","ajax/corporate_product_profile.html");
+
+		}
 	});
 
 </script>
