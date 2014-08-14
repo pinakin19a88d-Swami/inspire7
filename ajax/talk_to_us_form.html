@@ -9,36 +9,37 @@
 		</p>
 		
 		<div class="formWrap talkForm mCustomScrollbar animated fadeIn de14ms">
-			<form class="form-horizontal carrersForm">
+			<div id="form-messages_fb"></div>
+			<form id="ajax-feedback" class="form-horizontal feedbackForm" method="post" action="ajax/feedbackMailer.php">
 			  <div class="control-group animated fadeInRight de16ms">
-			    <label class="control-label" for="inputPost">Company Name</label>
+			    <label class="control-label" for="companyName_fb">Company Name</label>
 			    <span>:</span>	    
 			    <div class="controls">
-			      <input type="text" id="inputPost">
+			      <input type="text" id="companyName_fb" name="companyName_fb">
 			    </div><!-- controls -->
 			  </div><!-- control-group -->
 
 			  <div class="control-group animated fadeInRight de16ms">
-			    <label class="control-label" for="inputName">Person Name</label>
+			    <label class="control-label" for="personName_fb">Person Name</label>
 			    <span>:</span>
 			    <div class="controls">
-			      <input type="text" id="inputName">
+			      <input type="text" id="personName_fb" name="personName_fb">
 			    </div><!-- controls -->
 			  </div><!-- control-group -->
 
 			  <div class="control-group animated fadeInRight de16ms">
-			    <label class="control-label" for="inputExpertise">Phone/ Mobile</label>
+			    <label class="control-label" for="phoneNumer_fb">Phone / Mobile</label>
 			    <span>:</span>
 			    <div class="controls">
-			      <input type="text" id="inputExpertise">
+			      <input type="text" id="phoneNumer_fb" name="phoneNumer_fb">
 			    </div><!-- controls -->
 			  </div><!-- control-group -->
 
 			  <div class="control-group animated fadeInRight de16ms">
-			    <label class="control-label" for="inputExp">Email Id</label>
+			    <label class="control-label" for="email_fb">Email Id</label>
 			    <span>:</span>
 			    <div class="controls">
-			      <input type="text" id="inputExp">
+			      <input type="text" id="email_fb" name="email_fb">
 			    </div><!-- controls -->
 			  </div><!-- control-group -->
 			  
@@ -48,33 +49,33 @@
 
 			    <div class="controls">
 			      <label class="checkbox inline">
-					  <input type="checkbox" id="inlineCheckbox1" value="CorporateIdentities"> Corporate Identities</label>
+					  <input type="checkbox" id="corporateChkBox" value="CorporateIdentities" name="interestedIn[]"> Corporate Identities</label>
 					<label class="checkbox inline">
-					  <input type="checkbox" id="inlineCheckbox2" value="SpecializedPublishing "> Specialized Publishing
+					  <input type="checkbox" id="publishingChkBox" value="SpecializedPublishing" name="interestedIn[]"> Specialized Publishing
 				  </label>
 			    </div><!-- controls -->
 
 			    <div class="controls">
 			      <label class="checkbox inline">
-					  <input type="checkbox" id="inlineCheckbox1" value="BrandBuilding"> Brand Building Campaigns</label>
+					  <input type="checkbox" id="bbcChkBox" value="BrandBuilding" name="interestedIn[]"> Brand Building Campaigns</label>
 					<label class="checkbox inline">
-					  <input type="checkbox" id="inlineCheckbox2" value="Exhibition"> Exhibition &amp; Event Support
+					  <input type="checkbox" id="exhibitionChkBox" value="Exhibition" name="interestedIn[]"> Exhibition &amp; Event Support
 				  </label>
 			    </div><!-- controls -->
 
 			    <div class="controls">
 			      <label class="checkbox inline">
-					  <input type="checkbox" id="inlineCheckbox1" value="DesignCommun"> Design Communication </label>
+					  <input type="checkbox" id="designChkBox" value="DesignCommun" name="interestedIn[]"> Design Communication </label>
 					<label class="checkbox inline">
-					  <input type="checkbox" id="inlineCheckbox2" value="WebSites"> Web Sites &amp; Portals
+					  <input type="checkbox" id="websitesChkBox" value="WebSites" name="interestedIn[]"> Web Sites &amp; Portals
 				  </label>
 			    </div><!-- controls -->
 
 			    <div class="controls">
 			      <label class="checkbox inline">
-					  <input type="checkbox" id="inlineCheckbox1" value="MediaCampaigns"> Media Campaigns  </label>
+					  <input type="checkbox" id="mediaChkBox" value="MediaCampaigns" name="interestedIn[]"> Media Campaigns  </label>
 					<label class="checkbox inline">
-					  <input type="checkbox" id="inlineCheckbox2" value="MultimediaPresentations"> Multimedia Presentations 
+					  <input type="checkbox" id="presentationsChkBox" value="MultimediaPresentations" name="interestedIn[]"> Multimedia Presentations 
 				  </label>
 			    </div><!-- controls -->
 
@@ -88,9 +89,6 @@
 		      	  <input type="reset" value="Reset" name="reset">
 			    </div><!-- controls -->
 			  </div><!-- control-group -->
-
-
-
 		</form>
 		</div><!-- formWrap -->
 	</div><!-- infoText -->
@@ -105,5 +103,8 @@
 	    });
 
 	</script>
+
+	<script src="jquery-2.1.0.min.js"></script>
+	<script src="js/appFeedback.js"></script>
 
 </div>

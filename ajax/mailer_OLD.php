@@ -28,15 +28,17 @@ $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
 
 $mail = new PHPMailer;
 
-// $mail->isSMTP();                                      // Set mailer to use SMTP
-// $mail->Host = 'smtp1.example.com;smtp2.example.com';  // Specify main and backup SMTP servers
-// $mail->SMTPAuth = true;                               // Enable SMTP authentication
-// $mail->Username = 'user@example.com';                 // SMTP username
-// $mail->Password = 'secret';                           // SMTP password
-// $mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
+$mail->isSMTP();                                      // Set mailer to use SMTP
+$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail->Port = 587;
+$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->SMTPDebug = 0;
+$mail->Username = 'inspiresanjay@gmail.com';                 // SMTP username
+$mail->Password = 'srkdon789';                           // SMTP password
+$mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
 
-$mail->From = '$email';
-$mail->FromName = '$nameOfCandidate';
+$mail->From = $email;
+$mail->FromName = $nameOfCandidate;
 $mail->addAddress('chinmay412@gmail.com', 'Chinmay Patil');     // Add a recipient
 $mail->addReplyTo('info@inspiremultimedia.co.in', 'Inspire Multimedia');
 
