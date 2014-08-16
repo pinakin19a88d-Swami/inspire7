@@ -7,6 +7,8 @@ $(document).ready(function() {
 		$(this).addClass("active");
 
 		var current = $(this).attr("name");
+		$(".blackBox").html("");
+		$(".blackBox").load("ajax/cssLoader.html");
 		$(".blackBox").load(current);
 		$(".gridCurtain").removeClass("fadeOut");
 		$(".blackBox").removeClass("slideOutLeft");
@@ -48,6 +50,8 @@ $(document).ready(function() {
 	    	$(".subMenu li a").removeClass("active");
 			$(".services span").removeClass("active");
 		}
+		$(".blackBox").html("");
+		$(".blackBox").load("ajax/cssLoader.html");
 		$(".blackBox").load(current);
 		$(".gridCurtain").removeClass("fadeOut");
 		$(".blackBox").removeClass("slideOutLeft");
@@ -73,6 +77,8 @@ $(document).ready(function() {
     	$(".subMenu li a").removeClass("active");
 		$(".services span").removeClass("active");
 
+		$(".blackBox").html("");
+		$(".blackBox").load("ajax/cssLoader.html");
 		$(".blackBox").load(current);
 		$(".gridCurtain").removeClass("fadeOut");
 		$(".blackBox").removeClass("slideOutLeft");
@@ -92,6 +98,8 @@ $(document).ready(function() {
 		$(this).children("span").addClass("active");
 
 		var current = $(this).attr("name");
+		$(".blackBox").html("");
+		$(".blackBox").load("ajax/cssLoader.html");
 		$(".blackBox").load(current);
 		$(".gridCurtain").removeClass("fadeOut");
 		$(".blackBox").removeClass("slideOutLeft");
@@ -113,6 +121,8 @@ $(document).ready(function() {
 		var current = $(this).attr("name");
 		$(this).removeClass("slideInLeft de1s");
 		$(this).addClass("slideOutLeft");
+		$(".blackBox").html("");
+		$(".blackBox").load("ajax/cssLoader.html");
 		$(".blackBox").load(current);
 
 	});
