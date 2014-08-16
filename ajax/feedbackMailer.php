@@ -14,6 +14,9 @@
 
         $email = filter_var(trim($_POST["email_fb"]), FILTER_SANITIZE_EMAIL);
 
+        $remarks_fb = strip_tags(trim($_POST["remarks_fb"]));
+                $remarks_fb = str_replace(array("\r","\n"),array(" "," "),$remarks_fb);
+
         // Check that data was sent to the mailer.
         if ( empty($companyName_fb) OR 
             empty($personName_fb) OR 
@@ -52,6 +55,14 @@
         $email_content .= "Person Name: $personName_fb\n";
         $email_content .= "Phone / Mobile: $phoneNumer_fb\n";
         $email_content .= "Email: $email\n";
+        $email_content .= "Remarks: $remarks_fb\n";
+        $email_content .= "Interested In: \n";
+        if(!empty($_POST['interestedIn'])) {
+            foreach($_POST['interestedIn'] as $check) {
+                $email_content .= "$check\n"; 
+            }
+        }
+        
 
         // Build the email headers.
         // $email_headers = "From: $nameOfCandidate <$email>";

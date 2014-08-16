@@ -9,7 +9,7 @@
 		</p>
 		
 		<div class="formWrap talkForm mCustomScrollbar animated fadeIn de14ms">
-			<div id="form-messages_fb"></div>
+			<div id="form-messages_fb" class="animated fadeInDown de4ms"></div>
 			<form id="ajax-feedback" class="form-horizontal feedbackForm" method="post" action="ajax/feedbackMailer.php">
 			  <div class="control-group animated fadeInRight de16ms">
 			    <label class="control-label" for="companyName_fb">Company Name</label>
@@ -40,6 +40,14 @@
 			    <span>:</span>
 			    <div class="controls">
 			      <input type="text" id="email_fb" name="email_fb">
+			    </div><!-- controls -->
+			  </div><!-- control-group -->
+
+			  <div class="control-group animated fadeInRight de16ms">
+			    <label class="control-label" for="remarks_fb">Remarks</label>
+			    <span>:</span>
+			    <div class="controls">
+			      <textarea rows="3" id="remarks_fb" name="remarks_fb"></textarea>
 			    </div><!-- controls -->
 			  </div><!-- control-group -->
 			  
