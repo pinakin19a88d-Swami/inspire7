@@ -1852,11 +1852,38 @@ a.multimediaWrap {
 	border-radius: 5px;
 	float: left;
 	margin: 0 4% 0 0;
+	cursor: pointer;
 	-webkit-box-shadow: 2px 2px 5px #000;
 	-moz-box-shadow: 2px 2px 5px #000;
 	-ms-box-shadow: 2px 2px 5px #000;
 	-o-box-shadow: 2px 2px 5px #000;
 	box-shadow: 2px 2px 5px #000;
+}
+
+.bbc {
+	width: 100%;
+	height: 100%;
+	margin: 8% 0 0 0;
+}
+.bbc h2 {
+	margin: 0 0 2% 5%;
+}
+.bbc .logoCarousel {
+	height: 40%;
+}
+.bbc ul li {
+	float: left;
+	padding: 0 2%;
+	border-left: #3fa5d4 solid 2px;
+	margin-bottom: 1%;
+}
+
+.brandInfo p,
+.brandInfo h4,
+.brandInfo ul {
+	width: 85%;
+	margin: 0 0 2% 8%;
+	font-family: 'calibriregular';
 }
 .slideshow {
 	width: 100%;
@@ -2035,6 +2062,9 @@ margin-left: 180px;
 }
 .blueText {
 	color: #006699;
+}
+.brandBlueText {
+	color: #3fa5d4;
 }
 
 #cboxCurrent {

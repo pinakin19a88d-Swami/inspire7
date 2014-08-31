@@ -26,7 +26,7 @@
 			<div class="thumbsCont animated fadeInRight de18ms">
 				<ul>
 					<li>
-						<img src="images/Client_logos/Constro.jpg" alt="Constro">
+						<img src="images/Client_logos/Constro.jpg" alt="Constro" name="ajax/brandConstro.html">
 						<img src="images/Client_logos/Tenth_Mile.jpg" alt="Tenth_Mile">
 					</li>
 					
@@ -85,7 +85,7 @@
 
 <script type="text/javascript">
 
-	$(".corporateBg a").click(function() {
+	$(".thumbsCont img").click(function() {
 		var current = $(this).attr("name");
 		$(".blackBox").html("");
 		$(".blackBox").load("ajax/cssLoader.html");

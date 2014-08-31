@@ -8,6 +8,7 @@ $(document).ready(function() {
 
 	var newFontSize = boxWidth * 0.032;
 	$(".infoText h2, h2").css("font-size",newFontSize);
+	$(".infoText h2, h2").css("line-height",newFontSize+1.5+"px");
 
 	var newFontSize = boxWidth * 0.045;
 	$(".serviceNav h2").css("font-size",newFontSize);
@@ -19,7 +20,7 @@ $(document).ready(function() {
 	// $(".infoText p, p").css("font-size",newFontSize);
 
 	var newFontSize = boxWidth * 0.020;
-	$(".infoText p, .bulletPts li, .activities h4, .form-horizontal, p").css("font-size",newFontSize);
+	$(".infoText p, .bulletPts li, .activities h4, .form-horizontal, p, .bbc ul li").css("font-size",newFontSize);
 
 	var newFontSize = boxWidth * 0.020;
 	$(".infoText .boldItalics").css("font-size",newFontSize);
