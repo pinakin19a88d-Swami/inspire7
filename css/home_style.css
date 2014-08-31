@@ -1882,8 +1882,12 @@ a.multimediaWrap {
 .brandInfo h4,
 .brandInfo ul {
 	width: 85%;
-	margin: 0 0 2% 8%;
+	margin: 0 0 0 8%;
 	font-family: 'calibriregular';
+}
+.brandInfo h4 {
+	margin-top: 2%;
+	margin-bottom: 1%;
 }
 .slideshow {
 	width: 100%;

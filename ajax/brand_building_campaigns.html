@@ -91,6 +91,15 @@
 		$(".blackBox").load("ajax/cssLoader.html");
 		$(".blackBox").load(current);
 		$(".gridCurtain").css("display","block");
+
+		if(current == "ajax/brand_building_campaigns.html"){
+
+	    		$("#backBtn").css("display","block");
+	    		$("#backBtn").removeClass("slideOutLeft");
+	    		$("#backBtn").addClass("flipInX de1s");
+	    		$("#backBtn").attr("name","ajax/port_corporate_identities.html");
+
+		}
 	});
 	
 </script>
