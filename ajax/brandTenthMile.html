@@ -1,0 +1,149 @@
+<script type="text/javascript">
+	
+	$("body #cboxOverlay").remove();
+	$("body #colorbox").remove();
+
+</script>
+
+<script type="text/javascript" src="js/fontsize_fix.js"></script>
+
+<div class="bbc whiteText clearfix animated fadeIn de8ms">
+
+	<div class="logoContent">
+		<h2 class="animated fadeInDown de1s">Brand Building Campaigns</h2>
+		<div class="logoCarousel">
+			<div class="slideshow clearfix" 
+				 data-cycle-fx="carousel"
+				 data-cycle-timeout="3000"
+				 data-cycle-carousel-visible="3"
+				 data-cycle-carousel-fluid="true"
+				 data-cycle-next="#next"
+				 data-cycle-prev="#prev"
+				 data-cycle-slides="a">
+
+  <!--  <a class="gallery1" href="images/portfolio_logos/bbc/10thMile/Large_view/1_10thMile_large.jpg">
+    	<img src="images/portfolio_logos/bbc/10thMile/Thumb_view/1_10thMile.jpg">
+    </a>
+ -->   <a class="gallery1" href="images/portfolio_logos/bbc/10thMile/Large_view/2_10thMile_large.jpg">
+    	<img src="images/portfolio_logos/bbc/10thMile/Thumb_view/2_10thMile.jpg">
+    </a>
+   <a class="gallery1" href="images/portfolio_logos/bbc/10thMile/Large_view/3_10thMile_large.jpg">
+    	<img src="images/portfolio_logos/bbc/10thMile/Thumb_view/3_10thMile.jpg">
+    </a>
+   <a class="gallery1" href="images/portfolio_logos/bbc/10thMile/Large_view/4_10thMile_large.jpg">
+    	<img src="images/portfolio_logos/bbc/10thMile/Thumb_view/4_10thMile.jpg">
+    </a>
+   <a class="gallery1" href="images/portfolio_logos/bbc/10thMile/Large_view/5_10thMile_large.jpg">
+    	<img src="images/portfolio_logos/bbc/10thMile/Thumb_view/5_10thMile.jpg">
+    </a>
+   <a class="gallery1" href="images/portfolio_logos/bbc/10thMile/Large_view/6_10thMile_large.jpg">
+    	<img src="images/portfolio_logos/bbc/10thMile/Thumb_view/6_10thMile.jpg">
+    </a>
+
+
+    <a class="gallery1" href="images/portfolio_logos/bbc/10thMile/Large_view/7_10thMile_large.jpg">
+    	<img src="images/portfolio_logos/bbc/10thMile/Thumb_view/7_10thMile.jpg">
+    </a>
+    <a class="gallery1" href="images/portfolio_logos/bbc/10thMile/Large_view/8_10thMile_large.jpg">
+    	<img src="images/portfolio_logos/bbc/10thMile/Thumb_view/8_10thMile.jpg">
+    </a>
+    <a class="gallery1" href="images/portfolio_logos/bbc/10thMile/Large_view/9_10thMile_large.jpg">
+    	<img src="images/portfolio_logos/bbc/10thMile/Thumb_view/9_10thMile.jpg">
+    </a>
+    <a class="gallery1" href="images/portfolio_logos/bbc/10thMile/Large_view/10_10thMile_large.jpg">
+    	<img src="images/portfolio_logos/bbc/10thMile/Thumb_view/10_10thMile.jpg">
+    </a>
+    <a class="gallery1" href="images/portfolio_logos/bbc/10thMile/Large_view/11_10thMile_large.jpg">
+    	<img src="images/portfolio_logos/bbc/10thMile/Thumb_view/11_10thMile.jpg">
+    </a>
+    <a class="gallery1" href="images/portfolio_logos/bbc/10thMile/Large_view/12_10thMile_large.jpg">
+    	<img src="images/portfolio_logos/bbc/10thMile/Thumb_view/12_10thMile.jpg">
+    </a>
+	<a class="gallery1" href="images/portfolio_logos/bbc/10thMile/Large_view/13_10thMile_large.jpg">
+    	<img src="images/portfolio_logos/bbc/10thMile/Thumb_view/13_10thMile.jpg">
+    </a>
+	<a class="gallery1" href="images/portfolio_logos/bbc/10thMile/Large_view/14_10thMile_large.jpg">
+    	<img src="images/portfolio_logos/bbc/10thMile/Thumb_view/14_10thMile.jpg">
+    </a>
+	
+
+</div>
+<div class="BtnWrap">
+    <a href="#" id="prev">&nbsp;</a>
+    <a href="#" id="next">&nbsp;</a>
+</div>
+
+
+		</div><!-- logoCarousel -->
+
+		<div class="brandInfo">
+			<p>
+				<span class="brandBlueText"><strong>10th Mile</strong></span> is one of the major hospitality group of Pune having three properties namely, a restaurant 'Metway Grill, open air party lawns 'Harmony Express' and indoor conferencing hall 'Opinion Forum' with banqueting  and event management support. Our brand building campaign has managed to create a unique personality of 10th Mile and achieved desired marketing objectives.
+			</p>
+			
+			<h4 class="brandBlueText">Our comprehensive Design &amp; Branding services includes :</h4>
+			<ul>
+				<li>Brand Identity</li>
+				<li>Designing of Promotion Campaign</li>
+				<li>e-Media Templates</li>
+				<li>Venue Branding</li>
+				<li>Publishing of News Letters</li>
+				<li>Publishing of Hand Book</li>
+				<li>Branded Merchandise</li>
+			</ul>
+		</div><!-- brandInfo -->
+		
+	</div><!-- logoContent -->
+
+</div>
+
+<!-- For Cycle 2 -->
+<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+<script src="js/jquery.cycle2.min.js"></script>
+
+<script src="js/jquery.cycle2.carousel.js"></script>
+<script type="text/javascript">
+		
+     $.fn.cycle.defaults.autoSelector = '.slideshow';
+
+</script>
+
+<!-- For ColorBox -->
+
+<link rel="stylesheet" href="css/colorbox.css" />
+<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+	 	if ( ($("#cboxOverlay").length <= 1) && ($("#colorbox").length <= 1) )
+	 	{
+		 	$('a.gallery1').colorbox({	transition:'elastic',
+		 								rel:'gallery1',
+		 								opacity:0.8,
+		 								trapFocus:true });
+		}
+
+	});
+</script>
+
+<script type="text/javascript">
+
+	$(".corporateBg a").click(function() {
+		var current = $(this).attr("name");
+		$(".blackBox").html("");
+		$(".blackBox").load("ajax/cssLoader.html");
+		$(".blackBox").load(current);
+		$(".gridCurtain").css("display","block");
+
+		if(current == "ajax/brand_building_campaigns.html"){
+				
+	    		$("#backBtn").css("display","block");
+	    		$("#backBtn").removeClass("slideOutLeft");
+	    		$("#backBtn").addClass("flipInX de1s");
+	    		$("#backBtn").attr("name","ajax/port_corporate_identities.html");
+
+		}
+	});
+	
+</script>
