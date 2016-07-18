@@ -859,6 +859,16 @@ iframe {
 	padding: 0.5%;
 	border: #666 dotted 2px;
 }
+.location-map {
+	position: absolute;
+	width: 55%;
+	/*height: 75%;*/
+	/*margin: 6% 0 0 -18%;*/
+	top: 7%;
+	right: 5%;
+	padding: 0.5%;
+	border: #666 dotted 2px;
+}
 .feedbackForm {
 	/*position: absolute;*/
 	width: 100%;
